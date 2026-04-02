@@ -1,0 +1,286 @@
+{
+  "scene": {
+    "background": "#000005",
+    "bloom": {
+      "strength": 2.0,
+      "radius": 0.6,
+      "threshold": 0.05
+    },
+    "ambient": "#050505"
+  },
+  "camera": {
+    "position": [
+      0.06,
+      0.03,
+      0.06
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "fov": 60,
+    "near": 0.001,
+    "far": 50000
+  },
+  "elements": [
+    {
+      "type": "particles",
+      "count": 1000,
+      "spread": 15000,
+      "color": "#ffffff",
+      "size": 1.0,
+      "opacity": 0.3,
+      "position": [
+        2500,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        12,
+        0,
+        0
+      ],
+      "size": 0.95,
+      "color": "#ffcc00",
+      "opacity": 0.7,
+      "wireframe": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.3,
+          "max": 0.8,
+          "period": 3,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        12,
+        0,
+        0
+      ],
+      "size": 1.05,
+      "color": "#ff8800",
+      "opacity": 0.15,
+      "wireframe": false,
+      "animate": {
+        "pulse": {
+          "property": "opacity",
+          "min": 0.08,
+          "max": 0.2,
+          "period": 5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        12,
+        0,
+        0
+      ],
+      "size": 1.25,
+      "color": "#ff8800",
+      "opacity": 0.04,
+      "wireframe": false
+    },
+    {
+      "type": "node",
+      "position": [
+        12,
+        0,
+        0
+      ],
+      "color": "#ffcc00",
+      "size": 0.15,
+      "emissive": 5,
+      "glow": true,
+      "glowIntensity": 2,
+      "glowRange": 3.0
+    },
+    {
+      "type": "particles",
+      "count": 100,
+      "spread": 2.0,
+      "color": "#ffcc00",
+      "size": 0.02,
+      "opacity": 0.3,
+      "position": [
+        12,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "label",
+      "text": "SOL  (1x)",
+      "position": [
+        12,
+        2.0,
+        0
+      ],
+      "color": "#ffcc00",
+      "style": "bracket"
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "color": "#42a5f5",
+      "size": 0.009174311926605505,
+      "emissive": 2.5,
+      "glow": false
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "innerRadius": 0.08,
+      "outerRadius": 0.09,
+      "color": "#42a5f5",
+      "opacity": 0.3,
+      "rotation": [
+        -90,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "label",
+      "text": "EARTH  (1/109x)",
+      "position": [
+        0,
+        0.3,
+        0
+      ],
+      "color": "#42a5f5",
+      "style": "minimal"
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        5500,
+        0,
+        0
+      ],
+      "size": 2042.5,
+      "color": "#cc3300",
+      "opacity": 0.7,
+      "wireframe": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.3,
+          "max": 0.8,
+          "period": 3,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        5500,
+        0,
+        0
+      ],
+      "size": 2257.5,
+      "color": "#881100",
+      "opacity": 0.15,
+      "wireframe": false,
+      "animate": {
+        "pulse": {
+          "property": "opacity",
+          "min": 0.08,
+          "max": 0.2,
+          "period": 5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        5500,
+        0,
+        0
+      ],
+      "size": 2687.5,
+      "color": "#881100",
+      "opacity": 0.04,
+      "wireframe": false
+    },
+    {
+      "type": "node",
+      "position": [
+        5500,
+        0,
+        0
+      ],
+      "color": "#cc3300",
+      "size": 322.5,
+      "emissive": 3,
+      "glow": true,
+      "glowIntensity": 2,
+      "glowRange": 6450.0
+    },
+    {
+      "type": "particles",
+      "count": 800,
+      "spread": 4300.0,
+      "color": "#cc3300",
+      "size": 10.75,
+      "opacity": 0.3,
+      "position": [
+        5500,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "label",
+      "text": "STEPHENSON 2-18  (2,150x)",
+      "position": [
+        5500,
+        2350.0,
+        0
+      ],
+      "color": "#cc3300",
+      "style": "bracket"
+    },
+    {
+      "type": "edge",
+      "from": [
+        12,
+        0,
+        0
+      ],
+      "to": [
+        5500,
+        0,
+        0
+      ],
+      "color": "#222244",
+      "opacity": 0.08
+    }
+  ]
+}

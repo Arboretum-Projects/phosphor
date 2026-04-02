@@ -1,0 +1,1804 @@
+{
+  "scene": {
+    "bloom": {
+      "strength": 1.0,
+      "radius": 0.4,
+      "threshold": 0.1
+    },
+    "fog": {
+      "color": "#000008",
+      "near": 60,
+      "far": 200
+    },
+    "effects": {
+      "chromatic": {
+        "offset": 0.0015
+      }
+    }
+  },
+  "camera": {
+    "position": [
+      60,
+      25,
+      60
+    ],
+    "target": [
+      0,
+      10,
+      0
+    ],
+    "fov": 65,
+    "far": 500
+  },
+  "elements": [
+    {
+      "type": "grid",
+      "size": 300,
+      "divisions": 60,
+      "color": "#0066ff",
+      "opacity": 0.12
+    },
+    {
+      "type": "grid",
+      "size": 300,
+      "divisions": 120,
+      "color": "#003388",
+      "opacity": 0.05,
+      "position": [
+        0,
+        0.1,
+        0
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        12,
+        0
+      ],
+      "color": "#00ffff",
+      "size": 2.0,
+      "emissive": 2.5,
+      "glow": true,
+      "glowIntensity": 0.5,
+      "glowRange": 12,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.75,
+          "max": 3.0,
+          "period": 3.2788535969157673,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "TESSIER-ASHPOOL",
+      "position": [
+        0,
+        15.5,
+        0
+      ],
+      "color": "#00ffff",
+      "style": "bracket"
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        0,
+        12,
+        0
+      ],
+      "size": 8,
+      "color": "#00ffff",
+      "opacity": 0.04,
+      "wireframe": true
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          12,
+          0
+        ]
+      ],
+      "color": "#00ffff",
+      "opacity": 0.3,
+      "animate": {
+        "trace": {
+          "color": "#00ffff",
+          "period": 2.050021510445334,
+          "length": 0.3
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        35,
+        8,
+        -20
+      ],
+      "color": "#ff00ff",
+      "size": 1.5,
+      "emissive": 2.0,
+      "glow": true,
+      "glowIntensity": 0.5,
+      "glowRange": 12,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.4,
+          "max": 2.4,
+          "period": 2.5500586367382385,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "SENSE/NET",
+      "position": [
+        35,
+        11.0,
+        -20
+      ],
+      "color": "#ff00ff",
+      "style": "bracket"
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        35,
+        8,
+        -20
+      ],
+      "size": 6,
+      "color": "#ff00ff",
+      "opacity": 0.04,
+      "wireframe": true
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          35,
+          0,
+          -20
+        ],
+        [
+          35,
+          8,
+          -20
+        ]
+      ],
+      "color": "#ff00ff",
+      "opacity": 0.3,
+      "animate": {
+        "trace": {
+          "color": "#ff00ff",
+          "period": 2.4464214762976457,
+          "length": 0.3
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -28,
+        10,
+        25
+      ],
+      "color": "#00ff66",
+      "size": 1.4,
+      "emissive": 2.0,
+      "glow": true,
+      "glowIntensity": 0.5,
+      "glowRange": 12,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.4,
+          "max": 2.4,
+          "period": 3.472942428328025,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "HOSAKA",
+      "position": [
+        -28,
+        12.9,
+        25
+      ],
+      "color": "#00ff66",
+      "style": "bracket"
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        -28,
+        10,
+        25
+      ],
+      "size": 5,
+      "color": "#00ff66",
+      "opacity": 0.04,
+      "wireframe": true
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -28,
+          0,
+          25
+        ],
+        [
+          -28,
+          10,
+          25
+        ]
+      ],
+      "color": "#00ff66",
+      "opacity": 0.3,
+      "animate": {
+        "trace": {
+          "color": "#00ff66",
+          "period": 3.3533989748458226,
+          "length": 0.3
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        20,
+        6,
+        40
+      ],
+      "color": "#ff6600",
+      "size": 1.2,
+      "emissive": 1.8,
+      "glow": true,
+      "glowIntensity": 0.5,
+      "glowRange": 12,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.26,
+          "max": 2.16,
+          "period": 3.784359135409691,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "MAAS BIOLABS",
+      "position": [
+        20,
+        8.7,
+        40
+      ],
+      "color": "#ff6600",
+      "style": "bracket"
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        20,
+        6,
+        40
+      ],
+      "size": 5,
+      "color": "#ff6600",
+      "opacity": 0.04,
+      "wireframe": true
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          20,
+          0,
+          40
+        ],
+        [
+          20,
+          6,
+          40
+        ]
+      ],
+      "color": "#ff6600",
+      "opacity": 0.3,
+      "animate": {
+        "trace": {
+          "color": "#ff6600",
+          "period": 2.173877665258832,
+          "length": 0.3
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -40,
+        14,
+        -30
+      ],
+      "color": "#ffff00",
+      "size": 1.8,
+      "emissive": 2.2,
+      "glow": true,
+      "glowIntensity": 0.5,
+      "glowRange": 12,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.54,
+          "max": 2.64,
+          "period": 2.843843639370541,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "TURING REGISTRY",
+      "position": [
+        -40,
+        17.3,
+        -30
+      ],
+      "color": "#ffff00",
+      "style": "bracket"
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        -40,
+        14,
+        -30
+      ],
+      "size": 7,
+      "color": "#ffff00",
+      "opacity": 0.04,
+      "wireframe": true
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -40,
+          0,
+          -30
+        ],
+        [
+          -40,
+          14,
+          -30
+        ]
+      ],
+      "color": "#ffff00",
+      "opacity": 0.3,
+      "animate": {
+        "trace": {
+          "color": "#ffff00",
+          "period": 2.0595944388761405,
+          "length": 0.3
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        50,
+        16,
+        10
+      ],
+      "color": "#00ffff",
+      "size": 1.6,
+      "emissive": 2.0,
+      "glow": true,
+      "glowIntensity": 0.5,
+      "glowRange": 12,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.4,
+          "max": 2.4,
+          "period": 2.4372759496072067,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "ZURICH ORBITAL",
+      "position": [
+        50,
+        19.1,
+        10
+      ],
+      "color": "#00ffff",
+      "style": "bracket"
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        50,
+        16,
+        10
+      ],
+      "size": 6,
+      "color": "#00ffff",
+      "opacity": 0.04,
+      "wireframe": true
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          50,
+          0,
+          10
+        ],
+        [
+          50,
+          16,
+          10
+        ]
+      ],
+      "color": "#00ffff",
+      "opacity": 0.3,
+      "animate": {
+        "trace": {
+          "color": "#00ffff",
+          "period": 3.0107105762067246,
+          "length": 0.3
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -15,
+        20,
+        -50
+      ],
+      "color": "#ff44ff",
+      "size": 1.3,
+      "emissive": 1.8,
+      "glow": true,
+      "glowIntensity": 0.5,
+      "glowRange": 12,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.26,
+          "max": 2.16,
+          "period": 2.0530719393677272,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "FREESIDE",
+      "position": [
+        -15,
+        22.8,
+        -50
+      ],
+      "color": "#ff44ff",
+      "style": "bracket"
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        -15,
+        20,
+        -50
+      ],
+      "size": 5,
+      "color": "#ff44ff",
+      "opacity": 0.04,
+      "wireframe": true
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -15,
+          0,
+          -50
+        ],
+        [
+          -15,
+          20,
+          -50
+        ]
+      ],
+      "color": "#ff44ff",
+      "opacity": 0.3,
+      "animate": {
+        "trace": {
+          "color": "#ff44ff",
+          "period": 2.397675301373297,
+          "length": 0.3
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          12,
+          0
+        ],
+        [
+          18.99884437779523,
+          17.724707403016083,
+          -12.795593779593034
+        ],
+        [
+          35,
+          8,
+          -20
+        ]
+      ],
+      "color": "#00ff66",
+      "opacity": 0.15,
+      "curve": true,
+      "segments": 40,
+      "animate": {
+        "flow": {
+          "color": "#00ff66",
+          "size": 0.15,
+          "period": 3.618860913355653,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          12,
+          0
+        ],
+        [
+          -11.411926328702327,
+          15.79829658188445,
+          11.726143981535024
+        ],
+        [
+          -28,
+          10,
+          25
+        ]
+      ],
+      "color": "#00ff66",
+      "opacity": 0.15,
+      "curve": true,
+      "segments": 40,
+      "animate": {
+        "flow": {
+          "color": "#00ff66",
+          "size": 0.15,
+          "period": 2.310958999623563,
+          "count": 3
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          12,
+          0
+        ],
+        [
+          -23.977897234801514,
+          18.899636503186688,
+          -16.410206195153716
+        ],
+        [
+          -40,
+          14,
+          -30
+        ]
+      ],
+      "color": "#00ff66",
+      "opacity": 0.15,
+      "curve": true,
+      "segments": 40,
+      "animate": {
+        "flow": {
+          "color": "#00ff66",
+          "size": 0.15,
+          "period": 3.207452062733782,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          35,
+          8,
+          -20
+        ],
+        [
+          29.79731786693818,
+          13.681140457273504,
+          14.731157639793706
+        ],
+        [
+          20,
+          6,
+          40
+        ]
+      ],
+      "color": "#4488ff",
+      "opacity": 0.15,
+      "curve": true,
+      "segments": 40,
+      "animate": {
+        "flow": {
+          "color": "#4488ff",
+          "size": 0.15,
+          "period": 2.1576003961569166,
+          "count": 3
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -28,
+          10,
+          25
+        ],
+        [
+          -0.705953357470051,
+          16.09259876182123,
+          36.11706900310777
+        ],
+        [
+          20,
+          6,
+          40
+        ]
+      ],
+      "color": "#ff00ff",
+      "opacity": 0.15,
+      "curve": true,
+      "segments": 40,
+      "animate": {
+        "flow": {
+          "color": "#ff00ff",
+          "size": 0.15,
+          "period": 3.409143672429847,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -40,
+          14,
+          -30
+        ],
+        [
+          6.612633185677101,
+          22.865341703943457,
+          -5.147784793392422
+        ],
+        [
+          50,
+          16,
+          10
+        ]
+      ],
+      "color": "#ff00ff",
+      "opacity": 0.15,
+      "curve": true,
+      "segments": 40,
+      "animate": {
+        "flow": {
+          "color": "#ff00ff",
+          "size": 0.15,
+          "period": 3.7329673335105396,
+          "count": 3
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          50,
+          16,
+          10
+        ],
+        [
+          22.77973603110092,
+          22.178422221322002,
+          3.6483217897008426
+        ],
+        [
+          0,
+          12,
+          0
+        ]
+      ],
+      "color": "#00ff66",
+      "opacity": 0.15,
+      "curve": true,
+      "segments": 40,
+      "animate": {
+        "flow": {
+          "color": "#00ff66",
+          "size": 0.15,
+          "period": 2.710541400455043,
+          "count": 4
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -15,
+          20,
+          -50
+        ],
+        [
+          -29.830221779508868,
+          27.68327293856247,
+          -38.51964614753406
+        ],
+        [
+          -40,
+          14,
+          -30
+        ]
+      ],
+      "color": "#ff00ff",
+      "opacity": 0.15,
+      "curve": true,
+      "segments": 40,
+      "animate": {
+        "flow": {
+          "color": "#ff00ff",
+          "size": 0.15,
+          "period": 3.068279754059416,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          35,
+          8,
+          -20
+        ],
+        [
+          39.13402493761929,
+          20.89727720878824,
+          -0.10476649363404711
+        ],
+        [
+          50,
+          16,
+          10
+        ]
+      ],
+      "color": "#ff00ff",
+      "opacity": 0.15,
+      "curve": true,
+      "segments": 40,
+      "animate": {
+        "flow": {
+          "color": "#ff00ff",
+          "size": 0.15,
+          "period": 3.369228501979749,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -28,
+          10,
+          25
+        ],
+        [
+          -24.209519280358958,
+          23.16050121952019,
+          -14.345469519409182
+        ],
+        [
+          -15,
+          20,
+          -50
+        ]
+      ],
+      "color": "#00ff66",
+      "opacity": 0.15,
+      "curve": true,
+      "segments": 40,
+      "animate": {
+        "flow": {
+          "color": "#00ff66",
+          "size": 0.15,
+          "period": 2.1323772104230945,
+          "count": 4
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        60.21882023562702,
+        5.932631991769281,
+        -29.651539072243537
+      ],
+      "color": "#0066cc",
+      "size": 0.46540494616601075,
+      "emissive": 1.249996309140297,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -57.14054552926997,
+        6.46993389254964,
+        -57.65914887591899
+      ],
+      "color": "#44aaff",
+      "size": 0.2788224825568806,
+      "emissive": 1.2092101931564785,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        63.651661376396305,
+        3.3159245549436998,
+        -16.095919177536437
+      ],
+      "color": "#00ccaa",
+      "size": 0.3528578881029394,
+      "emissive": 0.8636365885216558,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -72.46137993204246,
+        5.764676250218541,
+        -62.45613914389453
+      ],
+      "color": "#0066cc",
+      "size": 0.37892270921959215,
+      "emissive": 1.06933711817215,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        15.342148537780503,
+        3.508484719890879,
+        -5.11201795445163
+      ],
+      "color": "#44aaff",
+      "size": 0.4582339106703494,
+      "emissive": 0.8080367153599738,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        35.31549109763114,
+        5.221821982452771,
+        29.07365904425197
+      ],
+      "color": "#8844ff",
+      "size": 0.4305796197972338,
+      "emissive": 1.0381228311217316,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -33.03997941641182,
+        2.0194718966103755,
+        -54.694759304852845
+      ],
+      "color": "#8844ff",
+      "size": 0.4915664296610343,
+      "emissive": 1.3333735393364452,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        1.229067936692033,
+        5.751801161398506,
+        -62.974268352367204
+      ],
+      "color": "#44aaff",
+      "size": 0.3826910634314517,
+      "emissive": 0.9069874879847444,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        42.0017280120242,
+        6.671758871783349,
+        6.300644819140118
+      ],
+      "color": "#44aaff",
+      "size": 0.47554804831871067,
+      "emissive": 1.2192612091221604,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -1.8230867153683334,
+        4.177884603085602,
+        -62.10116394865679
+      ],
+      "color": "#8844ff",
+      "size": 0.27183569310141764,
+      "emissive": 0.9686101147130632,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        10.777110990225594,
+        6.391445569067766,
+        -67.39887227338143
+      ],
+      "color": "#0088ff",
+      "size": 0.49339534810320024,
+      "emissive": 1.1728943186706609,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -59.87831815672939,
+        7.681092078229945,
+        25.560131639578785
+      ],
+      "color": "#00ccaa",
+      "size": 0.27951698868201774,
+      "emissive": 1.41070312875968,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -12.297929567858091,
+        5.23577653267675,
+        -46.112287129266875
+      ],
+      "color": "#00ccaa",
+      "size": 0.41388469184573656,
+      "emissive": 1.0792946099982004,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        27.469913542125283,
+        7.397684507857672,
+        -20.25271959531299
+      ],
+      "color": "#0066cc",
+      "size": 0.23630125876047972,
+      "emissive": 0.9572881359220902,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -25.90631005640715,
+        3.3806883955794618,
+        14.12939495315733
+      ],
+      "color": "#00ccaa",
+      "size": 0.20215725169552806,
+      "emissive": 1.295488662583918,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -70.58019729978825,
+        2.1884777483181086,
+        -69.2159475023508
+      ],
+      "color": "#8844ff",
+      "size": 0.22125720496659604,
+      "emissive": 0.9666032440582967,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        27.036444527404896,
+        2.79387109235015,
+        -45.722110820729824
+      ],
+      "color": "#44aaff",
+      "size": 0.37286349491626997,
+      "emissive": 0.9700980696770072,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -4.324329128865003,
+        2.5659547789512933,
+        -14.870406162250148
+      ],
+      "color": "#0066cc",
+      "size": 0.3062892699768661,
+      "emissive": 1.0877715932348166,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        58.21387973913653,
+        5.92073292959475,
+        -71.33261004285272
+      ],
+      "color": "#0088ff",
+      "size": 0.2181838022231041,
+      "emissive": 1.3097495119088278,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        48.09480173787182,
+        3.149540432849924,
+        -62.51695484083136
+      ],
+      "color": "#44aaff",
+      "size": 0.3345840643499396,
+      "emissive": 1.0953171478840829,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -35.432776853289525,
+        7.539593595656077,
+        -40.03096833886392
+      ],
+      "color": "#0066cc",
+      "size": 0.4424066734195108,
+      "emissive": 1.3991768247278609,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -64.33460348774395,
+        5.24352762860183,
+        24.34318303976353
+      ],
+      "color": "#0088ff",
+      "size": 0.4906988771854254,
+      "emissive": 1.4484568881056892,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        55.79131750628886,
+        4.913846752704311,
+        -53.39022230337376
+      ],
+      "color": "#00ccaa",
+      "size": 0.45939511820906465,
+      "emissive": 1.4317100058573842,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -53.6580605757557,
+        4.342530545526879,
+        -79.65513946377177
+      ],
+      "color": "#0066cc",
+      "size": 0.2855747686840761,
+      "emissive": 1.2876140525201138,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        36.880850786474554,
+        5.971227871704471,
+        45.33784455748595
+      ],
+      "color": "#0066cc",
+      "size": 0.24643904758221924,
+      "emissive": 1.007695477846195,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        74.99349839506542,
+        5.253171208245646,
+        12.668846530601002
+      ],
+      "color": "#8844ff",
+      "size": 0.21714958187224492,
+      "emissive": 1.20892431612128,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        0.4560612671221662,
+        2.9445963676368994,
+        56.435182727725646
+      ],
+      "color": "#44aaff",
+      "size": 0.22403343957217609,
+      "emissive": 0.9300774726865063,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        15.205617032004426,
+        3.411223370005587,
+        28.03400857665443
+      ],
+      "color": "#0088ff",
+      "size": 0.48247883816872683,
+      "emissive": 1.1987727870967295,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        12.627049201153696,
+        2.4919004329692527,
+        -73.6413340337497
+      ],
+      "color": "#44aaff",
+      "size": 0.3695680771532268,
+      "emissive": 1.021458892183709,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -38.27748870341875,
+        3.8851031767734563,
+        27.156155963172665
+      ],
+      "color": "#8844ff",
+      "size": 0.31873575403737636,
+      "emissive": 1.2701831560719798,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -25.4,
+        14.5,
+        78.1
+      ],
+      "color": "#00ffff",
+      "size": 0.3046577284421232,
+      "emissive": 1.621159255493093,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 4.688980936916838,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        79.0,
+        11.1,
+        57.4
+      ],
+      "color": "#ff00ff",
+      "size": 0.7666296889968545,
+      "emissive": 1.8808641736864395,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 5.637810727453628,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -48.5,
+        15.7,
+        51.9
+      ],
+      "color": "#00ff66",
+      "size": 0.605838882862975,
+      "emissive": 1.9872330636315043,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 4.9619289531321975,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        117.1,
+        8.2,
+        5.8
+      ],
+      "color": "#00ffff",
+      "size": 0.7694650019635519,
+      "emissive": 1.1342911143933678,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 3.3462860112573067,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        77.2,
+        7.8,
+        61.5
+      ],
+      "color": "#ff00ff",
+      "size": 0.6588060935693989,
+      "emissive": 1.203597312327453,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 4.902713876655239,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -8.3,
+        16.7,
+        93.8
+      ],
+      "color": "#00ffff",
+      "size": 0.3461492338563667,
+      "emissive": 1.4235757725637264,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 3.830040671916755,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        114.0,
+        12.9,
+        2.5
+      ],
+      "color": "#00ff66",
+      "size": 0.38079098813694306,
+      "emissive": 1.4418355118608506,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 5.1170023402799725,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -62.9,
+        17.2,
+        -25.3
+      ],
+      "color": "#ff00ff",
+      "size": 0.5727951446027612,
+      "emissive": 1.8345950198860166,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 4.747528699469382,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        41.2,
+        8.3,
+        55.3
+      ],
+      "color": "#00ffff",
+      "size": 0.7494623182632373,
+      "emissive": 1.210076538339754,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 3.748589217668773,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        91.5,
+        16.4,
+        69.0
+      ],
+      "color": "#ffff00",
+      "size": 0.7869185113186445,
+      "emissive": 1.7494776111435393,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 5.77729146770867,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        5.9,
+        15.2,
+        71.1
+      ],
+      "color": "#ff00ff",
+      "size": 0.7407081023316622,
+      "emissive": 1.0247863618981887,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 5.209693415265246,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -61.8,
+        15.2,
+        108.8
+      ],
+      "color": "#ff00ff",
+      "size": 0.433402854797236,
+      "emissive": 1.7873745091354711,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 3.3242868792088713,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        83.4,
+        7.1,
+        -86.4
+      ],
+      "color": "#ffff00",
+      "size": 0.4748292122229593,
+      "emissive": 1.820536380971562,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 5.613969107589025,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        18.0,
+        9.6,
+        104.7
+      ],
+      "color": "#00ff66",
+      "size": 0.7321764710151432,
+      "emissive": 1.9668891040483611,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 3.8373749781656143,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -55.4,
+        17.7,
+        -68.3
+      ],
+      "color": "#00ff66",
+      "size": 0.7696185701623579,
+      "emissive": 1.1153417518514277,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 5.911201833066684,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        55.3,
+        7.7,
+        114.8
+      ],
+      "color": "#00ffff",
+      "size": 0.5982856274938724,
+      "emissive": 1.3456871116798004,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 5.359284534611046,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -118.7,
+        5.6,
+        50.2
+      ],
+      "color": "#ff00ff",
+      "size": 0.42736125306929096,
+      "emissive": 1.7087852838341706,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 3.0050738346558883,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        87.2,
+        14.1,
+        -44.0
+      ],
+      "color": "#ff00ff",
+      "size": 0.4821107358906321,
+      "emissive": 1.0699738111263102,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 4.992713054733817,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -39.6,
+        15.9,
+        71.8
+      ],
+      "color": "#00ff66",
+      "size": 0.5535612520176345,
+      "emissive": 1.6668929041057297,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 3.9785487145721996,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -32.2,
+        6.7,
+        -93.4
+      ],
+      "color": "#ffff00",
+      "size": 0.6386589726363665,
+      "emissive": 1.9028055457325825,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 2.0,
+          "period": 4.846544747854141,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        5,
+        0
+      ],
+      "innerRadius": 45,
+      "outerRadius": 45.15,
+      "color": "#0044aa",
+      "opacity": 0.15,
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "animate": {
+        "trace": {
+          "color": "#0088ff",
+          "period": 8,
+          "length": 0.1
+        }
+      }
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        10,
+        0
+      ],
+      "innerRadius": 55,
+      "outerRadius": 55.1,
+      "color": "#440088",
+      "opacity": 0.1,
+      "rotation": [
+        -70,
+        30,
+        0
+      ],
+      "animate": {
+        "trace": {
+          "color": "#8844ff",
+          "period": 12,
+          "length": 0.08
+        }
+      }
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        12,
+        0
+      ],
+      "innerRadius": 14,
+      "outerRadius": 14.08,
+      "color": "#00ffff",
+      "opacity": 0.25,
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "animate": [
+        {
+          "type": "rotate",
+          "axis": "y",
+          "speed": 0.1
+        },
+        {
+          "type": "trace",
+          "color": "#44ffff",
+          "period": 4,
+          "length": 0.2
+        }
+      ]
+    },
+    {
+      "type": "particles",
+      "count": 500,
+      "spread": 200,
+      "color": "#4488ff",
+      "size": 0.06,
+      "opacity": 0.25,
+      "position": [
+        0,
+        15,
+        0
+      ]
+    },
+    {
+      "type": "particles",
+      "count": 200,
+      "spread": 50,
+      "color": "#00ffff",
+      "size": 0.1,
+      "opacity": 0.35,
+      "position": [
+        0,
+        10,
+        0
+      ]
+    },
+    {
+      "type": "particles",
+      "count": 150,
+      "spread": 150,
+      "color": "#ffffff",
+      "size": 0.04,
+      "opacity": 0.15,
+      "position": [
+        0,
+        30,
+        0
+      ]
+    },
+    {
+      "type": "light",
+      "kind": "point",
+      "position": [
+        0,
+        30,
+        0
+      ],
+      "color": "#112244",
+      "intensity": 0.3,
+      "range": 80
+    },
+    {
+      "type": "light",
+      "kind": "point",
+      "position": [
+        -40,
+        15,
+        -40
+      ],
+      "color": "#220044",
+      "intensity": 0.2,
+      "range": 50
+    },
+    {
+      "type": "light",
+      "kind": "point",
+      "position": [
+        40,
+        15,
+        40
+      ],
+      "color": "#002244",
+      "intensity": 0.2,
+      "range": 50
+    }
+  ]
+}

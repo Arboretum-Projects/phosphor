@@ -1,0 +1,1077 @@
+{
+  "scene": {
+    "bloom": {
+      "strength": 1.6,
+      "radius": 0.4,
+      "threshold": 0.1
+    }
+  },
+  "camera": {
+    "position": [
+      22,
+      14,
+      22
+    ],
+    "target": [
+      0,
+      6,
+      0
+    ],
+    "fov": 58
+  },
+  "elements": [
+    {
+      "type": "grid",
+      "size": 40,
+      "divisions": 40,
+      "color": "#4a148c",
+      "opacity": 0.3,
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0.05,
+        0
+      ],
+      "innerRadius": 12,
+      "outerRadius": 13.5,
+      "color": "#0277bd",
+      "opacity": 0.15,
+      "rotation": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0.05,
+        0
+      ],
+      "innerRadius": 16,
+      "outerRadius": 17.5,
+      "color": "#0277bd",
+      "opacity": 0.15,
+      "rotation": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        8,
+        0
+      ],
+      "innerRadius": 5,
+      "outerRadius": 5.3,
+      "tube": 0.1,
+      "color": "#40c4ff",
+      "opacity": 0.5,
+      "wireframe": true,
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        8,
+        0
+      ],
+      "innerRadius": 4.2,
+      "outerRadius": 4.5,
+      "tube": 0.08,
+      "color": "#ce93d8",
+      "opacity": 0.4,
+      "wireframe": true,
+      "rotation": [
+        0,
+        30,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        8,
+        0
+      ],
+      "innerRadius": 3.4,
+      "outerRadius": 3.6999999999999997,
+      "tube": 0.06,
+      "color": "#00bfa5",
+      "opacity": 0.35,
+      "wireframe": true,
+      "rotation": [
+        0,
+        60,
+        0
+      ]
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        0,
+        1.5,
+        0
+      ],
+      "size": [
+        6,
+        3,
+        6
+      ],
+      "color": "#8d6e63",
+      "opacity": 0.3,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        8,
+        0
+      ],
+      "color": "#40c4ff",
+      "size": 0.5,
+      "emissive": 3,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "CHAOS GATE",
+      "position": [
+        0,
+        14,
+        0
+      ],
+      "style": "bracket",
+      "color": "#40c4ff"
+    },
+    {
+      "type": "label",
+      "text": "Delta Server",
+      "position": [
+        0,
+        16,
+        0
+      ],
+      "style": "minimal",
+      "color": "#ce93d8"
+    },
+    {
+      "type": "label",
+      "text": "Bursting Passed Over Aqua Field",
+      "position": [
+        0,
+        15,
+        0
+      ],
+      "style": "minimal",
+      "color": "#ffab00"
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        10,
+        7.0,
+        10
+      ],
+      "size": [
+        2,
+        14,
+        2
+      ],
+      "color": "#ffab00",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        10,
+        14.5,
+        10
+      ],
+      "color": "#ffab00",
+      "size": 0.2,
+      "emissive": 2,
+      "glow": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        -10,
+        5.5,
+        10
+      ],
+      "size": [
+        2,
+        11,
+        2
+      ],
+      "color": "#8d6e63",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        -10,
+        11.5,
+        10
+      ],
+      "color": "#ffab00",
+      "size": 0.2,
+      "emissive": 2,
+      "glow": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        10,
+        6.0,
+        -10
+      ],
+      "size": [
+        2,
+        12,
+        2
+      ],
+      "color": "#ffab00",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        10,
+        12.5,
+        -10
+      ],
+      "color": "#ffab00",
+      "size": 0.2,
+      "emissive": 2,
+      "glow": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        -10,
+        8.0,
+        -10
+      ],
+      "size": [
+        2,
+        16,
+        2
+      ],
+      "color": "#8d6e63",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        -10,
+        16.5,
+        -10
+      ],
+      "color": "#ffab00",
+      "size": 0.2,
+      "emissive": 2,
+      "glow": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        14,
+        4.5,
+        0
+      ],
+      "size": [
+        2,
+        9,
+        2
+      ],
+      "color": "#ffab00",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        14,
+        9.5,
+        0
+      ],
+      "color": "#ffab00",
+      "size": 0.2,
+      "emissive": 2,
+      "glow": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        -14,
+        5.0,
+        0
+      ],
+      "size": [
+        2,
+        10,
+        2
+      ],
+      "color": "#8d6e63",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        -14,
+        10.5,
+        0
+      ],
+      "color": "#ffab00",
+      "size": 0.2,
+      "emissive": 2,
+      "glow": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        0,
+        4.0,
+        14
+      ],
+      "size": [
+        2,
+        8,
+        2
+      ],
+      "color": "#ffab00",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        8.5,
+        14
+      ],
+      "color": "#ffab00",
+      "size": 0.2,
+      "emissive": 2,
+      "glow": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        0,
+        6.5,
+        -14
+      ],
+      "size": [
+        2,
+        13,
+        2
+      ],
+      "color": "#8d6e63",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        13.5,
+        -14
+      ],
+      "color": "#ffab00",
+      "size": 0.2,
+      "emissive": 2,
+      "glow": true
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          10,
+          6,
+          10
+        ],
+        [
+          0.0,
+          7.5,
+          10.0
+        ],
+        [
+          -10,
+          5,
+          10
+        ]
+      ],
+      "color": "#8d6e63",
+      "curve": true,
+      "opacity": 0.25
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          10,
+          5,
+          -10
+        ],
+        [
+          12.0,
+          6.75,
+          -5.0
+        ],
+        [
+          14,
+          4.5,
+          0
+        ]
+      ],
+      "color": "#8d6e63",
+      "curve": true,
+      "opacity": 0.25
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -10,
+          6,
+          -10
+        ],
+        [
+          -12.0,
+          7.5,
+          -5.0
+        ],
+        [
+          -14,
+          5,
+          0
+        ]
+      ],
+      "color": "#8d6e63",
+      "curve": true,
+      "opacity": 0.25
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          4,
+          14
+        ],
+        [
+          5.0,
+          6.5,
+          12.0
+        ],
+        [
+          10,
+          5,
+          10
+        ]
+      ],
+      "color": "#8d6e63",
+      "curve": true,
+      "opacity": 0.25
+    },
+    {
+      "type": "node",
+      "position": [
+        3,
+        3.2,
+        2
+      ],
+      "color": "#ff4081",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Kite \u2014 Twin Blade",
+      "position": [
+        3,
+        4.4,
+        2
+      ],
+      "style": "minimal",
+      "color": "#ff4081"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          2.5,
+          3.9000000000000004,
+          2
+        ],
+        [
+          3.5,
+          3.9000000000000004,
+          2
+        ]
+      ],
+      "color": "#69f0ae",
+      "opacity": 0.6
+    },
+    {
+      "type": "node",
+      "position": [
+        -3,
+        3.2,
+        2
+      ],
+      "color": "#7c4dff",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "BlackRose \u2014 Heavy Blade",
+      "position": [
+        -3,
+        4.4,
+        2
+      ],
+      "style": "minimal",
+      "color": "#7c4dff"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -3.5,
+          3.9000000000000004,
+          2
+        ],
+        [
+          -2.5,
+          3.9000000000000004,
+          2
+        ]
+      ],
+      "color": "#69f0ae",
+      "opacity": 0.6
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        3.2,
+        -3
+      ],
+      "color": "#69f0ae",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Elk \u2014 Wavemaster",
+      "position": [
+        0,
+        4.4,
+        -3
+      ],
+      "style": "minimal",
+      "color": "#69f0ae"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -0.5,
+          3.9000000000000004,
+          -3
+        ],
+        [
+          0.5,
+          3.9000000000000004,
+          -3
+        ]
+      ],
+      "color": "#69f0ae",
+      "opacity": 0.6
+    },
+    {
+      "type": "node",
+      "position": [
+        -2,
+        3.2,
+        -1.5
+      ],
+      "color": "#ffab00",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Mia \u2014 Blade Brandier",
+      "position": [
+        -2,
+        4.4,
+        -1.5
+      ],
+      "style": "minimal",
+      "color": "#ffab00"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -2.5,
+          3.9000000000000004,
+          -1.5
+        ],
+        [
+          -1.5,
+          3.9000000000000004,
+          -1.5
+        ]
+      ],
+      "color": "#69f0ae",
+      "opacity": 0.6
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        22,
+        0,
+        -18
+      ],
+      "size": [
+        6,
+        1,
+        6
+      ],
+      "color": "#ce93d8",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        22,
+        3,
+        -18
+      ],
+      "size": [
+        5,
+        0.5,
+        5
+      ],
+      "color": "#ce93d8",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        22,
+        5.5,
+        -18
+      ],
+      "size": [
+        4,
+        0.5,
+        4
+      ],
+      "color": "#ce93d8",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        22,
+        8,
+        -18
+      ],
+      "size": [
+        3,
+        0.5,
+        3
+      ],
+      "color": "#ce93d8",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        27,
+        4,
+        -16
+      ],
+      "size": [
+        2,
+        0.5,
+        2
+      ],
+      "color": "#ce93d8",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        18,
+        6,
+        -21
+      ],
+      "size": [
+        2,
+        0.5,
+        1.5
+      ],
+      "color": "#ce93d8",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        25,
+        9,
+        -20
+      ],
+      "size": [
+        1.5,
+        0.5,
+        1.5
+      ],
+      "color": "#ce93d8",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "ring",
+      "position": [
+        22,
+        10,
+        -18
+      ],
+      "innerRadius": 1.5,
+      "outerRadius": 2,
+      "tube": 0.05,
+      "color": "#d50000",
+      "opacity": 0.4,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        22,
+        10,
+        -18
+      ],
+      "color": "#d50000",
+      "size": 0.3,
+      "emissive": 3,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "PROTECTED AREA",
+      "position": [
+        22,
+        12,
+        -18
+      ],
+      "style": "bracket",
+      "color": "#d50000"
+    },
+    {
+      "type": "label",
+      "text": "Warning: Data Bug Detected",
+      "position": [
+        22,
+        11,
+        -18
+      ],
+      "style": "minimal",
+      "color": "#d50000"
+    },
+    {
+      "type": "ring",
+      "position": [
+        -20,
+        0.1,
+        18
+      ],
+      "innerRadius": 2.5,
+      "outerRadius": 3,
+      "color": "#d50000",
+      "opacity": 0.3,
+      "rotation": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        -20,
+        0.1,
+        18
+      ],
+      "innerRadius": 3.5,
+      "outerRadius": 3.7,
+      "color": "#d50000",
+      "opacity": 0.15,
+      "rotation": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -18.0,
+          0.2,
+          18.0
+        ],
+        [
+          -18.0,
+          2.0,
+          18.5
+        ]
+      ],
+      "color": "#d50000",
+      "opacity": 0.5
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -19.38,
+          0.2,
+          19.9
+        ],
+        [
+          -18.96,
+          2.8,
+          20.17
+        ]
+      ],
+      "color": "#d50000",
+      "opacity": 0.5
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -21.62,
+          0.2,
+          19.18
+        ],
+        [
+          -21.16,
+          3.6,
+          18.97
+        ]
+      ],
+      "color": "#d50000",
+      "opacity": 0.5
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -21.62,
+          0.2,
+          16.82
+        ],
+        [
+          -21.55,
+          4.4,
+          16.33
+        ]
+      ],
+      "color": "#d50000",
+      "opacity": 0.5
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -19.38,
+          0.2,
+          16.1
+        ],
+        [
+          -19.76,
+          5.2,
+          15.77
+        ]
+      ],
+      "color": "#d50000",
+      "opacity": 0.5
+    },
+    {
+      "type": "node",
+      "position": [
+        -20,
+        4,
+        18
+      ],
+      "color": "#d50000",
+      "size": 0.6,
+      "emissive": 3.5,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "DATA BUG",
+      "position": [
+        -20,
+        6,
+        18
+      ],
+      "style": "bracket",
+      "color": "#d50000"
+    },
+    {
+      "type": "ring",
+      "position": [
+        4.5,
+        4,
+        2
+      ],
+      "innerRadius": 0.8,
+      "outerRadius": 1.0,
+      "tube": 0.03,
+      "color": "#00e5ff",
+      "opacity": 0.5,
+      "wireframe": true,
+      "rotation": [
+        45,
+        0,
+        30
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        4.5,
+        4,
+        2
+      ],
+      "innerRadius": 0.6,
+      "outerRadius": 0.75,
+      "tube": 0.02,
+      "color": "#00bfa5",
+      "opacity": 0.4,
+      "wireframe": true,
+      "rotation": [
+        45,
+        30,
+        0
+      ]
+    },
+    {
+      "type": "label",
+      "text": ".hack//",
+      "position": [
+        -18,
+        18,
+        -18
+      ],
+      "style": "bracket",
+      "color": "#ce93d8"
+    },
+    {
+      "type": "label",
+      "text": "The World R:1",
+      "position": [
+        -18,
+        17,
+        -18
+      ],
+      "style": "minimal",
+      "color": "#ffab00"
+    },
+    {
+      "type": "label",
+      "text": "Mac Anu \u2014 Aqua Capital",
+      "position": [
+        -18,
+        16,
+        -18
+      ],
+      "style": "minimal",
+      "color": "#00bfa5"
+    },
+    {
+      "type": "particles",
+      "count": 1200,
+      "spread": 45,
+      "size": 0.03,
+      "color": "#ce93d8",
+      "opacity": 0.25
+    },
+    {
+      "type": "particles",
+      "count": 400,
+      "spread": 30,
+      "size": 0.04,
+      "color": "#ffab00",
+      "opacity": 0.15
+    },
+    {
+      "type": "particles",
+      "count": 300,
+      "spread": 15,
+      "size": 0.03,
+      "color": "#40c4ff",
+      "opacity": 0.3
+    }
+  ]
+}

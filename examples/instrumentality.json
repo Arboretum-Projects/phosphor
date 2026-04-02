@@ -1,0 +1,2814 @@
+{
+  "scene": {
+    "bloom": {
+      "strength": 1.7,
+      "radius": 0.5,
+      "threshold": 0.08
+    },
+    "fog": {
+      "color": "#000000",
+      "near": 60,
+      "far": 180
+    },
+    "effects": {
+      "chromatic": {
+        "offset": 0.0012
+      }
+    }
+  },
+  "camera": {
+    "position": [
+      40,
+      20,
+      25
+    ],
+    "target": [
+      0,
+      25,
+      -20
+    ],
+    "fov": 65,
+    "far": 400
+  },
+  "elements": [
+    {
+      "type": "node",
+      "position": [
+        0,
+        0,
+        -20
+      ],
+      "color": "#ffffff",
+      "size": 0.3,
+      "emissive": 1.0,
+      "glow": false,
+      "glowIntensity": 0,
+      "glowRange": 0,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.7,
+          "max": 1.2,
+          "period": 3.1394267984578836,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        5,
+        -20
+      ],
+      "color": "#ffffff",
+      "size": 0.41,
+      "emissive": 1.23,
+      "glow": false,
+      "glowIntensity": 0,
+      "glowRange": 0,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.859090909090909,
+          "max": 1.4727272727272727,
+          "period": 2.525010755222667,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        10,
+        -20
+      ],
+      "color": "#ffffff",
+      "size": 0.52,
+      "emissive": 1.45,
+      "glow": false,
+      "glowIntensity": 0,
+      "glowRange": 0,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.018181818181818,
+          "max": 1.7454545454545454,
+          "period": 2.7750293183691195,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        15,
+        -20
+      ],
+      "color": "#ffffff",
+      "size": 0.63,
+      "emissive": 1.68,
+      "glow": false,
+      "glowIntensity": 0,
+      "glowRange": 0,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.177272727272727,
+          "max": 2.018181818181818,
+          "period": 2.723210738148823,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        20,
+        -20
+      ],
+      "color": "#ffffff",
+      "size": 0.74,
+      "emissive": 1.91,
+      "glow": false,
+      "glowIntensity": 0,
+      "glowRange": 0,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.3363636363636364,
+          "max": 2.290909090909091,
+          "period": 3.2364712141640126,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        25,
+        -20
+      ],
+      "color": "#ffffff",
+      "size": 0.85,
+      "emissive": 2.14,
+      "glow": false,
+      "glowIntensity": 0,
+      "glowRange": 0,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.4954545454545454,
+          "max": 2.5636363636363635,
+          "period": 3.176699487422911,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        30,
+        -20
+      ],
+      "color": "#ffffff",
+      "size": 0.95,
+      "emissive": 2.36,
+      "glow": false,
+      "glowIntensity": 0,
+      "glowRange": 0,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.6545454545454543,
+          "max": 2.836363636363636,
+          "period": 3.3921795677048454,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        35,
+        -20
+      ],
+      "color": "#ffffff",
+      "size": 1.06,
+      "emissive": 2.59,
+      "glow": false,
+      "glowIntensity": 0,
+      "glowRange": 0,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.8136363636363635,
+          "max": 3.109090909090909,
+          "period": 2.586938832629416,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        40,
+        -20
+      ],
+      "color": "#ffffff",
+      "size": 1.17,
+      "emissive": 2.82,
+      "glow": false,
+      "glowIntensity": 0,
+      "glowRange": 0,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.9727272727272727,
+          "max": 3.381818181818182,
+          "period": 2.9219218196852705,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        45,
+        -20
+      ],
+      "color": "#ffffff",
+      "size": 1.28,
+      "emissive": 3.05,
+      "glow": true,
+      "glowIntensity": 0.5,
+      "glowRange": 10,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 2.131818181818182,
+          "max": 3.6545454545454543,
+          "period": 2.5297972194380702,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        50,
+        -20
+      ],
+      "color": "#ffffff",
+      "size": 1.39,
+      "emissive": 3.27,
+      "glow": true,
+      "glowIntensity": 0.5,
+      "glowRange": 10,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 2.2909090909090906,
+          "max": 3.927272727272727,
+          "period": 2.7186379748036034,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        55,
+        -20
+      ],
+      "color": "#ffffff",
+      "size": 1.5,
+      "emissive": 3.5,
+      "glow": true,
+      "glowIntensity": 0.5,
+      "glowRange": 20,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 2.4499999999999997,
+          "max": 4.2,
+          "period": 3.0053552881033623,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          0,
+          -20
+        ],
+        [
+          0,
+          55,
+          -20
+        ],
+        [
+          0,
+          80,
+          -20
+        ]
+      ],
+      "color": "#ffffff",
+      "opacity": 0.15,
+      "curve": true,
+      "segments": 40,
+      "animate": {
+        "trace": {
+          "color": "#ffffff",
+          "period": 6,
+          "length": 0.3
+        }
+      }
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        25,
+        -20
+      ],
+      "innerRadius": 14.92,
+      "outerRadius": 15,
+      "color": "#ff2222",
+      "opacity": 0.25,
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "animate": {
+        "pulse": {
+          "property": "scale",
+          "min": 0.98,
+          "max": 1.02,
+          "period": 4.0,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        25,
+        -20
+      ],
+      "innerRadius": 26.92,
+      "outerRadius": 27,
+      "color": "#ff2222",
+      "opacity": 0.22,
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "animate": {
+        "pulse": {
+          "property": "scale",
+          "min": 0.98,
+          "max": 1.02,
+          "period": 4.5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        25,
+        -20
+      ],
+      "innerRadius": 38.92,
+      "outerRadius": 39,
+      "color": "#ff2222",
+      "opacity": 0.19,
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "animate": {
+        "pulse": {
+          "property": "scale",
+          "min": 0.98,
+          "max": 1.02,
+          "period": 5.0,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        25,
+        -20
+      ],
+      "innerRadius": 50.92,
+      "outerRadius": 51,
+      "color": "#ff2222",
+      "opacity": 0.16,
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "animate": {
+        "pulse": {
+          "property": "scale",
+          "min": 0.98,
+          "max": 1.02,
+          "period": 5.5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        25,
+        -20
+      ],
+      "innerRadius": 62.92,
+      "outerRadius": 63,
+      "color": "#ff2222",
+      "opacity": 0.13,
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "animate": {
+        "pulse": {
+          "property": "scale",
+          "min": 0.98,
+          "max": 1.02,
+          "period": 6.0,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        25,
+        -20
+      ],
+      "innerRadius": 74.92,
+      "outerRadius": 75,
+      "color": "#ff2222",
+      "opacity": 0.1,
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "animate": {
+        "pulse": {
+          "property": "scale",
+          "min": 0.98,
+          "max": 1.02,
+          "period": 6.5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        25,
+        -20
+      ],
+      "innerRadius": 86.92,
+      "outerRadius": 87,
+      "color": "#ff2222",
+      "opacity": 0.07,
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "animate": {
+        "pulse": {
+          "property": "scale",
+          "min": 0.98,
+          "max": 1.02,
+          "period": 7.0,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        25,
+        -20
+      ],
+      "innerRadius": 98.92,
+      "outerRadius": 99,
+      "color": "#ff2222",
+      "opacity": 0.04000000000000001,
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "animate": {
+        "pulse": {
+          "property": "scale",
+          "min": 0.98,
+          "max": 1.02,
+          "period": 7.5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "ring",
+      "position": [
+        30.0,
+        25,
+        -20.0
+      ],
+      "innerRadius": 18,
+      "outerRadius": 18.1,
+      "color": "#ff4444",
+      "opacity": 0.06,
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        21.213203435596427,
+        25,
+        1.213203435596423
+      ],
+      "innerRadius": 18,
+      "outerRadius": 18.1,
+      "color": "#ff4444",
+      "opacity": 0.06,
+      "rotation": [
+        0,
+        45,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        1.83697019872103e-15,
+        25,
+        10.0
+      ],
+      "innerRadius": 18,
+      "outerRadius": 18.1,
+      "color": "#ff4444",
+      "opacity": 0.06,
+      "rotation": [
+        0,
+        90,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        -21.213203435596423,
+        25,
+        1.2132034355964265
+      ],
+      "innerRadius": 18,
+      "outerRadius": 18.1,
+      "color": "#ff4444",
+      "opacity": 0.06,
+      "rotation": [
+        0,
+        135,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        -30.0,
+        25,
+        -19.999999999999996
+      ],
+      "innerRadius": 18,
+      "outerRadius": 18.1,
+      "color": "#ff4444",
+      "opacity": 0.06,
+      "rotation": [
+        0,
+        180,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        -21.21320343559643,
+        25,
+        -41.21320343559643
+      ],
+      "innerRadius": 18,
+      "outerRadius": 18.1,
+      "color": "#ff4444",
+      "opacity": 0.06,
+      "rotation": [
+        0,
+        225,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        -5.510910596163089e-15,
+        25,
+        -50.0
+      ],
+      "innerRadius": 18,
+      "outerRadius": 18.1,
+      "color": "#ff4444",
+      "opacity": 0.06,
+      "rotation": [
+        0,
+        270,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        21.21320343559642,
+        25,
+        -41.21320343559643
+      ],
+      "innerRadius": 18,
+      "outerRadius": 18.1,
+      "color": "#ff4444",
+      "opacity": 0.06,
+      "rotation": [
+        0,
+        315,
+        0
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        15.7,
+        29.2,
+        -17.4
+      ],
+      "color": "#ffaa44",
+      "size": 0.29,
+      "emissive": 1.6738135694257803,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.5563814164613254,
+          "period": 5.607900962378801
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 4.276422101389302,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        15.2,
+        12.5,
+        3.8
+      ],
+      "color": "#ffcc66",
+      "size": 0.2,
+      "emissive": 1.153315414779773,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.7598546012746747,
+          "period": 4.076938141453885
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 3.0318671674369133,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -0.7,
+        20.7,
+        -12.6
+      ],
+      "color": "#ffddaa",
+      "size": 0.18,
+      "emissive": 1.1182002971176872,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.5863565628141858,
+          "period": 4.88591939848333
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 4.65635524381042,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -10.1,
+        3.1,
+        -8.1
+      ],
+      "color": "#ffcc66",
+      "size": 0.32,
+      "emissive": 2.4778322809911364,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.710635442030294,
+          "period": 5.599451000265809
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 3.1403786751174985,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -48.7,
+        7.3,
+        -5.3
+      ],
+      "color": "#ffcc66",
+      "size": 0.24,
+      "emissive": 2.052730470187827,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.3670953310733345,
+          "period": 3.214207528735645
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 3.9049348645911808,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -18.0,
+        20.8,
+        -23.9
+      ],
+      "color": "#ffffff",
+      "size": 0.22,
+      "emissive": 1.3294227609554035,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.6485654688306437,
+          "period": 5.3049407327771165
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 2.1678138426478517,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        21.5,
+        18.1,
+        -64.3
+      ],
+      "color": "#ffffff",
+      "size": 0.17,
+      "emissive": 2.3145514397090032,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.6293557615969558,
+          "period": 4.96631599588464
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 3.186895703181993,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        26.0,
+        11.9,
+        -35.5
+      ],
+      "color": "#ffffff",
+      "size": 0.21,
+      "emissive": 1.8084659345009357,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.4940276233045156,
+          "period": 4.285301481883739
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 3.750598774836969,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -38.7,
+        6.2,
+        25.6
+      ],
+      "color": "#ff8833",
+      "size": 0.27,
+      "emissive": 2.2916543644999985,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.3056826386965221,
+          "period": 3.479946005167351
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 4.041443640488981,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -21.5,
+        26.8,
+        -34.9
+      ],
+      "color": "#ffcc66",
+      "size": 0.27,
+      "emissive": 2.4566175664204275,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.721559404468996,
+          "period": 3.0344430658284587
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 4.162165458080584,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -14.4,
+        12.0,
+        -51.4
+      ],
+      "color": "#ff8833",
+      "size": 0.31,
+      "emissive": 1.4402501929711393,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.3163155086893394,
+          "period": 3.0097359483051878
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 4.166276183929732,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -11.1,
+        34.3,
+        -77.4
+      ],
+      "color": "#ff8833",
+      "size": 0.28,
+      "emissive": 2.30577785475515,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.5968895828972658,
+          "period": 4.916848484598015
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 3.826910634314517,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        26.9,
+        24.3,
+        18.5
+      ],
+      "color": "#ffffff",
+      "size": 0.34,
+      "emissive": 2.3777402415935533,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.197889168920458,
+          "period": 4.465817124086843
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 2.335603175962685,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -38.6,
+        36.3,
+        24.9
+      ],
+      "color": "#ffaa44",
+      "size": 0.21,
+      "emissive": 2.3170143988060605,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.893898890595988,
+          "period": 3.256960356203636
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 3.4579713899498414,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        42.5,
+        34.5,
+        -0.3
+      ],
+      "color": "#ffddaa",
+      "size": 0.18,
+      "emissive": 2.420273019557486,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.3302539179482553,
+          "period": 4.583021362254762
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 3.819781752447887,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        54.7,
+        34.0,
+        -32.5
+      ],
+      "color": "#ffcc66",
+      "size": 0.32,
+      "emissive": 1.5984884499961436,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.343373919276566,
+          "period": 4.120261507587881
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 4.698842253928836,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -17.8,
+        2.9,
+        -14.4
+      ],
+      "color": "#ffffff",
+      "size": 0.16,
+      "emissive": 1.3451720988948654,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.440434768903119,
+          "period": 3.2129792580270977
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 3.8933088718102966,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        7.2,
+        38.7,
+        34.3
+      ],
+      "color": "#ffaa44",
+      "size": 0.17,
+      "emissive": 1.4177158959468206,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.9708289983009815,
+          "period": 4.6177017941842635
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 4.170057697642912,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        27.1,
+        10.9,
+        -44.7
+      ],
+      "color": "#ffddaa",
+      "size": 0.27,
+      "emissive": 1.2856148715428166,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.1938616284576467,
+          "period": 4.2931535472191324
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 3.270735869059762,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -44.1,
+        30.3,
+        -10.7
+      ],
+      "color": "#ff8833",
+      "size": 0.4,
+      "emissive": 1.0909190111155205,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.4564271768823653,
+          "period": 5.401777532585097
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 2.327807096734412,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        12.4,
+        6.3,
+        12.2
+      ],
+      "color": "#ffddaa",
+      "size": 0.2,
+      "emissive": 1.3747096718231506,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.8465311985520256,
+          "period": 4.329392235160371
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 4.584047314285492,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -7.4,
+        45.0,
+        -22.4
+      ],
+      "color": "#ff8833",
+      "size": 0.36,
+      "emissive": 2.389550474512191,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.697391468828611,
+          "period": 3.498933331811742
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 3.4569233763521554,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        6.1,
+        2.6,
+        6.4
+      ],
+      "color": "#ffddaa",
+      "size": 0.24,
+      "emissive": 1.3978045872582279,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.568141203897139,
+          "period": 4.36502510201743
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 3.2690224579704887,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        57.6,
+        25.0,
+        -35.8
+      ],
+      "color": "#ffaa44",
+      "size": 0.33,
+      "emissive": 1.2848468009014558,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.43540179682835,
+          "period": 3.175449876021898
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 4.20721153636713,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        20.6,
+        2.3,
+        -11.7
+      ],
+      "color": "#ffffff",
+      "size": 0.27,
+      "emissive": 1.2361490919092248,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.9215578065489005,
+          "period": 3.2403343957217605
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 2.5574748829421696,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -34.8,
+        10.6,
+        -43.7
+      ],
+      "color": "#ffffff",
+      "size": 0.18,
+      "emissive": 1.3693230216829373,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.189038307066882,
+          "period": 4.858144530996309
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 3.257674746007617,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -29.2,
+        42.1,
+        -36.9
+      ],
+      "color": "#ffcc66",
+      "size": 0.2,
+      "emissive": 1.358028928923769,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.791571693582509,
+          "period": 5.015070668879914
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 2.899991239396287,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -18.7,
+        3.3,
+        22.4
+      ],
+      "color": "#ffffff",
+      "size": 0.26,
+      "emissive": 2.4941446717826414,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.146521442199266,
+          "period": 3.639462936801121
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 2.795601244251204,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        48.8,
+        39.6,
+        -41.8
+      ],
+      "color": "#ffaa44",
+      "size": 0.24,
+      "emissive": 1.6572768595115648,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.0864359245231734,
+          "period": 3.9075514289366695
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 4.951559930754447,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        12.0,
+        30.1,
+        -51.9
+      ],
+      "color": "#ff8833",
+      "size": 0.29,
+      "emissive": 2.4083950058906556,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.2685822287867354,
+          "period": 3.3462860112573067
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 2.321107933128253,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -18.9,
+        27.2,
+        -26.6
+      ],
+      "color": "#ffaa44",
+      "size": 0.33,
+      "emissive": 2.0312456932019956,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.705825630783795,
+          "period": 4.516227174293961
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 2.753363756209682,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        6.5,
+        28.5,
+        -24.3
+      ],
+      "color": "#ff8833",
+      "size": 0.36,
+      "emissive": 1.0053185336316734,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.542238446039254,
+          "period": 4.911340131904138
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 2.7858657873030443,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -1.9,
+        19.2,
+        -55.3
+      ],
+      "color": "#ff8833",
+      "size": 0.15,
+      "emissive": 2.4175764085699587,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.382039247511753,
+          "period": 3.4471628564355585
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 2.1080844141824917,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -24.1,
+        19.3,
+        5.9
+      ],
+      "color": "#ffcc66",
+      "size": 0.16,
+      "emissive": 2.3484722331138848,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.5922446097760834,
+          "period": 5.582107746002708
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 4.696773909579424,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        4.6,
+        4.6,
+        -1.9
+      ],
+      "color": "#ffddaa",
+      "size": 0.35,
+      "emissive": 2.4607555339559335,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 2.4989552222870786,
+          "period": 5.77729146770867
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 2.710211996688076,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        25.6,
+        8.0,
+        21.8
+      ],
+      "color": "#ffaa44",
+      "size": 0.25,
+      "emissive": 2.104846707632623,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.6643709358928573,
+          "period": 5.792447658144977
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 4.406705416811417,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        32.6,
+        12.0,
+        -57.4
+      ],
+      "color": "#ff8833",
+      "size": 0.35,
+      "emissive": 1.5738125838954016,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.077449215331573,
+          "period": 4.412070063257971
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 2.5987184900772555,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        21.1,
+        36.9,
+        -31.9
+      ],
+      "color": "#ffaa44",
+      "size": 0.37,
+      "emissive": 1.0354966520521773,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.3862595766554173,
+          "period": 3.9847858535931193
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 4.593058826090859,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        19.9,
+        28.9,
+        -24.2
+      ],
+      "color": "#ffffff",
+      "size": 0.25,
+      "emissive": 1.4967248023216106,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.0552010702392718,
+          "period": 5.631115234726681
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 2.7836455891706304,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -51.7,
+        1.7,
+        -48.7
+      ],
+      "color": "#ffcc66",
+      "size": 0.3,
+      "emissive": 2.0928175909790565,
+      "glow": false,
+      "animate": [
+        {
+          "type": "bob",
+          "height": 1.6273546283899825,
+          "period": 4.81862655991843
+        },
+        {
+          "type": "pulse",
+          "property": "emissive",
+          "min": 0.5,
+          "max": 3.0,
+          "period": 3.5342691790084344,
+          "easing": "sine"
+        }
+      ]
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -26.4,
+          0,
+          3.2
+        ],
+        [
+          -15.9,
+          17.54722506138582,
+          -6.1
+        ],
+        [
+          0,
+          45.63177925751256,
+          -20
+        ]
+      ],
+      "color": "#ffaa44",
+      "opacity": 0.1,
+      "curve": true,
+      "segments": 30,
+      "animate": {
+        "flow": {
+          "color": "#ffcc66",
+          "size": 0.12,
+          "period": 3.003382556437259,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          30.2,
+          0,
+          -35.3
+        ],
+        [
+          18.1,
+          22.194299991448453,
+          -29.2
+        ],
+        [
+          0,
+          46.129251167592145,
+          -20
+        ]
+      ],
+      "color": "#ffaa44",
+      "opacity": 0.1,
+      "curve": true,
+      "segments": 30,
+      "animate": {
+        "flow": {
+          "color": "#ffcc66",
+          "size": 0.12,
+          "period": 4.341257008865999,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -11.5,
+          0,
+          -6.9
+        ],
+        [
+          -6.9,
+          21.642376849112722,
+          -12.1
+        ],
+        [
+          0,
+          39.953000540638946,
+          -20
+        ]
+      ],
+      "color": "#ffaa44",
+      "opacity": 0.1,
+      "curve": true,
+      "segments": 30,
+      "animate": {
+        "flow": {
+          "color": "#ffcc66",
+          "size": 0.12,
+          "period": 3.6278312901167196,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          23.2,
+          0,
+          -52.8
+        ],
+        [
+          13.9,
+          18.003222682112643,
+          -39.7
+        ],
+        [
+          0,
+          39.639269933129796,
+          -20
+        ]
+      ],
+      "color": "#ffaa44",
+      "opacity": 0.1,
+      "curve": true,
+      "segments": 30,
+      "animate": {
+        "flow": {
+          "color": "#ffcc66",
+          "size": 0.12,
+          "period": 3.8167858172384337,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -20.7,
+          0,
+          -5.4
+        ],
+        [
+          -12.4,
+          16.27287799059153,
+          -11.2
+        ],
+        [
+          0,
+          41.30669500659363,
+          -20
+        ]
+      ],
+      "color": "#ffaa44",
+      "opacity": 0.1,
+      "curve": true,
+      "segments": 30,
+      "animate": {
+        "flow": {
+          "color": "#ffcc66",
+          "size": 0.12,
+          "period": 4.880727341460366,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -20.5,
+          0,
+          -61.8
+        ],
+        [
+          -12.3,
+          21.155149159513805,
+          -45.1
+        ],
+        [
+          0,
+          39.51424811848348,
+          -20
+        ]
+      ],
+      "color": "#ffaa44",
+      "opacity": 0.1,
+      "curve": true,
+      "segments": 30,
+      "animate": {
+        "flow": {
+          "color": "#ffcc66",
+          "size": 0.12,
+          "period": 4.095874426271396,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          25.0,
+          0,
+          -19.9
+        ],
+        [
+          15.0,
+          19.298881499898346,
+          -20.0
+        ],
+        [
+          0,
+          43.69977171793523,
+          -20
+        ]
+      ],
+      "color": "#ffaa44",
+      "opacity": 0.1,
+      "curve": true,
+      "segments": 30,
+      "animate": {
+        "flow": {
+          "color": "#ffcc66",
+          "size": 0.12,
+          "period": 4.3094112474061435,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -29.7,
+          0,
+          -13.3
+        ],
+        [
+          -17.8,
+          17.137014009891004,
+          -16.0
+        ],
+        [
+          0,
+          42.09779278863989,
+          -20
+        ]
+      ],
+      "color": "#ffaa44",
+      "opacity": 0.1,
+      "curve": true,
+      "segments": 30,
+      "animate": {
+        "flow": {
+          "color": "#ffcc66",
+          "size": 0.12,
+          "period": 4.802361651656509,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          6.0,
+          0,
+          -40.1
+        ],
+        [
+          3.6,
+          15.847955367251217,
+          -32.0
+        ],
+        [
+          0,
+          42.73178014872825,
+          -20
+        ]
+      ],
+      "color": "#ffaa44",
+      "opacity": 0.1,
+      "curve": true,
+      "segments": 30,
+      "animate": {
+        "flow": {
+          "color": "#ffcc66",
+          "size": 0.12,
+          "period": 4.265881711531591,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -22.3,
+          0,
+          17.5
+        ],
+        [
+          -13.4,
+          22.51138137540732,
+          2.5
+        ],
+        [
+          0,
+          45.09193505835751,
+          -20
+        ]
+      ],
+      "color": "#ffaa44",
+      "opacity": 0.1,
+      "curve": true,
+      "segments": 30,
+      "animate": {
+        "flow": {
+          "color": "#ffcc66",
+          "size": 0.12,
+          "period": 3.4492813319945768,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          5.0,
+          0,
+          -4.9
+        ],
+        [
+          3.0,
+          17.448425440783502,
+          -11.0
+        ],
+        [
+          0,
+          42.12704516328208,
+          -20
+        ]
+      ],
+      "color": "#ffaa44",
+      "opacity": 0.1,
+      "curve": true,
+      "segments": 30,
+      "animate": {
+        "flow": {
+          "color": "#ffcc66",
+          "size": 0.12,
+          "period": 4.699475389249464,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          26.5,
+          0,
+          -7.0
+        ],
+        [
+          15.9,
+          21.297653807377138,
+          -12.2
+        ],
+        [
+          0,
+          37.91652855109564,
+          -20
+        ]
+      ],
+      "color": "#ffaa44",
+      "opacity": 0.1,
+      "curve": true,
+      "segments": 30,
+      "animate": {
+        "flow": {
+          "color": "#ffcc66",
+          "size": 0.12,
+          "period": 4.39270850098101,
+          "count": 2
+        }
+      }
+    },
+    {
+      "type": "grid",
+      "size": 200,
+      "divisions": 40,
+      "color": "#ff6622",
+      "opacity": 0.08
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        0,
+        -2,
+        0
+      ],
+      "size": [
+        200,
+        2,
+        200
+      ],
+      "color": "#ff6600",
+      "opacity": 0.03,
+      "wireframe": false
+    },
+    {
+      "type": "edge",
+      "from": [
+        -49.7,
+        0,
+        -18.2
+      ],
+      "to": [
+        -49.7,
+        33.1,
+        -18.2
+      ],
+      "color": "#ffffff",
+      "opacity": 0.3
+    },
+    {
+      "type": "edge",
+      "from": [
+        -59.7,
+        23.2,
+        -18.2
+      ],
+      "to": [
+        -39.8,
+        23.2,
+        -18.2
+      ],
+      "color": "#ffffff",
+      "opacity": 0.3
+    },
+    {
+      "type": "node",
+      "position": [
+        -49.7,
+        23.2,
+        -18.2
+      ],
+      "color": "#ffffff",
+      "size": 0.3,
+      "emissive": 2.0,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.0,
+          "max": 3.0,
+          "period": 3.0166344544140955,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "edge",
+      "from": [
+        0.4,
+        0,
+        -90.8
+      ],
+      "to": [
+        0.4,
+        22.1,
+        -90.8
+      ],
+      "color": "#ffffff",
+      "opacity": 0.3
+    },
+    {
+      "type": "edge",
+      "from": [
+        -6.2,
+        15.5,
+        -90.8
+      ],
+      "to": [
+        7.1,
+        15.5,
+        -90.8
+      ],
+      "color": "#ffffff",
+      "opacity": 0.3
+    },
+    {
+      "type": "node",
+      "position": [
+        0.4,
+        15.5,
+        -90.8
+      ],
+      "color": "#ffffff",
+      "size": 0.3,
+      "emissive": 2.0,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.0,
+          "max": 3.0,
+          "period": 4.275438581828203,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "edge",
+      "from": [
+        35.2,
+        0,
+        50.0
+      ],
+      "to": [
+        35.2,
+        30.4,
+        50.0
+      ],
+      "color": "#ffffff",
+      "opacity": 0.3
+    },
+    {
+      "type": "edge",
+      "from": [
+        26.1,
+        21.3,
+        50.0
+      ],
+      "to": [
+        44.3,
+        21.3,
+        50.0
+      ],
+      "color": "#ffffff",
+      "opacity": 0.3
+    },
+    {
+      "type": "node",
+      "position": [
+        35.2,
+        21.3,
+        50.0
+      ],
+      "color": "#ffffff",
+      "size": 0.3,
+      "emissive": 2.0,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.0,
+          "max": 3.0,
+          "period": 3.150655155421923,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "edge",
+      "from": [
+        0.4,
+        0,
+        53.9
+      ],
+      "to": [
+        0.4,
+        29.1,
+        53.9
+      ],
+      "color": "#ffffff",
+      "opacity": 0.3
+    },
+    {
+      "type": "edge",
+      "from": [
+        -8.4,
+        20.4,
+        53.9
+      ],
+      "to": [
+        9.1,
+        20.4,
+        53.9
+      ],
+      "color": "#ffffff",
+      "opacity": 0.3
+    },
+    {
+      "type": "node",
+      "position": [
+        0.4,
+        20.4,
+        53.9
+      ],
+      "color": "#ffffff",
+      "size": 0.3,
+      "emissive": 2.0,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.0,
+          "max": 3.0,
+          "period": 5.404249805166794,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "edge",
+      "from": [
+        -39.4,
+        0,
+        -89.1
+      ],
+      "to": [
+        -39.4,
+        31.9,
+        -89.1
+      ],
+      "color": "#ffffff",
+      "opacity": 0.3
+    },
+    {
+      "type": "edge",
+      "from": [
+        -48.9,
+        22.3,
+        -89.1
+      ],
+      "to": [
+        -29.8,
+        22.3,
+        -89.1
+      ],
+      "color": "#ffffff",
+      "opacity": 0.3
+    },
+    {
+      "type": "node",
+      "position": [
+        -39.4,
+        22.3,
+        -89.1
+      ],
+      "color": "#ffffff",
+      "size": 0.3,
+      "emissive": 2.0,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.0,
+          "max": 3.0,
+          "period": 5.850118825329468,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "edge",
+      "from": [
+        50.1,
+        0,
+        -60.7
+      ],
+      "to": [
+        50.1,
+        34.4,
+        -60.7
+      ],
+      "color": "#ffffff",
+      "opacity": 0.3
+    },
+    {
+      "type": "edge",
+      "from": [
+        39.8,
+        24.1,
+        -60.7
+      ],
+      "to": [
+        60.4,
+        24.1,
+        -60.7
+      ],
+      "color": "#ffffff",
+      "opacity": 0.3
+    },
+    {
+      "type": "node",
+      "position": [
+        50.1,
+        24.1,
+        -60.7
+      ],
+      "color": "#ffffff",
+      "size": 0.3,
+      "emissive": 2.0,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.0,
+          "max": 3.0,
+          "period": 4.514334494473205,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "edge",
+      "from": [
+        30.0,
+        0,
+        -74.1
+      ],
+      "to": [
+        30.0,
+        37.9,
+        -74.1
+      ],
+      "color": "#ffffff",
+      "opacity": 0.3
+    },
+    {
+      "type": "edge",
+      "from": [
+        18.6,
+        26.6,
+        -74.1
+      ],
+      "to": [
+        41.4,
+        26.6,
+        -74.1
+      ],
+      "color": "#ffffff",
+      "opacity": 0.3
+    },
+    {
+      "type": "node",
+      "position": [
+        30.0,
+        26.6,
+        -74.1
+      ],
+      "color": "#ffffff",
+      "size": 0.3,
+      "emissive": 2.0,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.0,
+          "max": 3.0,
+          "period": 5.230966326478755,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          40,
+          -20
+        ],
+        [
+          -18.0,
+          48,
+          -25
+        ],
+        [
+          -36.0,
+          52,
+          -28
+        ],
+        [
+          -60,
+          45,
+          -30
+        ]
+      ],
+      "color": "#ffffff",
+      "opacity": 0.2,
+      "curve": true,
+      "segments": 40,
+      "animate": {
+        "trace": {
+          "color": "#ffffff",
+          "period": 5,
+          "length": 0.4
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -9.600000000000001,
+          45.877852522924734,
+          -21.2
+        ],
+        [
+          -20.0,
+          57.05342302750968,
+          -24.6
+        ]
+      ],
+      "color": "#ffddaa",
+      "opacity": 0.08
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -19.200000000000003,
+          49.510565162951536,
+          -22.4
+        ],
+        [
+          -32.0,
+          61.412678195541844,
+          -26.2
+        ]
+      ],
+      "color": "#ffddaa",
+      "opacity": 0.08
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -28.8,
+          49.510565162951536,
+          -23.6
+        ],
+        [
+          -44.0,
+          61.412678195541844,
+          -27.8
+        ]
+      ],
+      "color": "#ffddaa",
+      "opacity": 0.08
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -38.400000000000006,
+          45.877852522924734,
+          -24.8
+        ],
+        [
+          -56.0,
+          57.05342302750968,
+          -29.4
+        ]
+      ],
+      "color": "#ffddaa",
+      "opacity": 0.08
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          40,
+          -20
+        ],
+        [
+          18.0,
+          48,
+          -15
+        ],
+        [
+          36.0,
+          52,
+          -12
+        ],
+        [
+          60,
+          45,
+          -10
+        ]
+      ],
+      "color": "#ffffff",
+      "opacity": 0.2,
+      "curve": true,
+      "segments": 40,
+      "animate": {
+        "trace": {
+          "color": "#ffffff",
+          "period": 5,
+          "length": 0.4
+        }
+      }
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          9.600000000000001,
+          45.877852522924734,
+          -18.8
+        ],
+        [
+          20.0,
+          57.05342302750968,
+          -15.4
+        ]
+      ],
+      "color": "#ffddaa",
+      "opacity": 0.08
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          19.200000000000003,
+          49.510565162951536,
+          -17.6
+        ],
+        [
+          32.0,
+          61.412678195541844,
+          -13.8
+        ]
+      ],
+      "color": "#ffddaa",
+      "opacity": 0.08
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          28.8,
+          49.510565162951536,
+          -16.4
+        ],
+        [
+          44.0,
+          61.412678195541844,
+          -12.2
+        ]
+      ],
+      "color": "#ffddaa",
+      "opacity": 0.08
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          38.400000000000006,
+          45.877852522924734,
+          -15.2
+        ],
+        [
+          56.0,
+          57.05342302750968,
+          -10.6
+        ]
+      ],
+      "color": "#ffddaa",
+      "opacity": 0.08
+    },
+    {
+      "type": "particles",
+      "count": 300,
+      "spread": 100,
+      "color": "#ffaa44",
+      "size": 0.08,
+      "opacity": 0.25,
+      "position": [
+        0,
+        20,
+        -20
+      ]
+    },
+    {
+      "type": "particles",
+      "count": 150,
+      "spread": 60,
+      "color": "#ffffff",
+      "size": 0.06,
+      "opacity": 0.2,
+      "position": [
+        0,
+        30,
+        -20
+      ]
+    },
+    {
+      "type": "particles",
+      "count": 500,
+      "spread": 250,
+      "color": "#ffffff",
+      "size": 0.04,
+      "opacity": 0.18,
+      "position": [
+        0,
+        30,
+        0
+      ]
+    },
+    {
+      "type": "light",
+      "kind": "point",
+      "position": [
+        0,
+        55,
+        -20
+      ],
+      "color": "#ffaa66",
+      "intensity": 0.5,
+      "range": 60
+    },
+    {
+      "type": "light",
+      "kind": "point",
+      "position": [
+        0,
+        10,
+        0
+      ],
+      "color": "#441100",
+      "intensity": 0.3,
+      "range": 50
+    },
+    {
+      "type": "light",
+      "kind": "point",
+      "position": [
+        0,
+        25,
+        10
+      ],
+      "color": "#220000",
+      "intensity": 0.2,
+      "range": 40
+    }
+  ]
+}

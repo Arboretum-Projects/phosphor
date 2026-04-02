@@ -1,0 +1,211 @@
+#!/usr/bin/env python3
+"""Phosphor CLI — open a scene in the browser, or export self-contained HTML."""
+
+import sys
+import os
+import json
+import http.server
+import socketserver
+import threading
+import webbrowser
+
+PORT = 8888
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+def export_scene(scene_file):
+    """Bundle engine + scene into a single HTML file. Writes to stdout."""
+    scene_path = os.path.join(SCRIPT_DIR, scene_file) if not os.path.isabs(scene_file) else scene_file
+    if not os.path.exists(scene_path):
+        print(f'Scene not found: {scene_file}', file=sys.stderr)
+        sys.exit(1)
+
+    with open(scene_path, 'r') as f:
+        scene_json = f.read()
+
+    # Validate JSON
+    try:
+        json.loads(scene_json)
+    except json.JSONDecodeError as e:
+        print(f'Invalid JSON in {scene_file}: {e}', file=sys.stderr)
+        sys.exit(1)
+
+    engine_path = os.path.join(SCRIPT_DIR, 'phosphor.js')
+    with open(engine_path, 'r') as f:
+        engine_source = f.read()
+
+    # Strip the export keyword so the class is available in the inline script
+    engine_source = engine_source.replace('export class PhosphorEngine', 'class PhosphorEngine', 1)
+
+    # Extract scene title from JSON if available
+    spec = json.loads(scene_json)
+    title = 'Phosphor'
+    if 'scene' in spec and 'title' in spec['scene']:
+        title = f"Phosphor — {spec['scene']['title']}"
+
+    html = f'''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <style>
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{ background: #000; overflow: hidden; font-family: 'Courier New', monospace; }}
+        #container {{ width: 100vw; height: 100vh; }}
+
+        .phosphor-label {{
+            color: #ff4444;
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 3px 10px;
+            border: 1px solid currentColor;
+            background: rgba(0, 0, 0, 0.7);
+            pointer-events: none;
+            white-space: nowrap;
+        }}
+        .phosphor-label.style-bracket {{
+            border: none;
+            background: rgba(0, 0, 0, 0.5);
+        }}
+        .phosphor-label.style-bracket::before {{ content: '\\300c  '; }}
+        .phosphor-label.style-bracket::after {{ content: '  \\300d'; }}
+        .phosphor-label.style-minimal {{
+            border: none;
+            background: none;
+            font-size: 10px;
+            opacity: 0.8;
+        }}
+
+        #hud {{
+            position: fixed;
+            bottom: 16px;
+            left: 16px;
+            color: rgba(255,255,255,0.3);
+            font-family: 'Courier New', monospace;
+            font-size: 10px;
+            letter-spacing: 1px;
+            pointer-events: none;
+        }}
+    </style>
+
+    <script type="importmap">
+    {{
+        "imports": {{
+            "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }}
+    }}
+    </script>
+</head>
+<body>
+    <div id="container"></div>
+    <div id="hud">PHOSPHOR</div>
+
+    <script type="module">
+{engine_source}
+
+const spec = {scene_json};
+
+const container = document.getElementById('container');
+const engine = new PhosphorEngine(container);
+engine.loadScene(spec);
+engine.animate();
+    </script>
+</body>
+</html>'''
+
+    sys.stdout.write(html)
+
+
+def list_examples():
+    examples_dir = os.path.join(SCRIPT_DIR, 'examples')
+    if not os.path.isdir(examples_dir):
+        print('  No examples directory found.')
+        return
+    files = sorted(f for f in os.listdir(examples_dir) if f.endswith('.json'))
+    if not files:
+        print('  No examples found.')
+        return
+    print('Available examples:\n')
+    for f in files:
+        print(f'  {f[:-5]:20s}  phosphor --example {f[:-5]}')
+    print()
+
+
+def main():
+    if len(sys.argv) < 2:
+        scene = 'examples/hello.json'
+    elif sys.argv[1] in ('--list', '-l'):
+        list_examples()
+        return
+    elif sys.argv[1] in ('--export', '-x'):
+        if len(sys.argv) < 3:
+            print('Usage: phosphor --export scene.json > output.html', file=sys.stderr)
+            sys.exit(1)
+        arg = sys.argv[2]
+        # Support --export NAME (resolves to examples/NAME.json)
+        if not arg.endswith('.json') and not os.path.exists(arg):
+            arg = f'examples/{arg}.json'
+        export_scene(arg)
+        return
+    elif sys.argv[1] in ('--example', '-e'):
+        if len(sys.argv) < 3:
+            print('Usage: phosphor --example NAME')
+            list_examples()
+            return
+        scene = f'examples/{sys.argv[2]}.json'
+    elif sys.argv[1] in ('--help', '-h'):
+        print('Phosphor — 3D scene engine\n')
+        print('Usage:')
+        print('  phosphor [scene.json]        Open a scene file')
+        print('  phosphor --export scene.json Export as self-contained HTML (stdout)')
+        print('  phosphor --example NAME      Open a built-in example')
+        print('  phosphor --list              List available examples')
+        print()
+        return
+    else:
+        scene = sys.argv[1]
+
+    scene_path = os.path.join(SCRIPT_DIR, scene)
+    if not os.path.exists(scene_path):
+        print(f'Scene not found: {scene}')
+        sys.exit(1)
+
+    os.chdir(SCRIPT_DIR)
+
+    handler = http.server.SimpleHTTPRequestHandler
+    handler.log_message = lambda *a: None
+
+    try:
+        server = socketserver.TCPServer(('localhost', PORT), handler)
+    except OSError:
+        # Port in use — probably already running, just open browser
+        url = f'http://localhost:{PORT}?scene={scene}'
+        print(f'Phosphor — {scene}')
+        print(f'  {url}')
+        webbrowser.open(url)
+        return
+
+    thread = threading.Thread(target=server.serve_forever, daemon=True)
+    thread.start()
+
+    url = f'http://localhost:{PORT}?scene={scene}'
+    print(f'Phosphor — {scene}')
+    print(f'  {url}')
+    print(f'  Ctrl+C to stop\n')
+
+    webbrowser.open(url)
+
+    try:
+        while True:
+            thread.join(timeout=1)
+    except KeyboardInterrupt:
+        print()
+        server.shutdown()
+
+
+if __name__ == '__main__':
+    main()

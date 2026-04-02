@@ -1,0 +1,226 @@
+{
+    "scene": {
+        "background": "#000002",
+        "fog": { "color": "#000002", "near": 25, "far": 120 },
+        "bloom": { "strength": 2.6, "radius": 0.6, "threshold": 0.05 },
+        "ambient": "#020204"
+    },
+    "camera": {
+        "position": [14, 4, 18],
+        "target": [0, 0, -10]
+    },
+    "elements": [
+        {
+            "type": "ring", "position": [0, 0, 0],
+            "innerRadius": 7, "outerRadius": 7.02, "color": "#00ffff", "opacity": 0.5,
+            "rotation": [0, 0, 0], "tube": 0.08
+        },
+        {
+            "type": "ring", "position": [0, 0, -3],
+            "innerRadius": 6.6, "outerRadius": 6.62, "color": "#00eeff", "opacity": 0.45,
+            "rotation": [5, 0, 0], "tube": 0.07
+        },
+        {
+            "type": "ring", "position": [0, 0, -6],
+            "innerRadius": 6.1, "outerRadius": 6.12, "color": "#00ddff", "opacity": 0.4,
+            "rotation": [10, 3, 0], "tube": 0.06
+        },
+        {
+            "type": "ring", "position": [0, 0, -9],
+            "innerRadius": 5.5, "outerRadius": 5.52, "color": "#00ccff", "opacity": 0.35,
+            "rotation": [15, 6, 0], "tube": 0.05
+        },
+        {
+            "type": "ring", "position": [0, 0, -12],
+            "innerRadius": 4.8, "outerRadius": 4.82, "color": "#00aaff", "opacity": 0.3,
+            "rotation": [20, 10, 0], "tube": 0.05
+        },
+        {
+            "type": "ring", "position": [0, 0, -15],
+            "innerRadius": 4.0, "outerRadius": 4.02, "color": "#0088ff", "opacity": 0.28,
+            "rotation": [26, 15, 0], "tube": 0.04
+        },
+        {
+            "type": "ring", "position": [0, 0, -18],
+            "innerRadius": 3.2, "outerRadius": 3.22, "color": "#2266ff", "opacity": 0.25,
+            "rotation": [33, 20, 0], "tube": 0.04
+        },
+        {
+            "type": "ring", "position": [0, 0, -21],
+            "innerRadius": 2.5, "outerRadius": 2.52, "color": "#4444ff", "opacity": 0.22,
+            "rotation": [40, 28, 0], "tube": 0.03
+        },
+        {
+            "type": "ring", "position": [0, 0, -24],
+            "innerRadius": 1.8, "outerRadius": 1.82, "color": "#6622ff", "opacity": 0.2,
+            "rotation": [50, 36, 0], "tube": 0.03
+        },
+        {
+            "type": "ring", "position": [0, 0, -27],
+            "innerRadius": 1.2, "outerRadius": 1.22, "color": "#8800ff", "opacity": 0.18,
+            "rotation": [62, 45, 0], "tube": 0.02
+        },
+        {
+            "type": "ring", "position": [0, 0, -30],
+            "innerRadius": 0.7, "outerRadius": 0.72, "color": "#aa00ff", "opacity": 0.15,
+            "rotation": [75, 55, 0], "tube": 0.02
+        },
+        {
+            "type": "ring", "position": [0, 0, -33],
+            "innerRadius": 0.3, "outerRadius": 0.32, "color": "#cc00ff", "opacity": 0.12,
+            "rotation": [90, 70, 0], "tube": 0.02
+        },
+
+        {
+            "type": "ring", "position": [0, 0, 0],
+            "innerRadius": 8, "outerRadius": 8.01, "color": "#00ffff", "opacity": 0.12,
+            "rotation": [0, 0, 0]
+        },
+        {
+            "type": "ring", "position": [0, 0, 0],
+            "innerRadius": 9.5, "outerRadius": 9.51, "color": "#0088aa", "opacity": 0.06,
+            "rotation": [0, 0, 0]
+        },
+        {
+            "type": "ring", "position": [0, 0, 0],
+            "innerRadius": 8.5, "outerRadius": 8.51, "color": "#00aacc", "opacity": 0.08,
+            "rotation": [30, 0, 0]
+        },
+        {
+            "type": "ring", "position": [0, 0, 0],
+            "innerRadius": 8.5, "outerRadius": 8.51, "color": "#00aacc", "opacity": 0.08,
+            "rotation": [-30, 0, 0]
+        },
+
+        { "type": "node", "position": [0, 0, -35], "color": "#ffffff", "size": 0.5, "emissive": 6, "glowIntensity": 2, "glowRange": 20 },
+
+        {
+            "type": "line",
+            "points": [[0, 7, 0], [0, 6.6, -3], [0, 6.1, -6], [0, 5.5, -9], [0, 4.8, -12], [0, 4, -15], [0, 3.2, -18], [0, 2.5, -21], [0, 1.8, -24], [0, 1.2, -27], [0, 0.7, -30], [0, 0.3, -33]],
+            "color": "#00ddff", "opacity": 0.12, "curve": true
+        },
+        {
+            "type": "line",
+            "points": [[0, -7, 0], [0, -6.6, -3], [0, -6.1, -6], [0, -5.5, -9], [0, -4.8, -12], [0, -4, -15], [0, -3.2, -18], [0, -2.5, -21], [0, -1.8, -24], [0, -1.2, -27], [0, -0.7, -30], [0, -0.3, -33]],
+            "color": "#00ddff", "opacity": 0.12, "curve": true
+        },
+        {
+            "type": "line",
+            "points": [[7, 0, 0], [6.6, 0, -3], [6.1, 0, -6], [5.5, 0, -9], [4.8, 0, -12], [4, 0, -15], [3.2, 0, -18], [2.5, 0, -21], [1.8, 0, -24], [1.2, 0, -27], [0.7, 0, -30], [0.3, 0, -33]],
+            "color": "#00ddff", "opacity": 0.12, "curve": true
+        },
+        {
+            "type": "line",
+            "points": [[-7, 0, 0], [-6.6, 0, -3], [-6.1, 0, -6], [-5.5, 0, -9], [-4.8, 0, -12], [-4, 0, -15], [-3.2, 0, -18], [-2.5, 0, -21], [-1.8, 0, -24], [-1.2, 0, -27], [-0.7, 0, -30], [-0.3, 0, -33]],
+            "color": "#00ddff", "opacity": 0.12, "curve": true
+        },
+        {
+            "type": "line",
+            "points": [[5, 5, 0], [4.7, 4.7, -3], [4.3, 4.3, -6], [3.9, 3.9, -9], [3.4, 3.4, -12], [2.8, 2.8, -15], [2.3, 2.3, -18], [1.8, 1.8, -21], [1.3, 1.3, -24], [0.85, 0.85, -27], [0.5, 0.5, -30], [0.2, 0.2, -33]],
+            "color": "#4444ff", "opacity": 0.08, "curve": true
+        },
+        {
+            "type": "line",
+            "points": [[-5, -5, 0], [-4.7, -4.7, -3], [-4.3, -4.3, -6], [-3.9, -3.9, -9], [-3.4, -3.4, -12], [-2.8, -2.8, -15], [-2.3, -2.3, -18], [-1.8, -1.8, -21], [-1.3, -1.3, -24], [-0.85, -0.85, -27], [-0.5, -0.5, -30], [-0.2, -0.2, -33]],
+            "color": "#4444ff", "opacity": 0.08, "curve": true
+        },
+        {
+            "type": "line",
+            "points": [[5, -5, 0], [4.7, -4.7, -3], [4.3, -4.3, -6], [3.9, -3.9, -9], [3.4, -3.4, -12], [2.8, -2.8, -15], [2.3, -2.3, -18], [1.8, -1.8, -21], [1.3, -1.3, -24], [0.85, -0.85, -27], [0.5, -0.5, -30], [0.2, -0.2, -33]],
+            "color": "#8822ff", "opacity": 0.08, "curve": true
+        },
+        {
+            "type": "line",
+            "points": [[-5, 5, 0], [-4.7, 4.7, -3], [-4.3, 4.3, -6], [-3.9, 3.9, -9], [-3.4, 3.4, -12], [-2.8, 2.8, -15], [-2.3, 2.3, -18], [-1.8, 1.8, -21], [-1.3, 1.3, -24], [-0.85, 0.85, -27], [-0.5, 0.5, -30], [-0.2, 0.2, -33]],
+            "color": "#8822ff", "opacity": 0.08, "curve": true
+        },
+
+        {
+            "type": "particles",
+            "count": 300,
+            "spread": 14,
+            "color": "#00ccff",
+            "size": 0.05,
+            "opacity": 0.35,
+            "position": [0, 0, -5]
+        },
+        {
+            "type": "particles",
+            "count": 200,
+            "spread": 8,
+            "color": "#4466ff",
+            "size": 0.04,
+            "opacity": 0.3,
+            "position": [0, 0, -15]
+        },
+        {
+            "type": "particles",
+            "count": 100,
+            "spread": 4,
+            "color": "#8844ff",
+            "size": 0.04,
+            "opacity": 0.3,
+            "position": [0, 0, -25]
+        },
+        {
+            "type": "particles",
+            "count": 400,
+            "spread": 80,
+            "color": "#334466",
+            "size": 0.03,
+            "opacity": 0.1,
+            "position": [0, 0, -10]
+        },
+
+        {
+            "type": "volume",
+            "shape": "sphere",
+            "position": [0, 0, -33],
+            "size": 2,
+            "color": "#cc44ff",
+            "opacity": 0.06,
+            "wireframe": false
+        },
+        {
+            "type": "volume",
+            "shape": "sphere",
+            "position": [0, 0, 0],
+            "size": 8,
+            "color": "#003344",
+            "opacity": 0.02,
+            "wireframe": false
+        },
+
+        {
+            "type": "label",
+            "text": "EVENT HORIZON",
+            "position": [0, 8.5, 0],
+            "color": "#00ddff",
+            "style": "bracket"
+        },
+        {
+            "type": "label",
+            "text": "SINGULARITY",
+            "position": [0, 1.5, -35],
+            "color": "#cc44ff",
+            "style": "bracket"
+        },
+
+        {
+            "type": "light",
+            "kind": "point",
+            "position": [0, 0, -35],
+            "color": "#aa44ff",
+            "intensity": 1,
+            "range": 15
+        },
+        {
+            "type": "light",
+            "kind": "point",
+            "position": [0, 0, 0],
+            "color": "#004466",
+            "intensity": 0.5,
+            "range": 12
+        }
+    ]
+}

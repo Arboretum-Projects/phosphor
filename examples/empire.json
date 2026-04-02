@@ -1,0 +1,2699 @@
+{
+  "scene": {
+    "bloom": {
+      "strength": 1.4,
+      "radius": 0.4,
+      "threshold": 0.1
+    }
+  },
+  "camera": {
+    "position": [
+      45,
+      25,
+      35
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "fov": 58
+  },
+  "elements": [
+    {
+      "type": "grid",
+      "size": 100,
+      "divisions": 50,
+      "color": "#1a237e",
+      "opacity": 0.2,
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "grid",
+      "size": 100,
+      "divisions": 100,
+      "color": "#0d47a1",
+      "opacity": 0.05,
+      "position": [
+        0,
+        0.01,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "innerRadius": 48,
+      "outerRadius": 49,
+      "color": "#1565c0",
+      "opacity": 0.12,
+      "rotation": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "node",
+      "position": [
+        -15,
+        12,
+        -10
+      ],
+      "color": "#00e5ff",
+      "size": 0.6,
+      "emissive": 3,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "Nexus Prime",
+      "position": [
+        -15,
+        13.4,
+        -10
+      ],
+      "style": "bracket",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -15,
+          0,
+          -10
+        ],
+        [
+          -15,
+          12,
+          -10
+        ]
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -15,
+        0,
+        -10
+      ],
+      "color": "#00e5ff",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -20,
+        8,
+        -5
+      ],
+      "color": "#00e5ff",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Axiom Station",
+      "position": [
+        -20,
+        9.100000000000001,
+        -5
+      ],
+      "style": "minimal",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -20,
+          0,
+          -5
+        ],
+        [
+          -20,
+          8,
+          -5
+        ]
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -20,
+        0,
+        -5
+      ],
+      "color": "#00e5ff",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -10,
+        10,
+        -18
+      ],
+      "color": "#00e5ff",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Theta Array",
+      "position": [
+        -10,
+        11.100000000000001,
+        -18
+      ],
+      "style": "minimal",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -10,
+          0,
+          -18
+        ],
+        [
+          -10,
+          10,
+          -18
+        ]
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -10,
+        0,
+        -18
+      ],
+      "color": "#00e5ff",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -25,
+        6,
+        -15
+      ],
+      "color": "#00e5ff",
+      "size": 0.25,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Cypher Gate",
+      "position": [
+        -25,
+        7.05,
+        -15
+      ],
+      "style": "minimal",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -25,
+          0,
+          -15
+        ],
+        [
+          -25,
+          6,
+          -15
+        ]
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -25,
+        0,
+        -15
+      ],
+      "color": "#00e5ff",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -8,
+        14,
+        -4
+      ],
+      "color": "#00e5ff",
+      "size": 0.25,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Lux Orbital",
+      "position": [
+        -8,
+        15.05,
+        -4
+      ],
+      "style": "minimal",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -8,
+          0,
+          -4
+        ],
+        [
+          -8,
+          14,
+          -4
+        ]
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -8,
+        0,
+        -4
+      ],
+      "color": "#00e5ff",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -18,
+        16,
+        -12
+      ],
+      "color": "#00e5ff",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Helix Deep",
+      "position": [
+        -18,
+        17.0,
+        -12
+      ],
+      "style": "minimal",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -18,
+          0,
+          -12
+        ],
+        [
+          -18,
+          16,
+          -12
+        ]
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -18,
+        0,
+        -12
+      ],
+      "color": "#00e5ff",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -12,
+        5,
+        -22
+      ],
+      "color": "#00e5ff",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Shard Beacon",
+      "position": [
+        -12,
+        6.0,
+        -22
+      ],
+      "style": "minimal",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -12,
+          0,
+          -22
+        ],
+        [
+          -12,
+          5,
+          -22
+        ]
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -12,
+        0,
+        -22
+      ],
+      "color": "#00e5ff",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        18,
+        -10,
+        12
+      ],
+      "color": "#ff1744",
+      "size": 0.6,
+      "emissive": 3,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "Fortress Khar",
+      "position": [
+        18,
+        -8.6,
+        12
+      ],
+      "style": "bracket",
+      "color": "#ff1744"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          18,
+          0,
+          12
+        ],
+        [
+          18,
+          -10,
+          12
+        ]
+      ],
+      "color": "#ff1744",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        18,
+        0,
+        12
+      ],
+      "color": "#ff1744",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        12,
+        -6,
+        8
+      ],
+      "color": "#ff1744",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Ashfall Station",
+      "position": [
+        12,
+        -4.9,
+        8
+      ],
+      "style": "minimal",
+      "color": "#ff1744"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          12,
+          0,
+          8
+        ],
+        [
+          12,
+          -6,
+          8
+        ]
+      ],
+      "color": "#ff1744",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        12,
+        0,
+        8
+      ],
+      "color": "#ff1744",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        22,
+        -14,
+        18
+      ],
+      "color": "#ff1744",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Iron Reach",
+      "position": [
+        22,
+        -12.899999999999999,
+        18
+      ],
+      "style": "minimal",
+      "color": "#ff1744"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          22,
+          0,
+          18
+        ],
+        [
+          22,
+          -14,
+          18
+        ]
+      ],
+      "color": "#ff1744",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        22,
+        0,
+        18
+      ],
+      "color": "#ff1744",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        15,
+        -8,
+        20
+      ],
+      "color": "#ff1744",
+      "size": 0.25,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Scorch Gate",
+      "position": [
+        15,
+        -6.95,
+        20
+      ],
+      "style": "minimal",
+      "color": "#ff1744"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          15,
+          0,
+          20
+        ],
+        [
+          15,
+          -8,
+          20
+        ]
+      ],
+      "color": "#ff1744",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        15,
+        0,
+        20
+      ],
+      "color": "#ff1744",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        25,
+        -4,
+        10
+      ],
+      "color": "#ff1744",
+      "size": 0.25,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Pyre Anchorage",
+      "position": [
+        25,
+        -2.95,
+        10
+      ],
+      "style": "minimal",
+      "color": "#ff1744"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          25,
+          0,
+          10
+        ],
+        [
+          25,
+          -4,
+          10
+        ]
+      ],
+      "color": "#ff1744",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        25,
+        0,
+        10
+      ],
+      "color": "#ff1744",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        10,
+        -12,
+        15
+      ],
+      "color": "#ff1744",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Ember Watch",
+      "position": [
+        10,
+        -11.0,
+        15
+      ],
+      "style": "minimal",
+      "color": "#ff1744"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          10,
+          0,
+          15
+        ],
+        [
+          10,
+          -12,
+          15
+        ]
+      ],
+      "color": "#ff1744",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        10,
+        0,
+        15
+      ],
+      "color": "#ff1744",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        20,
+        -16,
+        6
+      ],
+      "color": "#ff1744",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Slag Depot",
+      "position": [
+        20,
+        -15.0,
+        6
+      ],
+      "style": "minimal",
+      "color": "#ff1744"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          20,
+          0,
+          6
+        ],
+        [
+          20,
+          -16,
+          6
+        ]
+      ],
+      "color": "#ff1744",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        20,
+        0,
+        6
+      ],
+      "color": "#ff1744",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        20,
+        10,
+        -18
+      ],
+      "color": "#69f0ae",
+      "size": 0.6,
+      "emissive": 3,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "Spore Cradle",
+      "position": [
+        20,
+        11.4,
+        -18
+      ],
+      "style": "bracket",
+      "color": "#69f0ae"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          20,
+          0,
+          -18
+        ],
+        [
+          20,
+          10,
+          -18
+        ]
+      ],
+      "color": "#69f0ae",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        20,
+        0,
+        -18
+      ],
+      "color": "#69f0ae",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        15,
+        6,
+        -12
+      ],
+      "color": "#69f0ae",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Bloom Nexus",
+      "position": [
+        15,
+        7.1,
+        -12
+      ],
+      "style": "minimal",
+      "color": "#69f0ae"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          15,
+          0,
+          -12
+        ],
+        [
+          15,
+          6,
+          -12
+        ]
+      ],
+      "color": "#69f0ae",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        15,
+        0,
+        -12
+      ],
+      "color": "#69f0ae",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        25,
+        12,
+        -22
+      ],
+      "color": "#69f0ae",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Tendril Reach",
+      "position": [
+        25,
+        13.100000000000001,
+        -22
+      ],
+      "style": "minimal",
+      "color": "#69f0ae"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          25,
+          0,
+          -22
+        ],
+        [
+          25,
+          12,
+          -22
+        ]
+      ],
+      "color": "#69f0ae",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        25,
+        0,
+        -22
+      ],
+      "color": "#69f0ae",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        28,
+        8,
+        -14
+      ],
+      "color": "#69f0ae",
+      "size": 0.25,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Mycel Hub",
+      "position": [
+        28,
+        9.05,
+        -14
+      ],
+      "style": "minimal",
+      "color": "#69f0ae"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          28,
+          0,
+          -14
+        ],
+        [
+          28,
+          8,
+          -14
+        ]
+      ],
+      "color": "#69f0ae",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        28,
+        0,
+        -14
+      ],
+      "color": "#69f0ae",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        18,
+        14,
+        -25
+      ],
+      "color": "#69f0ae",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Growth Spire",
+      "position": [
+        18,
+        15.0,
+        -25
+      ],
+      "style": "minimal",
+      "color": "#69f0ae"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          18,
+          0,
+          -25
+        ],
+        [
+          18,
+          14,
+          -25
+        ]
+      ],
+      "color": "#69f0ae",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        18,
+        0,
+        -25
+      ],
+      "color": "#69f0ae",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        12,
+        4,
+        -20
+      ],
+      "color": "#69f0ae",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Pollen Drift",
+      "position": [
+        12,
+        5.0,
+        -20
+      ],
+      "style": "minimal",
+      "color": "#69f0ae"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          12,
+          0,
+          -20
+        ],
+        [
+          12,
+          4,
+          -20
+        ]
+      ],
+      "color": "#69f0ae",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        12,
+        0,
+        -20
+      ],
+      "color": "#69f0ae",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -22,
+        -12,
+        18
+      ],
+      "color": "#e040fb",
+      "size": 0.6,
+      "emissive": 3,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "Void Throne",
+      "position": [
+        -22,
+        -10.6,
+        18
+      ],
+      "style": "bracket",
+      "color": "#e040fb"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -22,
+          0,
+          18
+        ],
+        [
+          -22,
+          -12,
+          18
+        ]
+      ],
+      "color": "#e040fb",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -22,
+        0,
+        18
+      ],
+      "color": "#e040fb",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -16,
+        -8,
+        14
+      ],
+      "color": "#e040fb",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Rift Observatory",
+      "position": [
+        -16,
+        -6.9,
+        14
+      ],
+      "style": "minimal",
+      "color": "#e040fb"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -16,
+          0,
+          14
+        ],
+        [
+          -16,
+          -8,
+          14
+        ]
+      ],
+      "color": "#e040fb",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -16,
+        0,
+        14
+      ],
+      "color": "#e040fb",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -25,
+        -14,
+        22
+      ],
+      "color": "#e040fb",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Whisper Gate",
+      "position": [
+        -25,
+        -12.899999999999999,
+        22
+      ],
+      "style": "minimal",
+      "color": "#e040fb"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -25,
+          0,
+          22
+        ],
+        [
+          -25,
+          -14,
+          22
+        ]
+      ],
+      "color": "#e040fb",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -25,
+        0,
+        22
+      ],
+      "color": "#e040fb",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -28,
+        -6,
+        16
+      ],
+      "color": "#e040fb",
+      "size": 0.25,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Echo Sanctum",
+      "position": [
+        -28,
+        -4.95,
+        16
+      ],
+      "style": "minimal",
+      "color": "#e040fb"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -28,
+          0,
+          16
+        ],
+        [
+          -28,
+          -6,
+          16
+        ]
+      ],
+      "color": "#e040fb",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -28,
+        0,
+        16
+      ],
+      "color": "#e040fb",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -20,
+        -16,
+        25
+      ],
+      "color": "#e040fb",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Relic Spire",
+      "position": [
+        -20,
+        -15.0,
+        25
+      ],
+      "style": "minimal",
+      "color": "#e040fb"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -20,
+          0,
+          25
+        ],
+        [
+          -20,
+          -16,
+          25
+        ]
+      ],
+      "color": "#e040fb",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -20,
+        0,
+        25
+      ],
+      "color": "#e040fb",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -14,
+        -10,
+        20
+      ],
+      "color": "#e040fb",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Shadow Drift",
+      "position": [
+        -14,
+        -9.0,
+        20
+      ],
+      "style": "minimal",
+      "color": "#e040fb"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -14,
+          0,
+          20
+        ],
+        [
+          -14,
+          -10,
+          20
+        ]
+      ],
+      "color": "#e040fb",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -14,
+        0,
+        20
+      ],
+      "color": "#e040fb",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        2,
+        0
+      ],
+      "color": "#ffd740",
+      "size": 0.4,
+      "emissive": 2.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Freeport Zion",
+      "position": [
+        0,
+        3.2,
+        0
+      ],
+      "style": "minimal",
+      "color": "#ffd740"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "color": "#ffd740",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "color": "#ffd740",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        5,
+        -1,
+        -5
+      ],
+      "color": "#ffd740",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Drift Market",
+      "position": [
+        5,
+        0.10000000000000009,
+        -5
+      ],
+      "style": "minimal",
+      "color": "#ffd740"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          5,
+          0,
+          -5
+        ],
+        [
+          5,
+          -1,
+          -5
+        ]
+      ],
+      "color": "#ffd740",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        5,
+        0,
+        -5
+      ],
+      "color": "#ffd740",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -5,
+        1,
+        5
+      ],
+      "color": "#ffd740",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Crossroads",
+      "position": [
+        -5,
+        2.1,
+        5
+      ],
+      "style": "minimal",
+      "color": "#ffd740"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -5,
+          0,
+          5
+        ],
+        [
+          -5,
+          1,
+          5
+        ]
+      ],
+      "color": "#ffd740",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -5,
+        0,
+        5
+      ],
+      "color": "#ffd740",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        8,
+        0,
+        8
+      ],
+      "color": "#ffd740",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Rim Station",
+      "position": [
+        8,
+        1.0,
+        8
+      ],
+      "style": "minimal",
+      "color": "#ffd740"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          8,
+          0,
+          8
+        ],
+        [
+          8,
+          0,
+          8
+        ]
+      ],
+      "color": "#ffd740",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        8,
+        0,
+        8
+      ],
+      "color": "#ffd740",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -8,
+        -2,
+        -8
+      ],
+      "color": "#ffd740",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Null Point",
+      "position": [
+        -8,
+        -1.0,
+        -8
+      ],
+      "style": "minimal",
+      "color": "#ffd740"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -8,
+          0,
+          -8
+        ],
+        [
+          -8,
+          -2,
+          -8
+        ]
+      ],
+      "color": "#ffd740",
+      "opacity": 0.12
+    },
+    {
+      "type": "node",
+      "position": [
+        -8,
+        0,
+        -8
+      ],
+      "color": "#ffd740",
+      "size": 0.06,
+      "emissive": 1,
+      "glow": false
+    },
+    {
+      "type": "ring",
+      "position": [
+        -15,
+        12,
+        -10
+      ],
+      "innerRadius": 18,
+      "outerRadius": 18.5,
+      "color": "#00e5ff",
+      "opacity": 0.08,
+      "tube": 0.05,
+      "wireframe": true
+    },
+    {
+      "type": "ring",
+      "position": [
+        18,
+        -10,
+        12
+      ],
+      "innerRadius": 18,
+      "outerRadius": 18.5,
+      "color": "#ff1744",
+      "opacity": 0.08,
+      "tube": 0.05,
+      "wireframe": true
+    },
+    {
+      "type": "ring",
+      "position": [
+        20,
+        10,
+        -18
+      ],
+      "innerRadius": 16,
+      "outerRadius": 16.5,
+      "color": "#69f0ae",
+      "opacity": 0.08,
+      "tube": 0.05,
+      "wireframe": true
+    },
+    {
+      "type": "ring",
+      "position": [
+        -22,
+        -12,
+        18
+      ],
+      "innerRadius": 16,
+      "outerRadius": 16.5,
+      "color": "#e040fb",
+      "opacity": 0.08,
+      "tube": 0.05,
+      "wireframe": true
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -15,
+          12,
+          -10
+        ],
+        [
+          -17.5,
+          12.0,
+          -7.5
+        ],
+        [
+          -20,
+          8,
+          -5
+        ]
+      ],
+      "color": "#00e5ff",
+      "curve": true,
+      "opacity": 0.3
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -15,
+          12,
+          -10
+        ],
+        [
+          -12.5,
+          13.0,
+          -14.0
+        ],
+        [
+          -10,
+          10,
+          -18
+        ]
+      ],
+      "color": "#00e5ff",
+      "curve": true,
+      "opacity": 0.3
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -15,
+          12,
+          -10
+        ],
+        [
+          -11.5,
+          15.0,
+          -7.0
+        ],
+        [
+          -8,
+          14,
+          -4
+        ]
+      ],
+      "color": "#00e5ff",
+      "curve": true,
+      "opacity": 0.25
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -20,
+          8,
+          -5
+        ],
+        [
+          -22.5,
+          9.0,
+          -10.0
+        ],
+        [
+          -25,
+          6,
+          -15
+        ]
+      ],
+      "color": "#00e5ff",
+      "curve": true,
+      "opacity": 0.2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -10,
+          10,
+          -18
+        ],
+        [
+          -11.0,
+          9.5,
+          -20.0
+        ],
+        [
+          -12,
+          5,
+          -22
+        ]
+      ],
+      "color": "#00e5ff",
+      "curve": true,
+      "opacity": 0.2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -15,
+          12,
+          -10
+        ],
+        [
+          -16.5,
+          16.0,
+          -11.0
+        ],
+        [
+          -18,
+          16,
+          -12
+        ]
+      ],
+      "color": "#00e5ff",
+      "curve": true,
+      "opacity": 0.2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          18,
+          -10,
+          12
+        ],
+        [
+          15.0,
+          -10.0,
+          10.0
+        ],
+        [
+          12,
+          -6,
+          8
+        ]
+      ],
+      "color": "#ff1744",
+      "curve": true,
+      "opacity": 0.3
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          18,
+          -10,
+          12
+        ],
+        [
+          20.0,
+          -14.0,
+          15.0
+        ],
+        [
+          22,
+          -14,
+          18
+        ]
+      ],
+      "color": "#ff1744",
+      "curve": true,
+      "opacity": 0.3
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          18,
+          -10,
+          12
+        ],
+        [
+          21.5,
+          -9.0,
+          11.0
+        ],
+        [
+          25,
+          -4,
+          10
+        ]
+      ],
+      "color": "#ff1744",
+      "curve": true,
+      "opacity": 0.25
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          12,
+          -6,
+          8
+        ],
+        [
+          11.0,
+          -11.0,
+          11.5
+        ],
+        [
+          10,
+          -12,
+          15
+        ]
+      ],
+      "color": "#ff1744",
+      "curve": true,
+      "opacity": 0.2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          22,
+          -14,
+          18
+        ],
+        [
+          18.5,
+          -13.0,
+          19.0
+        ],
+        [
+          15,
+          -8,
+          20
+        ]
+      ],
+      "color": "#ff1744",
+      "curve": true,
+      "opacity": 0.2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          18,
+          -10,
+          12
+        ],
+        [
+          19.0,
+          -15.0,
+          9.0
+        ],
+        [
+          20,
+          -16,
+          6
+        ]
+      ],
+      "color": "#ff1744",
+      "curve": true,
+      "opacity": 0.2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          20,
+          10,
+          -18
+        ],
+        [
+          17.5,
+          10.0,
+          -15.0
+        ],
+        [
+          15,
+          6,
+          -12
+        ]
+      ],
+      "color": "#69f0ae",
+      "curve": true,
+      "opacity": 0.3
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          20,
+          10,
+          -18
+        ],
+        [
+          22.5,
+          13.0,
+          -20.0
+        ],
+        [
+          25,
+          12,
+          -22
+        ]
+      ],
+      "color": "#69f0ae",
+      "curve": true,
+      "opacity": 0.3
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          20,
+          10,
+          -18
+        ],
+        [
+          24.0,
+          11.0,
+          -16.0
+        ],
+        [
+          28,
+          8,
+          -14
+        ]
+      ],
+      "color": "#69f0ae",
+      "curve": true,
+      "opacity": 0.25
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          15,
+          6,
+          -12
+        ],
+        [
+          13.5,
+          7.0,
+          -16.0
+        ],
+        [
+          12,
+          4,
+          -20
+        ]
+      ],
+      "color": "#69f0ae",
+      "curve": true,
+      "opacity": 0.2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          25,
+          12,
+          -22
+        ],
+        [
+          21.5,
+          15.0,
+          -23.5
+        ],
+        [
+          18,
+          14,
+          -25
+        ]
+      ],
+      "color": "#69f0ae",
+      "curve": true,
+      "opacity": 0.2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -22,
+          -12,
+          18
+        ],
+        [
+          -19.0,
+          -12.0,
+          16.0
+        ],
+        [
+          -16,
+          -8,
+          14
+        ]
+      ],
+      "color": "#e040fb",
+      "curve": true,
+      "opacity": 0.3
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -22,
+          -12,
+          18
+        ],
+        [
+          -23.5,
+          -15.0,
+          20.0
+        ],
+        [
+          -25,
+          -14,
+          22
+        ]
+      ],
+      "color": "#e040fb",
+      "curve": true,
+      "opacity": 0.3
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -22,
+          -12,
+          18
+        ],
+        [
+          -25.0,
+          -11.0,
+          17.0
+        ],
+        [
+          -28,
+          -6,
+          16
+        ]
+      ],
+      "color": "#e040fb",
+      "curve": true,
+      "opacity": 0.25
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -25,
+          -14,
+          22
+        ],
+        [
+          -22.5,
+          -17.0,
+          23.5
+        ],
+        [
+          -20,
+          -16,
+          25
+        ]
+      ],
+      "color": "#e040fb",
+      "curve": true,
+      "opacity": 0.2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -16,
+          -8,
+          14
+        ],
+        [
+          -15.0,
+          -11.0,
+          17.0
+        ],
+        [
+          -14,
+          -10,
+          20
+        ]
+      ],
+      "color": "#e040fb",
+      "curve": true,
+      "opacity": 0.2
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -20,
+          8,
+          -5
+        ],
+        [
+          -10.0,
+          6.0,
+          -2.5
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "color": "#78909c",
+      "curve": true,
+      "opacity": 0.15
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          6.0,
+          -3.0,
+          4.0
+        ],
+        [
+          12,
+          -6,
+          8
+        ]
+      ],
+      "color": "#78909c",
+      "curve": true,
+      "opacity": 0.15
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          15,
+          6,
+          -12
+        ],
+        [
+          10.0,
+          3.5,
+          -8.5
+        ],
+        [
+          5,
+          -1,
+          -5
+        ]
+      ],
+      "color": "#78909c",
+      "curve": true,
+      "opacity": 0.15
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          5,
+          -1,
+          -5
+        ],
+        [
+          2.5,
+          1.5,
+          -2.5
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "color": "#78909c",
+      "curve": true,
+      "opacity": 0.15
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -16,
+          -8,
+          14
+        ],
+        [
+          -10.5,
+          -4.5,
+          9.5
+        ],
+        [
+          -5,
+          1,
+          5
+        ]
+      ],
+      "color": "#78909c",
+      "curve": true,
+      "opacity": 0.15
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -5,
+          1,
+          5
+        ],
+        [
+          -2.5,
+          2.5,
+          2.5
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "color": "#78909c",
+      "curve": true,
+      "opacity": 0.15
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          4.0,
+          2.0,
+          4.0
+        ],
+        [
+          8,
+          0,
+          8
+        ]
+      ],
+      "color": "#78909c",
+      "curve": true,
+      "opacity": 0.15
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -8,
+          -2,
+          -8
+        ],
+        [
+          -1.5,
+          -2.5,
+          -6.5
+        ],
+        [
+          5,
+          -1,
+          -5
+        ]
+      ],
+      "color": "#78909c",
+      "curve": true,
+      "opacity": 0.15
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "innerRadius": 12,
+      "outerRadius": 12.5,
+      "color": "#ffd740",
+      "opacity": 0.1,
+      "rotation": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "label",
+      "text": "CONTESTED ZONE",
+      "position": [
+        12,
+        1,
+        12
+      ],
+      "style": "minimal",
+      "color": "#ffd740"
+    },
+    {
+      "type": "label",
+      "text": "HEGEMONY",
+      "position": [
+        -17,
+        20,
+        -12
+      ],
+      "style": "bracket",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "label",
+      "text": "DOMINION",
+      "position": [
+        18,
+        -20,
+        14
+      ],
+      "style": "bracket",
+      "color": "#ff1744"
+    },
+    {
+      "type": "label",
+      "text": "COLLECTIVE",
+      "position": [
+        22,
+        18,
+        -20
+      ],
+      "style": "bracket",
+      "color": "#69f0ae"
+    },
+    {
+      "type": "label",
+      "text": "ENCLAVE",
+      "position": [
+        -24,
+        -18,
+        20
+      ],
+      "style": "bracket",
+      "color": "#e040fb"
+    },
+    {
+      "type": "node",
+      "position": [
+        -4.4,
+        6,
+        -10.0
+      ],
+      "color": "#00e5ff",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -5.3,
+        6,
+        -9.48
+      ],
+      "color": "#00e5ff",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -5.3,
+        6,
+        -10.52
+      ],
+      "color": "#00e5ff",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "7th Fleet",
+      "position": [
+        -5,
+        7,
+        -10
+      ],
+      "style": "minimal",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "node",
+      "position": [
+        8.6,
+        -4,
+        6.0
+      ],
+      "color": "#ff1744",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        7.7,
+        -4,
+        6.52
+      ],
+      "color": "#ff1744",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        7.7,
+        -4,
+        5.48
+      ],
+      "color": "#ff1744",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Vanguard",
+      "position": [
+        8,
+        -3,
+        6
+      ],
+      "style": "minimal",
+      "color": "#ff1744"
+    },
+    {
+      "type": "node",
+      "position": [
+        10.6,
+        3,
+        -8.0
+      ],
+      "color": "#69f0ae",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        9.7,
+        3,
+        -7.48
+      ],
+      "color": "#69f0ae",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        9.7,
+        3,
+        -8.52
+      ],
+      "color": "#69f0ae",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Spore Wing",
+      "position": [
+        10,
+        4,
+        -8
+      ],
+      "style": "minimal",
+      "color": "#69f0ae"
+    },
+    {
+      "type": "node",
+      "position": [
+        -9.4,
+        -5,
+        10.0
+      ],
+      "color": "#e040fb",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -10.3,
+        -5,
+        10.52
+      ],
+      "color": "#e040fb",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -10.3,
+        -5,
+        9.48
+      ],
+      "color": "#e040fb",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Shadow Fleet",
+      "position": [
+        -10,
+        -4,
+        10
+      ],
+      "style": "minimal",
+      "color": "#e040fb"
+    },
+    {
+      "type": "particles",
+      "count": 1500,
+      "spread": 60,
+      "size": 0.02,
+      "color": "#ffffff",
+      "opacity": 0.25
+    },
+    {
+      "type": "particles",
+      "count": 400,
+      "spread": 50,
+      "size": 0.03,
+      "color": "#7c4dff",
+      "opacity": 0.12
+    }
+  ]
+}

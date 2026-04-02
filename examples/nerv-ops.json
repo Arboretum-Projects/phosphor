@@ -1,0 +1,2008 @@
+{
+  "scene": {
+    "bloom": {
+      "strength": 1.6,
+      "radius": 0.4,
+      "threshold": 0.1
+    },
+    "fog": {
+      "color": "#020818",
+      "near": 30,
+      "far": 90
+    },
+    "background": "#020818",
+    "ambient": "#080e28"
+  },
+  "camera": {
+    "position": [
+      0,
+      12,
+      30
+    ],
+    "target": [
+      0,
+      8,
+      -5
+    ],
+    "fov": 60
+  },
+  "elements": [
+    {
+      "type": "grid",
+      "size": 80,
+      "divisions": 40,
+      "color": "#0e2266",
+      "opacity": 0.2,
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "grid",
+      "size": 80,
+      "divisions": 80,
+      "color": "#0a1844",
+      "opacity": 0.06,
+      "position": [
+        0,
+        0.01,
+        0
+      ]
+    },
+    {
+      "type": "grid",
+      "size": 80,
+      "divisions": 40,
+      "color": "#0e2266",
+      "opacity": 0.08,
+      "position": [
+        0,
+        18,
+        0
+      ]
+    },
+    {
+      "type": "grid",
+      "size": 80,
+      "divisions": 30,
+      "color": "#0e2266",
+      "opacity": 0.06,
+      "position": [
+        -40,
+        9.0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        90
+      ]
+    },
+    {
+      "type": "grid",
+      "size": 80,
+      "divisions": 30,
+      "color": "#0e2266",
+      "opacity": 0.06,
+      "position": [
+        40,
+        9.0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        90
+      ]
+    },
+    {
+      "type": "grid",
+      "size": 80,
+      "divisions": 30,
+      "color": "#0e2266",
+      "opacity": 0.06,
+      "position": [
+        0,
+        9.0,
+        -30
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "grid",
+      "size": 80,
+      "divisions": 30,
+      "color": "#0e2266",
+      "opacity": 0.06,
+      "position": [
+        0,
+        9.0,
+        30
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0.3,
+        -5
+      ],
+      "innerRadius": 5,
+      "outerRadius": 5.5,
+      "color": "#ff6d00",
+      "opacity": 0.15,
+      "animate": {
+        "pulse": {
+          "property": "opacity",
+          "min": 0.08,
+          "max": 0.2,
+          "period": 4,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "group",
+      "position": [
+        0,
+        8,
+        -5
+      ],
+      "animate": {
+        "rotate": {
+          "axis": "y",
+          "speed": 0.05
+        }
+      },
+      "children": [
+        {
+          "type": "node",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "color": "#ff6d00",
+          "size": 0.6,
+          "emissive": 3,
+          "glow": true,
+          "glowIntensity": 1.5,
+          "glowRange": 15
+        },
+        {
+          "type": "ring",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "innerRadius": 4.5,
+          "outerRadius": 4.6,
+          "color": "#ff6d00",
+          "opacity": 0.2,
+          "tube": 0.03,
+          "animate": [
+            {
+              "type": "rotate",
+              "axis": "y",
+              "speed": 0.3
+            },
+            {
+              "type": "pulse",
+              "property": "opacity",
+              "min": 0.1,
+              "max": 0.3,
+              "period": 3,
+              "easing": "sine"
+            }
+          ]
+        },
+        {
+          "type": "ring",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "innerRadius": 3.5,
+          "outerRadius": 3.55,
+          "color": "#00ffff",
+          "opacity": 0.15,
+          "rotation": [
+            30,
+            0,
+            0
+          ],
+          "animate": {
+            "rotate": {
+              "axis": "y",
+              "speed": -0.2
+            }
+          }
+        },
+        {
+          "type": "ring",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "innerRadius": 5.5,
+          "outerRadius": 5.55,
+          "color": "#ff6d00",
+          "opacity": 0.1,
+          "rotation": [
+            -20,
+            45,
+            0
+          ],
+          "animate": {
+            "rotate": {
+              "axis": "y",
+              "speed": 0.15
+            }
+          }
+        },
+        {
+          "type": "ring",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "innerRadius": 3,
+          "outerRadius": 3.05,
+          "color": "#00ffff",
+          "opacity": 0.1,
+          "rotation": [
+            0,
+            0,
+            90
+          ],
+          "animate": {
+            "rotate": {
+              "axis": "x",
+              "speed": 0.25
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "position": [
+        0,
+        13,
+        -5
+      ],
+      "animate": [
+        {
+          "type": "rotate",
+          "axis": "y",
+          "speed": 0.3
+        },
+        {
+          "type": "rotate",
+          "axis": "x",
+          "speed": 0.1
+        },
+        {
+          "type": "bob",
+          "height": 0.3,
+          "period": 3
+        }
+      ],
+      "children": [
+        {
+          "type": "edge",
+          "from": [
+            0,
+            1.5,
+            0
+          ],
+          "to": [
+            1.5,
+            0,
+            0
+          ],
+          "color": "#ff1744",
+          "opacity": 0.4
+        },
+        {
+          "type": "edge",
+          "from": [
+            0,
+            1.5,
+            0
+          ],
+          "to": [
+            -1.5,
+            0,
+            0
+          ],
+          "color": "#ff1744",
+          "opacity": 0.4
+        },
+        {
+          "type": "edge",
+          "from": [
+            0,
+            1.5,
+            0
+          ],
+          "to": [
+            0,
+            0,
+            1.5
+          ],
+          "color": "#ff1744",
+          "opacity": 0.4
+        },
+        {
+          "type": "edge",
+          "from": [
+            0,
+            1.5,
+            0
+          ],
+          "to": [
+            0,
+            0,
+            -1.5
+          ],
+          "color": "#ff1744",
+          "opacity": 0.4
+        },
+        {
+          "type": "edge",
+          "from": [
+            0,
+            -1.5,
+            0
+          ],
+          "to": [
+            1.5,
+            0,
+            0
+          ],
+          "color": "#ff1744",
+          "opacity": 0.4
+        },
+        {
+          "type": "edge",
+          "from": [
+            0,
+            -1.5,
+            0
+          ],
+          "to": [
+            -1.5,
+            0,
+            0
+          ],
+          "color": "#ff1744",
+          "opacity": 0.4
+        },
+        {
+          "type": "edge",
+          "from": [
+            0,
+            -1.5,
+            0
+          ],
+          "to": [
+            0,
+            0,
+            1.5
+          ],
+          "color": "#ff1744",
+          "opacity": 0.4
+        },
+        {
+          "type": "edge",
+          "from": [
+            0,
+            -1.5,
+            0
+          ],
+          "to": [
+            0,
+            0,
+            -1.5
+          ],
+          "color": "#ff1744",
+          "opacity": 0.4
+        },
+        {
+          "type": "edge",
+          "from": [
+            1.5,
+            0,
+            0
+          ],
+          "to": [
+            0,
+            0,
+            1.5
+          ],
+          "color": "#ff1744",
+          "opacity": 0.4
+        },
+        {
+          "type": "edge",
+          "from": [
+            0,
+            0,
+            1.5
+          ],
+          "to": [
+            -1.5,
+            0,
+            0
+          ],
+          "color": "#ff1744",
+          "opacity": 0.4
+        },
+        {
+          "type": "edge",
+          "from": [
+            -1.5,
+            0,
+            0
+          ],
+          "to": [
+            0,
+            0,
+            -1.5
+          ],
+          "color": "#ff1744",
+          "opacity": 0.4
+        },
+        {
+          "type": "edge",
+          "from": [
+            0,
+            0,
+            -1.5
+          ],
+          "to": [
+            1.5,
+            0,
+            0
+          ],
+          "color": "#ff1744",
+          "opacity": 0.4
+        },
+        {
+          "type": "node",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "color": "#ff1744",
+          "size": 0.4,
+          "emissive": 3,
+          "glow": false,
+          "animate": {
+            "pulse": {
+              "property": "emissive",
+              "min": 2,
+              "max": 4,
+              "period": 2,
+              "easing": "sine"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "label",
+      "text": "PATTERN: BLUE",
+      "position": [
+        0,
+        15.5,
+        -5
+      ],
+      "style": "default",
+      "color": "#ff1744"
+    },
+    {
+      "type": "label",
+      "text": "BLOOD TYPE: UNKNOWN",
+      "position": [
+        0,
+        14.5,
+        -5
+      ],
+      "style": "minimal",
+      "color": "#ff4488"
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        -6,
+        1,
+        5
+      ],
+      "size": [
+        2.5,
+        1.2,
+        1.2
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.08,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        -6,
+        1.8,
+        5
+      ],
+      "color": "#00e5ff",
+      "size": 0.15,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.5,
+          "max": 3,
+          "period": 3.4536052208691883,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "IBUKI",
+      "position": [
+        -6,
+        3.5,
+        5
+      ],
+      "style": "bracket",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "label",
+      "text": "SYNC MONITOR",
+      "position": [
+        -6,
+        2.5,
+        5
+      ],
+      "style": "minimal",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -6,
+          1.5,
+          5
+        ],
+        [
+          0,
+          8,
+          -5
+        ]
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.06,
+      "animate": {
+        "flow": {
+          "color": "#00e5ff",
+          "size": 0.08,
+          "period": 4.280444288993676,
+          "emissive": 2
+        }
+      }
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        0,
+        1,
+        6
+      ],
+      "size": [
+        2.5,
+        1.2,
+        1.2
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.08,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        1.8,
+        6
+      ],
+      "color": "#00e5ff",
+      "size": 0.15,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.5,
+          "max": 3,
+          "period": 3.9588298803645205,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "HYUGA",
+      "position": [
+        0,
+        3.5,
+        6
+      ],
+      "style": "bracket",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "label",
+      "text": "TACTICAL OPS",
+      "position": [
+        0,
+        2.5,
+        6
+      ],
+      "style": "minimal",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          1.5,
+          6
+        ],
+        [
+          0,
+          8,
+          -5
+        ]
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.06,
+      "animate": {
+        "flow": {
+          "color": "#00e5ff",
+          "size": 0.08,
+          "period": 3.261563058877086,
+          "emissive": 2
+        }
+      }
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        6,
+        1,
+        5
+      ],
+      "size": [
+        2.5,
+        1.2,
+        1.2
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.08,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        6,
+        1.8,
+        5
+      ],
+      "color": "#00e5ff",
+      "size": 0.15,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.5,
+          "max": 3,
+          "period": 3.2800156880913827,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "AOBA",
+      "position": [
+        6,
+        3.5,
+        5
+      ],
+      "style": "bracket",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "label",
+      "text": "SIGNALS",
+      "position": [
+        6,
+        2.5,
+        5
+      ],
+      "style": "minimal",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          6,
+          1.5,
+          5
+        ],
+        [
+          0,
+          8,
+          -5
+        ]
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.06,
+      "animate": {
+        "flow": {
+          "color": "#00e5ff",
+          "size": 0.08,
+          "period": 3.178821083865617,
+          "emissive": 2
+        }
+      }
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        0,
+        2.5,
+        12
+      ],
+      "size": [
+        2.5,
+        1.2,
+        1.2
+      ],
+      "color": "#ff6d00",
+      "opacity": 0.08,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        3.3,
+        12
+      ],
+      "color": "#ff6d00",
+      "size": 0.15,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.5,
+          "max": 3,
+          "period": 3.307182394145127,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "KATSURAGI",
+      "position": [
+        0,
+        5.0,
+        12
+      ],
+      "style": "bracket",
+      "color": "#ff6d00"
+    },
+    {
+      "type": "label",
+      "text": "OPERATIONS DIRECTOR",
+      "position": [
+        0,
+        4.0,
+        12
+      ],
+      "style": "minimal",
+      "color": "#ff6d00"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          3.0,
+          12
+        ],
+        [
+          0,
+          8,
+          -5
+        ]
+      ],
+      "color": "#ff6d00",
+      "opacity": 0.06,
+      "animate": {
+        "flow": {
+          "color": "#ff6d00",
+          "size": 0.08,
+          "period": 3.8406143004679283,
+          "emissive": 2
+        }
+      }
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        -14,
+        1,
+        10
+      ],
+      "size": [
+        2.5,
+        1.2,
+        1.2
+      ],
+      "color": "#4488ff",
+      "opacity": 0.08,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        -14,
+        1.8,
+        10
+      ],
+      "color": "#4488ff",
+      "size": 0.15,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.5,
+          "max": 3,
+          "period": 3.856476234432108,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "COMMS",
+      "position": [
+        -14,
+        3.5,
+        10
+      ],
+      "style": "bracket",
+      "color": "#4488ff"
+    },
+    {
+      "type": "label",
+      "text": "EXTERNAL RELAY",
+      "position": [
+        -14,
+        2.5,
+        10
+      ],
+      "style": "minimal",
+      "color": "#4488ff"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -14,
+          1.5,
+          10
+        ],
+        [
+          0,
+          8,
+          -5
+        ]
+      ],
+      "color": "#4488ff",
+      "opacity": 0.06,
+      "animate": {
+        "flow": {
+          "color": "#4488ff",
+          "size": 0.08,
+          "period": 4.431808529044396,
+          "emissive": 2
+        }
+      }
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        14,
+        1,
+        10
+      ],
+      "size": [
+        2.5,
+        1.2,
+        1.2
+      ],
+      "color": "#4488ff",
+      "opacity": 0.08,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        14,
+        1.8,
+        10
+      ],
+      "color": "#4488ff",
+      "size": 0.15,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.5,
+          "max": 3,
+          "period": 3.1932367448801937,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "DAMAGE",
+      "position": [
+        14,
+        3.5,
+        10
+      ],
+      "style": "bracket",
+      "color": "#4488ff"
+    },
+    {
+      "type": "label",
+      "text": "STRUCTURAL ANALYSIS",
+      "position": [
+        14,
+        2.5,
+        10
+      ],
+      "style": "minimal",
+      "color": "#4488ff"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          14,
+          1.5,
+          10
+        ],
+        [
+          0,
+          8,
+          -5
+        ]
+      ],
+      "color": "#4488ff",
+      "opacity": 0.06,
+      "animate": {
+        "flow": {
+          "color": "#4488ff",
+          "size": 0.08,
+          "period": 4.493198101939839,
+          "emissive": 2
+        }
+      }
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        0,
+        5,
+        20
+      ],
+      "size": [
+        6,
+        0.3,
+        3
+      ],
+      "color": "#ff6d00",
+      "opacity": 0.12,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        5.5,
+        20
+      ],
+      "color": "#ff6d00",
+      "size": 0.3,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "IKARI",
+      "position": [
+        0,
+        8,
+        20
+      ],
+      "style": "bracket",
+      "color": "#ff6d00"
+    },
+    {
+      "type": "label",
+      "text": "SUPREME COMMANDER",
+      "position": [
+        0,
+        6.8,
+        20
+      ],
+      "style": "minimal",
+      "color": "#bf360c"
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        -12,
+        10,
+        -28
+      ],
+      "size": [
+        5,
+        4,
+        0.3
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.1,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        -12,
+        10,
+        -27.7
+      ],
+      "color": "#00e5ff",
+      "size": 0.3,
+      "emissive": 2.5,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.5,
+          "max": 3.5,
+          "period": 3,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "MELCHIOR-1",
+      "position": [
+        -12,
+        13,
+        -27
+      ],
+      "style": "bracket",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "label",
+      "text": "APPROVE",
+      "position": [
+        -12,
+        11.5,
+        -27
+      ],
+      "style": "minimal",
+      "color": "#00ff88"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -12,
+          10,
+          -27
+        ],
+        [
+          0,
+          8,
+          -5
+        ]
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.05,
+      "animate": {
+        "trace": {
+          "color": "#00e5ff",
+          "period": 4,
+          "length": 0.15
+        }
+      }
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        0,
+        10,
+        -28
+      ],
+      "size": [
+        5,
+        4,
+        0.3
+      ],
+      "color": "#ff6d00",
+      "opacity": 0.1,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        10,
+        -27.7
+      ],
+      "color": "#ff6d00",
+      "size": 0.3,
+      "emissive": 2.5,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.5,
+          "max": 3.5,
+          "period": 3,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "BALTHASAR-2",
+      "position": [
+        0,
+        13,
+        -27
+      ],
+      "style": "bracket",
+      "color": "#ff6d00"
+    },
+    {
+      "type": "label",
+      "text": "APPROVE",
+      "position": [
+        0,
+        11.5,
+        -27
+      ],
+      "style": "minimal",
+      "color": "#00ff88"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          10,
+          -27
+        ],
+        [
+          0,
+          8,
+          -5
+        ]
+      ],
+      "color": "#ff6d00",
+      "opacity": 0.05,
+      "animate": {
+        "trace": {
+          "color": "#ff6d00",
+          "period": 4,
+          "length": 0.15
+        }
+      }
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        12,
+        10,
+        -28
+      ],
+      "size": [
+        5,
+        4,
+        0.3
+      ],
+      "color": "#aa44ff",
+      "opacity": 0.1,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        12,
+        10,
+        -27.7
+      ],
+      "color": "#aa44ff",
+      "size": 0.3,
+      "emissive": 2.5,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1.5,
+          "max": 3.5,
+          "period": 3,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "CASPAR-3",
+      "position": [
+        12,
+        13,
+        -27
+      ],
+      "style": "bracket",
+      "color": "#aa44ff"
+    },
+    {
+      "type": "label",
+      "text": "PENDING",
+      "position": [
+        12,
+        11.5,
+        -27
+      ],
+      "style": "minimal",
+      "color": "#ffdd00"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          12,
+          10,
+          -27
+        ],
+        [
+          0,
+          8,
+          -5
+        ]
+      ],
+      "color": "#aa44ff",
+      "opacity": 0.05,
+      "animate": {
+        "trace": {
+          "color": "#aa44ff",
+          "period": 4,
+          "length": 0.15
+        }
+      }
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        -37,
+        8,
+        0
+      ],
+      "size": [
+        0.3,
+        2.5,
+        5
+      ],
+      "color": "#2196f3",
+      "opacity": 0.08,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        -36.7,
+        8,
+        0
+      ],
+      "color": "#2196f3",
+      "size": 0.2,
+      "emissive": 2.5,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 2,
+          "max": 3.5,
+          "period": 2,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "UNIT-00",
+      "position": [
+        -36,
+        9.8,
+        0
+      ],
+      "style": "bracket",
+      "color": "#2196f3"
+    },
+    {
+      "type": "label",
+      "text": "PILOT: AYANAMI",
+      "position": [
+        -36,
+        8.5,
+        0
+      ],
+      "style": "minimal",
+      "color": "#2196f3"
+    },
+    {
+      "type": "label",
+      "text": "SYNC: 67.3%",
+      "position": [
+        -36,
+        7.5,
+        0
+      ],
+      "style": "minimal",
+      "color": "#2196f3"
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        -37,
+        12,
+        0
+      ],
+      "size": [
+        0.3,
+        2.5,
+        5
+      ],
+      "color": "#7c4dff",
+      "opacity": 0.08,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        -36.7,
+        12,
+        0
+      ],
+      "color": "#7c4dff",
+      "size": 0.2,
+      "emissive": 2.5,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 2,
+          "max": 3.5,
+          "period": 2,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "UNIT-01",
+      "position": [
+        -36,
+        13.8,
+        0
+      ],
+      "style": "bracket",
+      "color": "#7c4dff"
+    },
+    {
+      "type": "label",
+      "text": "PILOT: IKARI",
+      "position": [
+        -36,
+        12.5,
+        0
+      ],
+      "style": "minimal",
+      "color": "#7c4dff"
+    },
+    {
+      "type": "label",
+      "text": "SYNC: 94.1%",
+      "position": [
+        -36,
+        11.5,
+        0
+      ],
+      "style": "minimal",
+      "color": "#7c4dff"
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        -37,
+        4,
+        0
+      ],
+      "size": [
+        0.3,
+        2.5,
+        5
+      ],
+      "color": "#ff1744",
+      "opacity": 0.08,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        -36.7,
+        4,
+        0
+      ],
+      "color": "#ff1744",
+      "size": 0.2,
+      "emissive": 2.5,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 2,
+          "max": 3.5,
+          "period": 2,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "UNIT-02",
+      "position": [
+        -36,
+        5.8,
+        0
+      ],
+      "style": "bracket",
+      "color": "#ff1744"
+    },
+    {
+      "type": "label",
+      "text": "PILOT: SORYU",
+      "position": [
+        -36,
+        4.5,
+        0
+      ],
+      "style": "minimal",
+      "color": "#ff1744"
+    },
+    {
+      "type": "label",
+      "text": "SYNC: 78.8%",
+      "position": [
+        -36,
+        3.5,
+        0
+      ],
+      "style": "minimal",
+      "color": "#ff1744"
+    },
+    {
+      "type": "node",
+      "position": [
+        20.0,
+        17.5,
+        0.0
+      ],
+      "color": "#ff1744",
+      "size": 0.2,
+      "emissive": 3,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 5,
+          "period": 1,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        14.142135623730951,
+        17.5,
+        14.14213562373095
+      ],
+      "color": "#ff1744",
+      "size": 0.2,
+      "emissive": 3,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 5,
+          "period": 1,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        1.2246467991473533e-15,
+        17.5,
+        20.0
+      ],
+      "color": "#ff1744",
+      "size": 0.2,
+      "emissive": 3,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 5,
+          "period": 1,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -14.14213562373095,
+        17.5,
+        14.142135623730951
+      ],
+      "color": "#ff1744",
+      "size": 0.2,
+      "emissive": 3,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 5,
+          "period": 1,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -20.0,
+        17.5,
+        2.4492935982947065e-15
+      ],
+      "color": "#ff1744",
+      "size": 0.2,
+      "emissive": 3,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 5,
+          "period": 1,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -14.142135623730955,
+        17.5,
+        -14.14213562373095
+      ],
+      "color": "#ff1744",
+      "size": 0.2,
+      "emissive": 3,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 5,
+          "period": 1,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -3.673940397442059e-15,
+        17.5,
+        -20.0
+      ],
+      "color": "#ff1744",
+      "size": 0.2,
+      "emissive": 3,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 5,
+          "period": 1,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        14.142135623730947,
+        17.5,
+        -14.142135623730955
+      ],
+      "color": "#ff1744",
+      "size": 0.2,
+      "emissive": 3,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 0.5,
+          "max": 5,
+          "period": 1,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -35,
+        0.2,
+        -29
+      ],
+      "color": "#ff6d00",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1,
+          "max": 3,
+          "period": 1.5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -27,
+        0.2,
+        -29
+      ],
+      "color": "#ff6d00",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1,
+          "max": 3,
+          "period": 1.5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -19,
+        0.2,
+        -29
+      ],
+      "color": "#ff6d00",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1,
+          "max": 3,
+          "period": 1.5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -11,
+        0.2,
+        -29
+      ],
+      "color": "#ff6d00",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1,
+          "max": 3,
+          "period": 1.5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        -3,
+        0.2,
+        -29
+      ],
+      "color": "#ff6d00",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1,
+          "max": 3,
+          "period": 1.5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        5,
+        0.2,
+        -29
+      ],
+      "color": "#ff6d00",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1,
+          "max": 3,
+          "period": 1.5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        13,
+        0.2,
+        -29
+      ],
+      "color": "#ff6d00",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1,
+          "max": 3,
+          "period": 1.5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        21,
+        0.2,
+        -29
+      ],
+      "color": "#ff6d00",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1,
+          "max": 3,
+          "period": 1.5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        29,
+        0.2,
+        -29
+      ],
+      "color": "#ff6d00",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1,
+          "max": 3,
+          "period": 1.5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "node",
+      "position": [
+        37,
+        0.2,
+        -29
+      ],
+      "color": "#ff6d00",
+      "size": 0.1,
+      "emissive": 2,
+      "glow": false,
+      "animate": {
+        "pulse": {
+          "property": "emissive",
+          "min": 1,
+          "max": 3,
+          "period": 1.5,
+          "easing": "sine"
+        }
+      }
+    },
+    {
+      "type": "label",
+      "text": "CONDITION: RED",
+      "position": [
+        35,
+        16,
+        -28
+      ],
+      "style": "default",
+      "color": "#ff1744"
+    },
+    {
+      "type": "label",
+      "text": "ALL HANDS TO BATTLE STATIONS",
+      "position": [
+        35,
+        14,
+        -28
+      ],
+      "style": "minimal",
+      "color": "#ff4488"
+    },
+    {
+      "type": "label",
+      "text": "POWER: EXTERNAL \u2014 09:58:32",
+      "position": [
+        -32,
+        16,
+        -28
+      ],
+      "style": "minimal",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "particles",
+      "count": 300,
+      "spread": 50,
+      "size": 0.03,
+      "color": "#4488ff",
+      "opacity": 0.08,
+      "position": [
+        0,
+        9.0,
+        0
+      ]
+    },
+    {
+      "type": "particles",
+      "count": 200,
+      "spread": 12,
+      "size": 0.04,
+      "color": "#ff6d00",
+      "opacity": 0.15,
+      "position": [
+        0,
+        8,
+        -5
+      ]
+    },
+    {
+      "type": "light",
+      "kind": "point",
+      "position": [
+        0,
+        17,
+        0
+      ],
+      "color": "#0a1844",
+      "intensity": 0.4,
+      "range": 50
+    }
+  ]
+}

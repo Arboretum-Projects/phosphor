@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phosphor</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #000; overflow: hidden; font-family: 'Courier New', monospace; }
+        #container { width: 100vw; height: 100vh; }
+
+        /* Label styles for CSS2DRenderer */
+        .phosphor-label {
+            color: #ff4444;
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 3px 10px;
+            border: 1px solid currentColor;
+            background: rgba(0, 0, 0, 0.7);
+            pointer-events: none;
+            white-space: nowrap;
+        }
+        .phosphor-label.style-bracket {
+            border: none;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .phosphor-label.style-bracket::before { content: '\300c  '; }
+        .phosphor-label.style-bracket::after { content: '  \300d'; }
+        .phosphor-label.style-minimal {
+            border: none;
+            background: none;
+            font-size: 10px;
+            opacity: 0.8;
+        }
+
+        /* HUD */
+        #hud {
+            position: fixed;
+            bottom: 16px;
+            left: 16px;
+            color: rgba(255,255,255,0.3);
+            font-family: 'Courier New', monospace;
+            font-size: 10px;
+            letter-spacing: 1px;
+            pointer-events: none;
+        }
+    </style>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="container"></div>
+    <div id="hud">PHOSPHOR</div>
+
+    <script type="module">
+        import { PhosphorEngine } from './phosphor.js';
+
+        const container = document.getElementById('container');
+        const engine = new PhosphorEngine(container);
+
+        // Load scene from URL param or default
+        const params = new URLSearchParams(window.location.search);
+        const scenePath = params.get('scene') || 'examples/hello.json';
+
+        fetch(scenePath)
+            .then(r => r.json())
+            .then(spec => {
+                engine.loadScene(spec);
+                engine.animate();
+            })
+            .catch(err => {
+                console.error('Failed to load scene:', err);
+                // Load empty scene so controls still work
+                engine.loadScene({ elements: [] });
+                engine.animate();
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1054 @@
+{
+  "scene": {
+    "bloom": {
+      "strength": 1.8,
+      "radius": 0.5,
+      "threshold": 0.08
+    }
+  },
+  "camera": {
+    "position": [
+      35,
+      15,
+      30
+    ],
+    "target": [
+      0,
+      8,
+      0
+    ],
+    "fov": 60
+  },
+  "elements": [
+    {
+      "type": "grid",
+      "size": 120,
+      "divisions": 60,
+      "color": "#0d47a1",
+      "opacity": 0.3,
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "type": "grid",
+      "size": 120,
+      "divisions": 120,
+      "color": "#1565c0",
+      "opacity": 0.08,
+      "position": [
+        0,
+        0.01,
+        0
+      ]
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        0,
+        10,
+        0
+      ],
+      "size": [
+        12,
+        20,
+        12
+      ],
+      "color": "#ff1744",
+      "opacity": 0.15,
+      "wireframe": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        0,
+        10,
+        0
+      ],
+      "size": [
+        6,
+        16,
+        6
+      ],
+      "color": "#d50000",
+      "opacity": 0.25,
+      "wireframe": true
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        0,
+        10,
+        0
+      ],
+      "size": 2.5,
+      "color": "#ffea00",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        10,
+        0
+      ],
+      "color": "#ffea00",
+      "size": 0.8,
+      "emissive": 4,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "TESSIER-ASHPOOL S.A.",
+      "position": [
+        0,
+        22,
+        0
+      ],
+      "style": "bracket",
+      "color": "#ff1744"
+    },
+    {
+      "type": "label",
+      "text": "BLACK ICE \u2014 LETHAL",
+      "position": [
+        0,
+        20.5,
+        0
+      ],
+      "style": "minimal",
+      "color": "#ff5252"
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        3,
+        0
+      ],
+      "innerRadius": 8.7,
+      "outerRadius": 9.0,
+      "color": "#ff1744",
+      "opacity": 0.25
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        8,
+        0
+      ],
+      "innerRadius": 8.2,
+      "outerRadius": 8.5,
+      "color": "#ff1744",
+      "opacity": 0.33
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        13,
+        0
+      ],
+      "innerRadius": 7.7,
+      "outerRadius": 8.0,
+      "color": "#ff1744",
+      "opacity": 0.41000000000000003
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        18,
+        0
+      ],
+      "innerRadius": 7.2,
+      "outerRadius": 7.5,
+      "color": "#ff1744",
+      "opacity": 0.49
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        25,
+        6,
+        20
+      ],
+      "size": [
+        5,
+        12,
+        5
+      ],
+      "color": "#2979ff",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        25,
+        12.0,
+        20
+      ],
+      "color": "#2979ff",
+      "size": 0.4,
+      "emissive": 2.5,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "BANK OF ZURICH",
+      "position": [
+        25,
+        13.5,
+        20
+      ],
+      "style": "bracket",
+      "color": "#2979ff"
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        -30,
+        4,
+        -15
+      ],
+      "size": [
+        4,
+        8,
+        4
+      ],
+      "color": "#00e5ff",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        -30,
+        8.0,
+        -15
+      ],
+      "color": "#00e5ff",
+      "size": 0.4,
+      "emissive": 2.5,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "HOSAKA CORP",
+      "position": [
+        -30,
+        9.5,
+        -15
+      ],
+      "style": "bracket",
+      "color": "#00e5ff"
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        20,
+        5,
+        -25
+      ],
+      "size": [
+        6,
+        10,
+        3
+      ],
+      "color": "#7c4dff",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        20,
+        10.0,
+        -25
+      ],
+      "color": "#7c4dff",
+      "size": 0.4,
+      "emissive": 2.5,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "SENSE/NET",
+      "position": [
+        20,
+        11.5,
+        -25
+      ],
+      "style": "bracket",
+      "color": "#7c4dff"
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        -20,
+        3,
+        25
+      ],
+      "size": [
+        3,
+        6,
+        6
+      ],
+      "color": "#00e676",
+      "opacity": 0.2,
+      "wireframe": true
+    },
+    {
+      "type": "node",
+      "position": [
+        -20,
+        6.0,
+        25
+      ],
+      "color": "#00e676",
+      "size": 0.4,
+      "emissive": 2.5,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "THE FINN \u2014 OPEN",
+      "position": [
+        -20,
+        7.5,
+        25
+      ],
+      "style": "bracket",
+      "color": "#00e676"
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          6,
+          5,
+          6
+        ],
+        [
+          14.0,
+          13.5,
+          12.0
+        ],
+        [
+          22,
+          6,
+          18
+        ]
+      ],
+      "color": "#00e5ff",
+      "curve": true,
+      "opacity": 0.5
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -6,
+          5,
+          -6
+        ],
+        [
+          -16.5,
+          12.5,
+          -9.5
+        ],
+        [
+          -27,
+          4,
+          -13
+        ]
+      ],
+      "color": "#00e5ff",
+      "curve": true,
+      "opacity": 0.5
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          6,
+          5,
+          -6
+        ],
+        [
+          12.0,
+          13.0,
+          -14.0
+        ],
+        [
+          18,
+          5,
+          -22
+        ]
+      ],
+      "color": "#7c4dff",
+      "curve": true,
+      "opacity": 0.5
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -6,
+          5,
+          6
+        ],
+        [
+          -12.0,
+          12.0,
+          14.0
+        ],
+        [
+          -18,
+          3,
+          22
+        ]
+      ],
+      "color": "#00e676",
+      "curve": true,
+      "opacity": 0.5
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          25,
+          8,
+          20
+        ],
+        [
+          22.5,
+          15.5,
+          -2.5
+        ],
+        [
+          20,
+          7,
+          -25
+        ]
+      ],
+      "color": "#448aff",
+      "curve": true,
+      "opacity": 0.5
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -30,
+          6,
+          -15
+        ],
+        [
+          -25.0,
+          13.0,
+          5.0
+        ],
+        [
+          -20,
+          4,
+          25
+        ]
+      ],
+      "color": "#69f0ae",
+      "curve": true,
+      "opacity": 0.5
+    },
+    {
+      "type": "node",
+      "position": [
+        15,
+        0.3,
+        5
+      ],
+      "color": "#00e5ff",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          15,
+          0,
+          5
+        ],
+        [
+          15,
+          2.3,
+          5
+        ]
+      ],
+      "color": "#0d47a1",
+      "opacity": 0.4
+    },
+    {
+      "type": "node",
+      "position": [
+        -12,
+        0.3,
+        10
+      ],
+      "color": "#00e5ff",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -12,
+          0,
+          10
+        ],
+        [
+          -12,
+          2.3,
+          10
+        ]
+      ],
+      "color": "#0d47a1",
+      "opacity": 0.4
+    },
+    {
+      "type": "node",
+      "position": [
+        8,
+        0.3,
+        -15
+      ],
+      "color": "#00e5ff",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          8,
+          0,
+          -15
+        ],
+        [
+          8,
+          2.3,
+          -15
+        ]
+      ],
+      "color": "#0d47a1",
+      "opacity": 0.4
+    },
+    {
+      "type": "node",
+      "position": [
+        -8,
+        0.3,
+        -20
+      ],
+      "color": "#00e5ff",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -8,
+          0,
+          -20
+        ],
+        [
+          -8,
+          2.3,
+          -20
+        ]
+      ],
+      "color": "#0d47a1",
+      "opacity": 0.4
+    },
+    {
+      "type": "node",
+      "position": [
+        30,
+        0.3,
+        -5
+      ],
+      "color": "#00e5ff",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          30,
+          0,
+          -5
+        ],
+        [
+          30,
+          2.3,
+          -5
+        ]
+      ],
+      "color": "#0d47a1",
+      "opacity": 0.4
+    },
+    {
+      "type": "node",
+      "position": [
+        -25,
+        0.3,
+        0
+      ],
+      "color": "#00e5ff",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -25,
+          0,
+          0
+        ],
+        [
+          -25,
+          2.3,
+          0
+        ]
+      ],
+      "color": "#0d47a1",
+      "opacity": 0.4
+    },
+    {
+      "type": "node",
+      "position": [
+        0,
+        0.3,
+        30
+      ],
+      "color": "#00e5ff",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          0,
+          0,
+          30
+        ],
+        [
+          0,
+          2.3,
+          30
+        ]
+      ],
+      "color": "#0d47a1",
+      "opacity": 0.4
+    },
+    {
+      "type": "node",
+      "position": [
+        35,
+        0.3,
+        15
+      ],
+      "color": "#00e5ff",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          35,
+          0,
+          15
+        ],
+        [
+          35,
+          2.3,
+          15
+        ]
+      ],
+      "color": "#0d47a1",
+      "opacity": 0.4
+    },
+    {
+      "type": "node",
+      "position": [
+        -35,
+        0.3,
+        -25
+      ],
+      "color": "#00e5ff",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          -35,
+          0,
+          -25
+        ],
+        [
+          -35,
+          2.3,
+          -25
+        ]
+      ],
+      "color": "#0d47a1",
+      "opacity": 0.4
+    },
+    {
+      "type": "line",
+      "points": [
+        [
+          40,
+          0.5,
+          35
+        ],
+        [
+          30,
+          1,
+          25
+        ],
+        [
+          20,
+          2,
+          15
+        ],
+        [
+          12,
+          4,
+          8
+        ],
+        [
+          7,
+          6,
+          4
+        ]
+      ],
+      "color": "#76ff03",
+      "curve": true,
+      "opacity": 0.8
+    },
+    {
+      "type": "node",
+      "position": [
+        40,
+        0.5,
+        35
+      ],
+      "color": "#76ff03",
+      "size": 0.3,
+      "emissive": 3,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "CASE \u2014 JACKED IN",
+      "position": [
+        40,
+        2,
+        35
+      ],
+      "style": "bracket",
+      "color": "#76ff03"
+    },
+    {
+      "type": "node",
+      "position": [
+        11.0,
+        0.3,
+        0.0
+      ],
+      "color": "#ff1744",
+      "size": 0.12,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        7.778174593052023,
+        0.3,
+        7.778174593052022
+      ],
+      "color": "#ff1744",
+      "size": 0.12,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        6.735557395310443e-16,
+        0.3,
+        11.0
+      ],
+      "color": "#ff1744",
+      "size": 0.12,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -7.778174593052022,
+        0.3,
+        7.778174593052023
+      ],
+      "color": "#ff1744",
+      "size": 0.12,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -11.0,
+        0.3,
+        1.3471114790620886e-15
+      ],
+      "color": "#ff1744",
+      "size": 0.12,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -7.778174593052024,
+        0.3,
+        -7.778174593052022
+      ],
+      "color": "#ff1744",
+      "size": 0.12,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -2.0206672185931327e-15,
+        0.3,
+        -11.0
+      ],
+      "color": "#ff1744",
+      "size": 0.12,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        7.778174593052021,
+        0.3,
+        -7.778174593052024
+      ],
+      "color": "#ff1744",
+      "size": 0.12,
+      "emissive": 2,
+      "glow": false
+    },
+    {
+      "type": "grid",
+      "size": 60,
+      "divisions": 30,
+      "color": "#0d47a1",
+      "opacity": 0.03,
+      "position": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "type": "grid",
+      "size": 60,
+      "divisions": 30,
+      "color": "#0d47a1",
+      "opacity": 0.03,
+      "position": [
+        0,
+        5,
+        0
+      ]
+    },
+    {
+      "type": "grid",
+      "size": 60,
+      "divisions": 30,
+      "color": "#0d47a1",
+      "opacity": 0.03,
+      "position": [
+        0,
+        15,
+        0
+      ]
+    },
+    {
+      "type": "grid",
+      "size": 60,
+      "divisions": 30,
+      "color": "#0d47a1",
+      "opacity": 0.03,
+      "position": [
+        0,
+        25,
+        0
+      ]
+    },
+    {
+      "type": "particles",
+      "count": 1500,
+      "spread": 60,
+      "size": 0.03,
+      "color": "#448aff",
+      "opacity": 0.35
+    },
+    {
+      "type": "particles",
+      "count": 300,
+      "spread": 50,
+      "size": 0.05,
+      "color": "#ff1744",
+      "opacity": 0.2
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        50,
+        8,
+        -40
+      ],
+      "size": [
+        2,
+        16,
+        2
+      ],
+      "color": "#1565c0",
+      "opacity": 0.1,
+      "wireframe": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        -45,
+        6,
+        50
+      ],
+      "size": [
+        2,
+        12,
+        2
+      ],
+      "color": "#1565c0",
+      "opacity": 0.1,
+      "wireframe": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        55,
+        4,
+        30
+      ],
+      "size": [
+        2,
+        8,
+        2
+      ],
+      "color": "#1565c0",
+      "opacity": 0.1,
+      "wireframe": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        -50,
+        10,
+        -45
+      ],
+      "size": [
+        2,
+        20,
+        2
+      ],
+      "color": "#1565c0",
+      "opacity": 0.1,
+      "wireframe": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        40,
+        7,
+        50
+      ],
+      "size": [
+        2,
+        14,
+        2
+      ],
+      "color": "#1565c0",
+      "opacity": 0.1,
+      "wireframe": true
+    },
+    {
+      "type": "volume",
+      "shape": "box",
+      "position": [
+        -55,
+        5,
+        20
+      ],
+      "size": [
+        2,
+        10,
+        2
+      ],
+      "color": "#1565c0",
+      "opacity": 0.1,
+      "wireframe": true
+    }
+  ]
+}

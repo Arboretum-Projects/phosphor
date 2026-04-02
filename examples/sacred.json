@@ -1,0 +1,205 @@
+{
+    "scene": {
+        "background": "#000005",
+        "fog": { "color": "#000005", "near": 50, "far": 180 },
+        "bloom": { "strength": 2.4, "radius": 0.5, "threshold": 0.06 },
+        "ambient": "#060608"
+    },
+    "camera": {
+        "position": [24, 16, 26],
+        "target": [0, 10, 0]
+    },
+    "elements": [
+        {
+            "type": "grid",
+            "size": 60,
+            "divisions": 15,
+            "color": "#0e0e2a",
+            "opacity": 0.2
+        },
+
+        {
+            "type": "particles",
+            "count": 400,
+            "spread": 100,
+            "color": "#8866cc",
+            "size": 0.04,
+            "opacity": 0.15,
+            "position": [0, 15, 0]
+        },
+        {
+            "type": "particles",
+            "count": 100,
+            "spread": 16,
+            "color": "#ddaaff",
+            "size": 0.06,
+            "opacity": 0.3,
+            "position": [0, 10, 0]
+        },
+
+        { "type": "node", "position": [0, 10, 0], "color": "#ffffff", "size": 0.6, "emissive": 6, "glowIntensity": 2, "glowRange": 25 },
+
+        { "type": "line", "points": [[0, 18, 0], [7, 6, 0]], "color": "#00ffdd", "opacity": 0.6 },
+        { "type": "line", "points": [[0, 18, 0], [-3.5, 6, 6]], "color": "#00ffdd", "opacity": 0.6 },
+        { "type": "line", "points": [[0, 18, 0], [-3.5, 6, -6]], "color": "#00ffdd", "opacity": 0.6 },
+        { "type": "line", "points": [[7, 6, 0], [-3.5, 6, 6]], "color": "#00ddbb", "opacity": 0.45 },
+        { "type": "line", "points": [[-3.5, 6, 6], [-3.5, 6, -6]], "color": "#00ddbb", "opacity": 0.45 },
+        { "type": "line", "points": [[-3.5, 6, -6], [7, 6, 0]], "color": "#00ddbb", "opacity": 0.45 },
+
+        { "type": "line", "points": [[0, 2, 0], [3.5, 14, 6]], "color": "#ff44aa", "opacity": 0.6 },
+        { "type": "line", "points": [[0, 2, 0], [-7, 14, 0]], "color": "#ff44aa", "opacity": 0.6 },
+        { "type": "line", "points": [[0, 2, 0], [3.5, 14, -6]], "color": "#ff44aa", "opacity": 0.6 },
+        { "type": "line", "points": [[3.5, 14, 6], [-7, 14, 0]], "color": "#cc3388", "opacity": 0.45 },
+        { "type": "line", "points": [[-7, 14, 0], [3.5, 14, -6]], "color": "#cc3388", "opacity": 0.45 },
+        { "type": "line", "points": [[3.5, 14, -6], [3.5, 14, 6]], "color": "#cc3388", "opacity": 0.45 },
+
+        { "type": "node", "position": [0, 18, 0], "color": "#00ffee", "size": 0.2, "emissive": 4, "glow": false },
+        { "type": "node", "position": [7, 6, 0], "color": "#00ffdd", "size": 0.15, "emissive": 3, "glow": false },
+        { "type": "node", "position": [-3.5, 6, 6], "color": "#00ffdd", "size": 0.15, "emissive": 3, "glow": false },
+        { "type": "node", "position": [-3.5, 6, -6], "color": "#00ffdd", "size": 0.15, "emissive": 3, "glow": false },
+        { "type": "node", "position": [0, 2, 0], "color": "#ff66bb", "size": 0.2, "emissive": 4, "glow": false },
+        { "type": "node", "position": [3.5, 14, 6], "color": "#ff44aa", "size": 0.15, "emissive": 3, "glow": false },
+        { "type": "node", "position": [-7, 14, 0], "color": "#ff44aa", "size": 0.15, "emissive": 3, "glow": false },
+        { "type": "node", "position": [3.5, 14, -6], "color": "#ff44aa", "size": 0.15, "emissive": 3, "glow": false },
+
+        {
+            "type": "ring",
+            "position": [0, 10, 0],
+            "innerRadius": 9,
+            "outerRadius": 9.06,
+            "color": "#aa44ff",
+            "opacity": 0.3,
+            "rotation": [-90, 0, 0]
+        },
+        {
+            "type": "ring",
+            "position": [0, 10, 0],
+            "innerRadius": 9,
+            "outerRadius": 9.06,
+            "color": "#4488ff",
+            "opacity": 0.25,
+            "rotation": [0, 0, 0]
+        },
+        {
+            "type": "ring",
+            "position": [0, 10, 0],
+            "innerRadius": 9,
+            "outerRadius": 9.06,
+            "color": "#00ddcc",
+            "opacity": 0.25,
+            "rotation": [0, 90, 0]
+        },
+        {
+            "type": "ring",
+            "position": [0, 10, 0],
+            "innerRadius": 9,
+            "outerRadius": 9.06,
+            "color": "#ff44aa",
+            "opacity": 0.2,
+            "rotation": [-45, 0, 0]
+        },
+        {
+            "type": "ring",
+            "position": [0, 10, 0],
+            "innerRadius": 9,
+            "outerRadius": 9.06,
+            "color": "#ffaa44",
+            "opacity": 0.2,
+            "rotation": [-45, 90, 0]
+        },
+        {
+            "type": "ring",
+            "position": [0, 10, 0],
+            "innerRadius": 9,
+            "outerRadius": 9.06,
+            "color": "#44ffaa",
+            "opacity": 0.15,
+            "rotation": [-60, 45, 0]
+        },
+
+        {
+            "type": "volume",
+            "shape": "sphere",
+            "position": [0, 10, 0],
+            "size": 9.5,
+            "color": "#221144",
+            "opacity": 0.03,
+            "wireframe": false
+        },
+        {
+            "type": "volume",
+            "shape": "sphere",
+            "position": [0, 10, 0],
+            "size": 5,
+            "color": "#442266",
+            "opacity": 0.04,
+            "wireframe": false
+        },
+        {
+            "type": "volume",
+            "shape": "sphere",
+            "position": [0, 10, 0],
+            "size": 2,
+            "color": "#664488",
+            "opacity": 0.05,
+            "wireframe": false
+        },
+
+        {
+            "type": "line",
+            "points": [[0, 0, 0], [0, 2, 0]],
+            "color": "#aa44ff",
+            "opacity": 0.2
+        },
+        {
+            "type": "line",
+            "points": [[0, 18, 0], [0, 22, 0]],
+            "color": "#aa44ff",
+            "opacity": 0.15
+        },
+
+        {
+            "type": "ring",
+            "position": [0, 0.05, 0],
+            "innerRadius": 4,
+            "outerRadius": 4.03,
+            "color": "#aa44ff",
+            "opacity": 0.12
+        },
+        {
+            "type": "ring",
+            "position": [0, 22, 0],
+            "innerRadius": 1.5,
+            "outerRadius": 1.52,
+            "color": "#aa44ff",
+            "opacity": 0.1
+        },
+
+        { "type": "node", "position": [0, 22, 0], "color": "#ddaaff", "size": 0.08, "emissive": 4, "glow": false },
+
+        {
+            "type": "light",
+            "kind": "point",
+            "position": [0, 10, 0],
+            "color": "#aa66dd",
+            "intensity": 0.6,
+            "range": 20
+        },
+        {
+            "type": "light",
+            "kind": "point",
+            "position": [0, 18, 0],
+            "color": "#00ddcc",
+            "intensity": 0.3,
+            "range": 10
+        },
+        {
+            "type": "light",
+            "kind": "point",
+            "position": [0, 2, 0],
+            "color": "#ff44aa",
+            "intensity": 0.3,
+            "range": 10
+        }
+    ]
+}

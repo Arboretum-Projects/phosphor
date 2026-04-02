@@ -1,0 +1,1897 @@
+{
+  "scene": {
+    "bloom": {
+      "strength": 1.6,
+      "radius": 0.5,
+      "threshold": 0.08
+    }
+  },
+  "camera": {
+    "position": [
+      45.0,
+      33.0,
+      45.0
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "fov": 60
+  },
+  "elements": [
+    {
+      "type": "node",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "color": "#ffab00",
+      "size": 3,
+      "emissive": 5,
+      "glow": true
+    },
+    {
+      "type": "volume",
+      "shape": "sphere",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "size": 5.1,
+      "color": "#ffab00",
+      "opacity": 0.06,
+      "wireframe": true
+    },
+    {
+      "type": "label",
+      "text": "Sol",
+      "position": [
+        0,
+        5,
+        0
+      ],
+      "style": "bracket",
+      "color": "#ffab00"
+    },
+    {
+      "type": "light",
+      "kind": "point",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "color": "#ffab00",
+      "intensity": 2
+    },
+    {
+      "type": "node",
+      "position": [
+        5.66,
+        0,
+        5.66
+      ],
+      "color": "#b0bec5",
+      "size": 0.2,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Mercury",
+      "position": [
+        5.66,
+        1.7,
+        5.66
+      ],
+      "style": "minimal",
+      "color": "#b0bec5"
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "innerRadius": 7.9,
+      "outerRadius": 8.1,
+      "color": "#b0bec5",
+      "opacity": 0.1
+    },
+    {
+      "type": "node",
+      "position": [
+        -6.0,
+        0,
+        10.39
+      ],
+      "color": "#ffcc80",
+      "size": 0.4,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Venus",
+      "position": [
+        -6.0,
+        1.9,
+        10.39
+      ],
+      "style": "minimal",
+      "color": "#ffcc80"
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "innerRadius": 11.9,
+      "outerRadius": 12.1,
+      "color": "#ffcc80",
+      "opacity": 0.1
+    },
+    {
+      "type": "node",
+      "position": [
+        -15.97,
+        0,
+        -5.81
+      ],
+      "color": "#42a5f5",
+      "size": 0.45,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Earth",
+      "position": [
+        -15.97,
+        1.95,
+        -5.81
+      ],
+      "style": "minimal",
+      "color": "#42a5f5"
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "innerRadius": 16.9,
+      "outerRadius": 17.1,
+      "color": "#42a5f5",
+      "opacity": 0.1
+    },
+    {
+      "type": "node",
+      "position": [
+        -15.22,
+        0.3,
+        -4.51
+      ],
+      "color": "#bdbdbd",
+      "size": 0.12,
+      "emissive": 0.8,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Moon",
+      "position": [
+        -15.22,
+        1.2,
+        -4.51
+      ],
+      "style": "minimal",
+      "color": "#bdbdbd"
+    },
+    {
+      "type": "node",
+      "position": [
+        14.14,
+        0,
+        -16.85
+      ],
+      "color": "#ff5722",
+      "size": 0.35,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Mars",
+      "position": [
+        14.14,
+        1.85,
+        -16.85
+      ],
+      "style": "minimal",
+      "color": "#ff5722"
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "innerRadius": 21.9,
+      "outerRadius": 22.1,
+      "color": "#ff5722",
+      "opacity": 0.1
+    },
+    {
+      "type": "node",
+      "position": [
+        8.28,
+        0,
+        30.91
+      ],
+      "color": "#ffab40",
+      "size": 1.2,
+      "emissive": 1.5,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "Jupiter",
+      "position": [
+        8.28,
+        2.7,
+        30.91
+      ],
+      "style": "minimal",
+      "color": "#ffab40"
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "innerRadius": 31.9,
+      "outerRadius": 32.1,
+      "color": "#ffab40",
+      "opacity": 0.1
+    },
+    {
+      "type": "node",
+      "position": [
+        -39.47,
+        0,
+        14.36
+      ],
+      "color": "#ffd54f",
+      "size": 1.0,
+      "emissive": 1.5,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "Saturn",
+      "position": [
+        -39.47,
+        2.5,
+        14.36
+      ],
+      "style": "minimal",
+      "color": "#ffd54f"
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "innerRadius": 41.9,
+      "outerRadius": 42.1,
+      "color": "#ffd54f",
+      "opacity": 0.1
+    },
+    {
+      "type": "ring",
+      "position": [
+        -39.47,
+        0,
+        14.36
+      ],
+      "innerRadius": 1.5,
+      "outerRadius": 1.8,
+      "color": "#ffd54f",
+      "opacity": 0.2
+    },
+    {
+      "type": "ring",
+      "position": [
+        -39.47,
+        0,
+        14.36
+      ],
+      "innerRadius": 2.0,
+      "outerRadius": 2.3,
+      "color": "#ffd54f",
+      "opacity": 0.2
+    },
+    {
+      "type": "ring",
+      "position": [
+        -39.47,
+        0,
+        14.36
+      ],
+      "innerRadius": 2.4,
+      "outerRadius": 2.6999999999999997,
+      "color": "#ffd54f",
+      "opacity": 0.2
+    },
+    {
+      "type": "node",
+      "position": [
+        -17.79,
+        0,
+        -48.86
+      ],
+      "color": "#4dd0e1",
+      "size": 0.7,
+      "emissive": 1.5,
+      "glow": true
+    },
+    {
+      "type": "label",
+      "text": "Uranus",
+      "position": [
+        -17.79,
+        2.2,
+        -48.86
+      ],
+      "style": "minimal",
+      "color": "#4dd0e1"
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "innerRadius": 51.9,
+      "outerRadius": 52.1,
+      "color": "#4dd0e1",
+      "opacity": 0.1
+    },
+    {
+      "type": "node",
+      "position": [
+        51.96,
+        0,
+        30.0
+      ],
+      "color": "#5c6bc0",
+      "size": 0.65,
+      "emissive": 1.5,
+      "glow": false
+    },
+    {
+      "type": "label",
+      "text": "Neptune",
+      "position": [
+        51.96,
+        2.15,
+        30.0
+      ],
+      "style": "minimal",
+      "color": "#5c6bc0"
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "innerRadius": 59.9,
+      "outerRadius": 60.1,
+      "color": "#5c6bc0",
+      "opacity": 0.1
+    },
+    {
+      "type": "node",
+      "position": [
+        26.0,
+        0.0,
+        0.0
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        24.49,
+        0.77,
+        11.01
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        16.24,
+        0.41,
+        18.29
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        8.36,
+        -0.55,
+        26.66
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -2.85,
+        -0.71,
+        23.87
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -14.22,
+        0.17,
+        23.67
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -20.57,
+        0.8,
+        14.3
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -25.66,
+        0.26,
+        4.8
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -26.01,
+        -0.66,
+        -6.29
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -19.38,
+        -0.61,
+        -15.03
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -13.11,
+        0.34,
+        -24.64
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -1.59,
+        0.79,
+        -23.97
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        9.64,
+        0.09,
+        -25.93
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        17.53,
+        -0.74,
+        -17.78
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        24.43,
+        -0.48,
+        -9.48
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        26.63,
+        0.48,
+        1.39
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        21.87,
+        0.74,
+        11.24
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        17.4,
+        -0.09,
+        21.79
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        5.97,
+        -0.79,
+        23.25
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -4.71,
+        -0.34,
+        27.32
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -13.91,
+        0.61,
+        20.63
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -22.35,
+        0.66,
+        13.86
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -26.34,
+        -0.26,
+        3.52
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -23.64,
+        -0.8,
+        -7.04
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -21.08,
+        -0.17,
+        -18.19
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -10.15,
+        0.71,
+        -21.75
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -0.39,
+        0.55,
+        -27.77
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        9.84,
+        -0.41,
+        -22.76
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        19.49,
+        -0.77,
+        -17.81
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        25.15,
+        0.0,
+        -8.28
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        24.61,
+        0.77,
+        2.58
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        24.03,
+        0.41,
+        13.98
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        13.98,
+        -0.55,
+        19.51
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        5.51,
+        -0.71,
+        27.26
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -5.47,
+        0.17,
+        24.11
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -15.94,
+        0.8,
+        21.17
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -23.11,
+        0.25,
+        12.72
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -24.74,
+        -0.66,
+        2.0
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -26.15,
+        -0.61,
+        -9.3
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -17.33,
+        0.34,
+        -16.61
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -10.44,
+        0.79,
+        -25.82
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        0.94,
+        0.09,
+        -24.63
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        11.82,
+        -0.74,
+        -23.83
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        20.3,
+        -0.48,
+        -16.69
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        24.03,
+        0.48,
+        -6.54
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        27.37,
+        0.74,
+        4.32
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        20.1,
+        -0.09,
+        13.14
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        15.04,
+        -0.79,
+        23.49
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        3.6,
+        -0.33,
+        24.31
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -7.26,
+        0.61,
+        25.69
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -16.82,
+        0.66,
+        20.06
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -22.49,
+        -0.26,
+        10.89
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -27.64,
+        -0.8,
+        0.79
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -22.18,
+        -0.17,
+        -9.22
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -19.12,
+        0.71,
+        -20.34
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -7.99,
+        0.55,
+        -23.16
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        2.41,
+        -0.41,
+        -26.68
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        12.79,
+        -0.77,
+        -22.72
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        20.18,
+        0.0,
+        -14.89
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        26.97,
+        0.77,
+        -5.85
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        23.52,
+        0.41,
+        4.99
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        22.56,
+        -0.55,
+        16.49
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        12.08,
+        -0.71,
+        21.24
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        2.55,
+        0.17,
+        26.76
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -8.36,
+        0.8,
+        24.59
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -17.15,
+        0.25,
+        18.42
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -25.37,
+        -0.66,
+        10.68
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -24.06,
+        -0.61,
+        -0.57
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -25.23,
+        0.34,
+        -12.07
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -15.75,
+        0.79,
+        -18.61
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -7.45,
+        0.08,
+        -25.92
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        3.67,
+        -0.74,
+        -25.61
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        13.52,
+        -0.48,
+        -21.34
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        22.92,
+        0.49,
+        -15.13
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        23.78,
+        0.74,
+        -3.87
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        27.03,
+        -0.09,
+        7.22
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        18.86,
+        -0.79,
+        15.36
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        12.13,
+        -0.33,
+        24.18
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        1.1,
+        0.61,
+        25.75
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -9.4,
+        0.66,
+        23.55
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -19.69,
+        -0.26,
+        19.04
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -22.69,
+        -0.8,
+        8.19
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -27.91,
+        -0.17,
+        -2.13
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -21.32,
+        0.71,
+        -11.6
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -16.43,
+        0.55,
+        -21.6
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -5.8,
+        -0.41,
+        -25.01
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        4.92,
+        -0.77,
+        -24.97
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        15.81,
+        0.0,
+        -22.28
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        20.83,
+        0.77,
+        -12.25
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        27.83,
+        0.41,
+        -3.05
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        23.04,
+        -0.55,
+        7.46
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        20.18,
+        -0.71,
+        18.27
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        10.26,
+        0.17,
+        23.43
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -0.24,
+        0.8,
+        25.55
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -11.4,
+        0.25,
+        24.74
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -18.26,
+        -0.66,
+        15.9
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -26.8,
+        -0.61,
+        8.12
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -23.98,
+        0.34,
+        -3.09
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -23.26,
+        0.79,
+        -14.28
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -14.34,
+        0.08,
+        -21.06
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -4.48,
+        -0.74,
+        -25.25
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        6.64,
+        -0.48,
+        -26.34
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        15.05,
+        0.49,
+        -19.02
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        24.84,
+        0.74,
+        -12.91
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        24.1,
+        -0.09,
+        -1.37
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        25.56,
+        -0.79,
+        9.78
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        17.9,
+        -0.33,
+        17.99
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        9.08,
+        0.61,
+        24.09
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -1.67,
+        0.66,
+        27.02
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -11.31,
+        -0.26,
+        21.51
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -22.03,
+        -0.8,
+        17.25
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -23.4,
+        -0.17,
+        5.77
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -27.0,
+        0.71,
+        -4.92
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -20.83,
+        0.55,
+        -14.33
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -13.41,
+        -0.41,
+        -22.09
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        -3.32,
+        -0.77,
+        -26.78
+      ],
+      "color": "#78909c",
+      "size": 0.04,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        7.18,
+        0.0,
+        -23.28
+      ],
+      "color": "#78909c",
+      "size": 0.055,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        18.47,
+        0.77,
+        -21.0
+      ],
+      "color": "#78909c",
+      "size": 0.07,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        21.91,
+        0.41,
+        -9.97
+      ],
+      "color": "#78909c",
+      "size": 0.08499999999999999,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "node",
+      "position": [
+        27.51,
+        -0.55,
+        -0.13
+      ],
+      "color": "#78909c",
+      "size": 0.1,
+      "emissive": 0.6,
+      "glow": false
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "innerRadius": 24,
+      "outerRadius": 24.15,
+      "color": "#546e7a",
+      "opacity": 0.08
+    },
+    {
+      "type": "ring",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "innerRadius": 28,
+      "outerRadius": 28.15,
+      "color": "#546e7a",
+      "opacity": 0.08
+    },
+    {
+      "type": "particles",
+      "count": 2000,
+      "spread": 120,
+      "size": 0.02,
+      "color": "#ffffff",
+      "opacity": 0.4
+    },
+    {
+      "type": "particles",
+      "count": 400,
+      "spread": 100,
+      "size": 0.04,
+      "color": "#7c4dff",
+      "opacity": 0.12
+    },
+    {
+      "type": "grid",
+      "size": 138.0,
+      "divisions": 35,
+      "color": "#0d1b2a",
+      "opacity": 0.06
+    }
+  ]
+}
