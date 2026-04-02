@@ -53,6 +53,10 @@ python3 -m http.server 8888
 
 - **[Composition Guide](PHOSPHOR-GUIDE.md).** Full primitive reference, animation system, effects, camera paths, timeline, and lessons from building dozens of scenes
 
+## Support
+
+If Phosphor is useful to you, consider supporting the work: [ko-fi.com/arkitecc](https://ko-fi.com/arkitecc)
+
 ## License
 
 Apache 2.0
