@@ -713,7 +713,54 @@ export class PhosphorEngine {
     }
 
     // ─── Scene Loading ────────────────────────────────────────────
+    clearScene() {
+        // Remove all scene children except the camera
+        const keep = new Set([this.camera]);
+        const toRemove = this.scene.children.filter(c => !keep.has(c));
+        for (const obj of toRemove) {
+            this.scene.remove(obj);
+            if (obj.geometry) obj.geometry.dispose();
+            if (obj.material) {
+                if (Array.isArray(obj.material)) obj.material.forEach(m => m.dispose());
+                else obj.material.dispose();
+            }
+        }
+
+        // Clear CSS2D labels
+        const labelContainer = this.labelRenderer.domElement;
+        while (labelContainer.firstChild) labelContainer.removeChild(labelContainer.firstChild);
+
+        // Reset animation manager
+        this.animations.entries = [];
+
+        // Clear element registry
+        this._elementsById = {};
+
+        // Stop timeline
+        this._timeline = null;
+
+        // Stop camera path and tracking
+        this._cameraPath = null;
+        this._trackTarget = null;
+        this._flyAnim = null;
+
+        // Remove extra post-processing passes (keep RenderPass + BloomPass)
+        while (this.composer.passes.length > 2) {
+            this.composer.passes.pop();
+        }
+        this._chromaticPass = null;
+        this._scanlinesPass = null;
+        this._filmGrainPass = null;
+
+        // Clear fog
+        this.scene.fog = null;
+
+        // Re-add default ambient light
+        this.scene.add(new THREE.AmbientLight(0x111111));
+    }
+
     loadScene(spec) {
+        this.clearScene();
         // Theme resolution: theme preset → scene palette overrides → scene atmosphere overrides
         if (spec.scene) {
             // 1. Load theme preset (resets palette to theme's palette)
@@ -1564,6 +1611,36 @@ export class PhosphorEngine {
             .ph-dash.open ~ .ph-hint { opacity: 0; }
             .ph-sep { height: 1px; background: rgba(255,255,255,0.05); margin: 12px 0; }
             .ph-info { color: #444; font-size: 10px; line-height: 1.5; }
+            .ph-tab-bar {
+                display: flex; gap: 0; margin-bottom: 12px;
+                border-bottom: 1px solid rgba(255,255,255,0.06);
+            }
+            .ph-tab {
+                flex: 1; text-align: center; padding: 8px 0; font-size: 10px;
+                font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+                color: #444; cursor: pointer; transition: color 0.15s;
+                border-bottom: 2px solid transparent; margin-bottom: -1px;
+            }
+            .ph-tab:hover { color: #888; }
+            .ph-tab.active { color: #00ffff; border-bottom-color: #00ffff; }
+            .ph-tab-pane { display: none; }
+            .ph-tab-pane.active { display: block; }
+            .ph-scene-cat-header {
+                display: flex; align-items: center; gap: 5px;
+                font-size: 9px; font-weight: 600; letter-spacing: 1px;
+                text-transform: uppercase; color: #555;
+                cursor: pointer; user-select: none; padding: 4px 0;
+            }
+            .ph-scene-cat-header:hover { color: #888; }
+            .ph-scene-chevron { font-size: 8px; color: #444; transition: transform 0.2s; display: inline-block; }
+            .ph-scene-cat.collapsed .ph-scene-chevron { transform: rotate(-90deg); }
+            .ph-scene-cat.collapsed .ph-scene-cat-items { display: none; }
+            .ph-scene-item {
+                padding: 3px 4px 3px 14px; font-size: 10px; color: #555;
+                cursor: pointer; border-radius: 2px; transition: all 0.12s;
+            }
+            .ph-scene-item:hover { color: #aaa; background: rgba(255,255,255,0.04); }
+            .ph-scene-item.active { color: #00ffff; background: rgba(0,255,255,0.05); }
         `;
         document.head.appendChild(style);
 
@@ -1571,6 +1648,11 @@ export class PhosphorEngine {
         const dash = document.createElement('div');
         dash.className = 'ph-dash';
         dash.innerHTML = `<div class="ph-dash-inner">
+            <div class="ph-tab-bar">
+                <div class="ph-tab active" data-tab="controls">Controls</div>
+                <div class="ph-tab" data-tab="scenes">Scenes</div>
+            </div>
+            <div class="ph-tab-pane active" id="ph-tab-controls">
             <div class="ph-section" id="ph-info-section">
                 <div class="ph-section-title">Info</div>
                 <div class="ph-section-body">
@@ -1632,6 +1714,8 @@ export class PhosphorEngine {
                 <div class="ph-section-title">Elements</div>
                 <div class="ph-section-body" id="ph-el-list"></div>
             </div>
+            </div>
+            <div class="ph-tab-pane" id="ph-tab-scenes"></div>
         </div>`;
         this.container.appendChild(dash);
         this._dashboard = dash;
@@ -1650,6 +1734,17 @@ export class PhosphorEngine {
                 dash.classList.toggle('open');
                 if (dash.classList.contains('open')) this._populateDashboard();
             }
+        });
+
+        // Tab switching
+        dash.querySelectorAll('.ph-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                dash.querySelectorAll('.ph-tab').forEach(t => t.classList.remove('active'));
+                dash.querySelectorAll('.ph-tab-pane').forEach(p => p.classList.remove('active'));
+                tab.classList.add('active');
+                const pane = dash.querySelector(`#ph-tab-${tab.dataset.tab}`);
+                if (pane) pane.classList.add('active');
+            });
         });
 
         // Section collapse

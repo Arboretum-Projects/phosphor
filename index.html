@@ -66,23 +66,143 @@
 
         const container = document.getElementById('container');
         const engine = new PhosphorEngine(container);
+        let engineStarted = false;
 
-        // Load scene from URL param or default
-        const params = new URLSearchParams(window.location.search);
-        const scenePath = params.get('scene') || 'examples/hello.json';
+        // ── Categories ──
 
-        fetch(scenePath)
-            .then(r => r.json())
-            .then(spec => {
-                engine.loadScene(spec);
-                engine.animate();
-            })
-            .catch(err => {
-                console.error('Failed to load scene:', err);
-                // Load empty scene so controls still work
-                engine.loadScene({ elements: [] });
-                engine.animate();
+        const CATEGORIES = [
+            {
+                name: 'Anime & Sci-Fi',
+                collapsed: false,
+                scenes: [
+                    'nerv', 'nerv-ops', 'terminal-dogma', 'angel-attack',
+                    'instrumentality', 'ice', 'matrix', 'theworld',
+                    'theworld-v2', 'glitch',
+                ],
+            },
+            {
+                name: 'Compositions',
+                collapsed: false,
+                scenes: [
+                    'abyss', 'abyssal', 'wormhole', 'sacred', 'collider',
+                    'dune', 'abstract', 'flatland', 'absolutely-right',
+                ],
+            },
+            {
+                name: 'Science & Data',
+                collapsed: false,
+                scenes: [
+                    'dna', 'solar-system', 'solar-live', 'solar', 'scale',
+                    'star-map', 'galactic', 'circuit', 'circuit-animated',
+                    'convergence', 'transformer',
+                ],
+            },
+            {
+                name: 'Organic',
+                collapsed: false,
+                scenes: [
+                    'sprout', 'sprout-animated', 'sprout-lines', 'bouquet',
+                    'meadow',
+                ],
+            },
+            {
+                name: 'Environments',
+                collapsed: true,
+                scenes: ['command', 'command-v2', 'empire', 'empire-light'],
+            },
+            {
+                name: 'Fundamentals',
+                collapsed: true,
+                scenes: ['hello', 'primitive-tests'],
+            },
+        ];
+
+        // ── Inject scene browser into dashboard ──
+
+        function injectSceneBrowser() {
+            const pane = container.querySelector('#ph-tab-scenes');
+            if (!pane) return;
+
+            CATEGORIES.forEach(cat => {
+                const group = document.createElement('div');
+                group.className = 'ph-scene-cat' + (cat.collapsed ? ' collapsed' : '');
+
+                const header = document.createElement('div');
+                header.className = 'ph-scene-cat-header';
+                header.innerHTML = `<span class="ph-scene-chevron">&#9662;</span> ${cat.name}`;
+                header.addEventListener('click', () => group.classList.toggle('collapsed'));
+                group.appendChild(header);
+
+                const items = document.createElement('div');
+                items.className = 'ph-scene-cat-items';
+
+                cat.scenes.forEach(name => {
+                    const item = document.createElement('div');
+                    item.className = 'ph-scene-item';
+                    item.textContent = name;
+                    item.dataset.scene = name;
+                    item.addEventListener('click', () => {
+                        loadScene(`examples/${name}.json`);
+                        setActiveScene(name);
+                    });
+                    items.appendChild(item);
+                });
+
+                group.appendChild(items);
+                pane.appendChild(group);
             });
+        }
+
+        let activeItem = null;
+
+        function setActiveScene(name) {
+            if (activeItem) activeItem.classList.remove('active');
+            if (!name) { activeItem = null; return; }
+            const el = container.querySelector(`.ph-scene-item[data-scene="${name}"]`);
+            if (el) {
+                el.classList.add('active');
+                activeItem = el;
+                const cat = el.closest('.ph-scene-cat');
+                if (cat && cat.classList.contains('collapsed')) {
+                    cat.classList.remove('collapsed');
+                }
+            } else {
+                activeItem = null;
+            }
+        }
+
+        // ── Scene loading ──
+
+        function loadScene(path) {
+            fetch(path)
+                .then(r => r.json())
+                .then(spec => {
+                    engine.loadScene(spec);
+                    if (!engineStarted) {
+                        engine.animate();
+                        engineStarted = true;
+                    }
+                })
+                .catch(err => {
+                    console.error('Failed to load scene:', err);
+                });
+        }
+
+        // ── Init ──
+
+        injectSceneBrowser();
+
+        const params = new URLSearchParams(window.location.search);
+        const sceneParam = params.get('scene');
+
+        if (sceneParam) {
+            loadScene(sceneParam);
+            const name = sceneParam.replace(/^examples\//, '').replace(/\.json$/, '');
+            setActiveScene(name);
+        } else {
+            loadScene('examples/hello.json');
+            setActiveScene('hello');
+        }
     </script>
 </body>
 </html>

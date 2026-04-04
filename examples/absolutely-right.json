@@ -1,0 +1,101 @@
+{
+    "scene": {
+        "background": "#000000",
+        "bloom": { "strength": 1.8, "radius": 0.5, "threshold": 0.03 },
+        "ambient": "#0a0806",
+        "effects": {
+            "scanlines": { "count": 200, "opacity": 0.06 },
+            "filmGrain": { "intensity": 0.04 }
+        }
+    },
+    "camera": {
+        "position": [25, 15, 25],
+        "target": [0, 8, 0],
+        "fov": 55
+    },
+    "timeline": {
+        "loop": true,
+        "events": [
+            { "time": 0, "type": "camera", "position": [25, 15, 25], "target": [0, 8, 0], "duration": 0 },
+            { "time": 0, "type": "camera", "position": [-15, 8, 28], "target": [0, 8, 0], "duration": 10, "easing": "ease-in-out" },
+            { "time": 10, "type": "camera", "position": [-25, 18, -10], "target": [0, 8, 0], "duration": 10, "easing": "ease-in-out" },
+            { "time": 20, "type": "camera", "position": [20, 5, -20], "target": [0, 8, 0], "duration": 10, "easing": "ease-in-out" },
+            { "time": 30, "type": "camera", "position": [25, 15, 25], "target": [0, 8, 0], "duration": 8, "easing": "ease-in-out" }
+        ]
+    },
+    "elements": [
+
+        { "type": "grid", "size": 60, "divisions": 15, "color": "#5566aa", "opacity": 0.08 },
+        { "type": "particles", "count": 300, "spread": 60, "color": "#ffcc44", "size": 0.04, "opacity": 0.2, "position": [0, 10, 0] },
+
+        { "type": "node", "position": [0, 8, 0], "color": "#ffaa22", "size": 1.2, "emissive": 3, "glow": true, "glowIntensity": 1.0, "glowRange": 18, "animate": "pulse" },
+        { "type": "node", "position": [0, 8, 0], "color": "#ffffff", "size": 0.4, "emissive": 4, "glow": false },
+
+        { "type": "volume", "shape": "sphere", "position": [0, 8, 0], "size": 6, "color": "#ff8800", "opacity": 0.03, "wireframe": false },
+
+        { "type": "ring", "position": [0, 8, 0], "innerRadius": 4, "outerRadius": 4.04, "color": "#ffaa33", "opacity": 0.3, "rotation": [-70, 0, 0], "tube": 0.03,
+          "animate": { "rotate": { "axis": "y", "speed": 0.4 }, "trace": { "color": "#ffcc44", "period": 3, "length": 0.15 } } },
+        { "type": "ring", "position": [0, 8, 0], "innerRadius": 5.5, "outerRadius": 5.53, "color": "#ff8822", "opacity": 0.2, "rotation": [-50, 40, 0], "tube": 0.02,
+          "animate": { "rotate": { "axis": "y", "speed": -0.25 } } },
+        { "type": "ring", "position": [0, 8, 0], "innerRadius": 7, "outerRadius": 7.03, "color": "#ff6622", "opacity": 0.15, "rotation": [-85, 20, 0], "tube": 0.02,
+          "animate": { "rotate": { "axis": "y", "speed": 0.15 } } },
+
+
+        { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [0, 14, 0], "color": "#ffcc33", "style": "bracket" },
+
+        {
+            "type": "group",
+            "position": [0, 8, 0],
+            "animate": { "rotate": { "axis": "y", "speed": 0.12 } },
+            "children": [
+                { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [12, 2, 0], "color": "#ffaa22", "style": "bracket" },
+                { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [-10, -1, 6], "color": "#ffbb33", "style": "bracket" },
+                { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [3, 4, -11], "color": "#ff9922", "style": "bracket" },
+                { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [-6, -3, -9], "color": "#ffcc44", "style": "bracket" }
+            ]
+        },
+
+        {
+            "type": "group",
+            "position": [0, 8, 0],
+            "animate": { "rotate": { "axis": "y", "speed": -0.08 } },
+            "children": [
+                { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [18, 6, 5], "color": "#ff8833", "style": "minimal" },
+                { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [-16, -4, 10], "color": "#ffaa44", "style": "minimal" },
+                { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [8, -6, -16], "color": "#ff9933", "style": "minimal" },
+                { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [-12, 8, -14], "color": "#ffbb22", "style": "minimal" },
+                { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [14, -2, -8], "color": "#ffcc33", "style": "minimal" }
+            ]
+        },
+
+        { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [0, 1, 15], "color": "#ff8822", "style": "bracket" },
+        { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [-18, 12, 0], "color": "#ffaa33", "style": "minimal" },
+        { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [15, 18, -5], "color": "#ff9944", "style": "minimal" },
+        { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [-8, 3, -18], "color": "#ffbb44", "style": "bracket" },
+        { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [20, 6, 12], "color": "#ff7722", "style": "minimal" },
+        { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [-5, 20, 8], "color": "#ffcc22", "style": "minimal" },
+        { "type": "label", "text": "YOU'RE ABSOLUTELY RIGHT!", "position": [10, -2, 20], "color": "#ffaa55", "style": "bracket" },
+
+
+        { "type": "label", "text": "Ah, I see the issue", "position": [6, 5, 8], "color": "#44aaff", "style": "minimal" },
+        { "type": "label", "text": "I apologize for the confusion", "position": [-8, 11, -4], "color": "#44aaff", "style": "minimal" },
+        { "type": "label", "text": "Great question!", "position": [10, 13, 3], "color": "#44aaff", "style": "minimal" },
+        { "type": "label", "text": "That's a really good point", "position": [-14, 5, 8], "color": "#44aaff", "style": "minimal" },
+        { "type": "label", "text": "Excellent observation!", "position": [4, 3, -10], "color": "#44aaff", "style": "minimal" },
+
+
+        { "type": "node", "position": [12, 10, 0], "color": "#ffaa22", "size": 0.15, "emissive": 3, "glow": false, "animate": "pulse" },
+        { "type": "node", "position": [-10, 7, 6], "color": "#ffaa22", "size": 0.15, "emissive": 3, "glow": false, "animate": "pulse" },
+        { "type": "node", "position": [3, 12, -11], "color": "#ffaa22", "size": 0.15, "emissive": 3, "glow": false, "animate": "pulse" },
+        { "type": "node", "position": [-6, 5, -9], "color": "#ffaa22", "size": 0.15, "emissive": 3, "glow": false, "animate": "pulse" },
+        { "type": "node", "position": [8, 6, 8], "color": "#ffaa22", "size": 0.1, "emissive": 2.5, "glow": false, "animate": "glow" },
+        { "type": "node", "position": [-5, 11, 10], "color": "#ffaa22", "size": 0.1, "emissive": 2.5, "glow": false, "animate": "glow" },
+
+        { "type": "edge", "from": [0, 8, 0], "to": [12, 10, 0], "color": "#ffaa22", "opacity": 0.2, "emissive": 2 },
+        { "type": "edge", "from": [0, 8, 0], "to": [-10, 7, 6], "color": "#ffaa22", "opacity": 0.2, "emissive": 2 },
+        { "type": "edge", "from": [0, 8, 0], "to": [3, 12, -11], "color": "#ffaa22", "opacity": 0.2, "emissive": 2 },
+        { "type": "edge", "from": [0, 8, 0], "to": [-6, 5, -9], "color": "#ffaa22", "opacity": 0.2, "emissive": 2 },
+        { "type": "edge", "from": [0, 8, 0], "to": [8, 6, 8], "color": "#ffaa22", "opacity": 0.15, "emissive": 2 },
+        { "type": "edge", "from": [0, 8, 0], "to": [-5, 11, 10], "color": "#ffaa22", "opacity": 0.15, "emissive": 2 }
+    ]
+}
