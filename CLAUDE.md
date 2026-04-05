@@ -15,7 +15,7 @@ JSON spec  -->  PhosphorEngine.loadScene()  -->  WebGL + Bloom + CSS2D Labels
 - **CLI:** `phosphor` — opens scenes in browser, lists examples, exports self-contained HTML.
 - **Docs:** `PHOSPHOR-GUIDE.md` (full composition guide + primitive reference), `README.md` (public-facing)
 - **Examples:** `examples/` (JSON scene specs)
-- **Tests/scratch:** `tmp/` (not committed)
+- **Tests/scratch:** `tmp/` (gitignored)
 
 ### Running
 
@@ -32,7 +32,7 @@ python3 -m http.server 8888
 ./phosphor --export glitch > glitch.html                  # shorthand name
 ```
 
-Produces a single HTML file with engine + scene inlined. Three.js loads from CDN (needs internet). No server required — double-click to open.
+Produces a single HTML file with engine + scene inlined. Three.js loads from CDN (needs internet). Works standalone — double-click to open.
 
 ### When editing the engine
 
@@ -61,11 +61,11 @@ Practically, this means:
 - **The void is your canvas.** Black is active — it's the contrast that makes everything glow. Let objects float in it. Negative space is what makes the lit elements feel alive. Make color choices that will stand out against the darkness.
 - **Bloom is the visibility system.** In a dark scene, bloom determines what feels present and what fades into the void. Elements that participate in bloom — nodes, tubes, particles, lines with emissive — carry visual weight. When placing an element, the first question is whether it needs bloom participation, and if so, give it a path: `emissive` on lines/edges, `tube` on rings.
 - **Start from glow, dial back to taste.** Start with emissive 2 and opacity 0.4, then pull back until the element sits at the right level in the hierarchy. You find the right value faster from above than from below.
-- **Color value and opacity are different tools.** Opacity controls presence — is it there or not. Emissive controls energy — does it glow or just exist. A reference line at `opacity: 0.3, emissive: 2` has moderate presence but real energy. One at `opacity: 0.6` has strong presence but feels dead. Use both levers: opacity for how solid, emissive for how alive.
+- **Color value and opacity are different tools.** Opacity controls presence — how much the element occupies the scene. Emissive controls energy — how alive it feels. A reference line at `opacity: 0.3, emissive: 2` has moderate presence but real energy. One at `opacity: 0.6` has strong presence but feels dead. Use both levers: opacity for how solid, emissive for how alive.
 - **Saturate your colors for the void.** Desaturated colors (`#669966`, `#8899bb`) lose their identity against black even at decent opacity. Push saturation up (`#88cc88`, `#aabbdd`) — the void desaturates everything visually, so over-saturate at the source.
-- **Hierarchy comes from emissive contrast.** A capital pin at emissive 2 next to a secondary pin with no emissive creates the same kind of read as a large node next to a small one — but through glow rather than geometry. Layer both: size + emissive = clear hierarchy.
+- **Hierarchy comes from emissive contrast.** A capital pin at emissive 2 next to a secondary pin at emissive 0 creates the same kind of read as a large node next to a small one — through glow as well as geometry. Layer both: size + emissive = clear hierarchy.
 - **Color is information.** Use the palette semantically. Warm colors for important or active elements. Cool colors for structure, connections, boundaries. Green for organic or terrain. Consistency makes scenes readable.
-- **Layers create depth.** Grid floor (ground reference), main elements (nodes, graphs), ambient fill (particles, volumes), framing (rings, lights). Each layer at a different opacity creates natural depth without clutter.
+- **Layers create depth.** Grid floor (ground reference), main elements (nodes, graphs), ambient fill (particles, volumes), framing (rings, lights). Each layer at a different opacity creates natural depth while keeping the scene clean.
 - **Labels are overlays.** They always face the camera and stay at fixed size regardless of distance. Place them slightly above their associated node.
 
 ## Key architectural details
@@ -81,7 +81,7 @@ Practically, this means:
 - Ambient light: `#111111` (very dim — objects earn visibility)
 - Bloom: strength 1.5, radius 0.4, threshold 0.1
 - Nodes: IcosahedronGeometry with emissive MeshStandardMaterial + point light
-- Particles: additive blending, no depth write
+- Particles: additive blending, depth write disabled
 - Grid: transparent, low opacity, depth write disabled
 
 ### The 11 primitives
@@ -98,7 +98,7 @@ Any element can have an `animate` property. String presets: `"spin"`, `"slow-spi
 Any element can have a `children` array — children inherit parent transforms. The `group` type is an invisible container (Unity's empty GameObject). Nesting is unlimited; animations compose at every level. Use `group` to spin/bob/orbit a collection of elements together.
 
 ### Flow on graph edges
-Graph edges support flow animations via `edgeAnimate` (graph-level default) or per-edge `animate` (selective). Per-edge overrides graph-level. Trace is filtered out on graph edges — only flow is supported because trace streaks don't read against thin lines.
+Graph edges support flow animations via `edgeAnimate` (graph-level default) or per-edge `animate` (selective). Per-edge overrides graph-level. Trace is filtered out on graph edges — flow is the supported type because trace streaks lose legibility against thin lines.
 
 ### Themes and palette
 Five built-in themes: `phosphor` (default), `ocean`, `forest`, `sunset`, `monochrome`. Set via `"theme": "ocean"` in the scene config. Each theme bundles a palette and atmosphere. Use palette names (`"cyan"`, `"orange"`, etc.) in elements to make them theme-aware. Hardcoded hex is absolute. Scene-level `palette`, `background`, `bloom`, `ambient` override the theme. Available palette names: `void`, `grid`, `cyan`, `orange`, `magenta`, `violet`, `green`, `red`, `blue`, `yellow`, `white`, `pink`.

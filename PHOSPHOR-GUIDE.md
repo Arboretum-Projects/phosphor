@@ -63,7 +63,7 @@ Bundle a scene into a single, self-contained HTML file:
 ./phosphor -x hello > hello.html                # short flag
 ```
 
-The exported file embeds the engine and scene JSON inline. Three.js loads from the CDN at runtime, so the recipient needs an internet connection. No local server required — double-click to open.
+The exported file embeds the engine and scene JSON inline. Three.js loads from the CDN at runtime, so the recipient needs an internet connection. Works standalone — double-click to open.
 
 ---
 
@@ -116,7 +116,7 @@ Controls the global environment.
 | `sunset` | Warm oranges and purples. High bloom, dramatic. |
 | `monochrome` | Whites and grays. Clean, minimal. |
 
-**Creating a custom theme from a scene:** Override the full palette and atmosphere without editing the engine. Start from any base theme and replace everything:
+**Creating a custom theme from a scene:** Override the full palette and atmosphere directly in the scene JSON. Start from any base theme and replace everything:
 
 ```json
 "scene": {
@@ -399,7 +399,7 @@ A collection of nodes and edges, with optional automatic layout.
 | `opacity` | number | `0.7` | Line transparency |
 | `animate` | animate | graph's `edgeAnimate` | Per-edge flow animation (overrides graph-level `edgeAnimate`) |
 
-**Flow on graph edges:** Graph edges support flow animations (glowing particles traveling along the edge). Set `edgeAnimate` on the graph for a default across all edges, or `animate` on individual edges for selective control. Set `"animate": false` on an edge to opt out of the graph-level default. Trace is not supported on graph edges because the streaks don't read visually against thin lines.
+**Flow on graph edges:** Graph edges support flow animations (glowing particles traveling along the edge). Set `edgeAnimate` on the graph for a default across all edges, or `animate` on individual edges for selective control. Set `"animate": false` on an edge to opt out of the graph-level default. Only flow is supported on graph edges because trace streaks lose legibility against thin lines.
 
 ```json
 {
@@ -413,7 +413,7 @@ A collection of nodes and edges, with optional automatic layout.
 }
 ```
 
-**Tree layout:** Set `layout: "tree"`. Edges define parent-child relationships. Roots (nodes with no incoming edges) start at the base. Children branch upward. Control spacing via `levelHeight` and `spread` on the first node.
+**Tree layout:** Set `layout: "tree"`. Edges define parent-child relationships. Roots (nodes that only have outgoing edges) start at the base. Children branch upward. Control spacing via `levelHeight` and `spread` on the first node.
 
 ---
 
@@ -631,7 +631,7 @@ Any element can have a `children` array. Children are positioned relative to the
 
 ### group
 
-An invisible transform container. Position, rotation, and animation with no visible geometry.
+A pure transform container. Position, rotation, and animation applied to children, with the container itself hidden.
 
 ```json
 {
@@ -852,7 +852,7 @@ These are hard-won lessons from building Phosphor scenes.
 
 ### 1. Dark colors are invisible in a dark scene
 
-Grid and terrain colors like `#0a0a3e` disappear against a `#000000` background, even at reasonable opacity. The bloom pass only amplifies emissive content above the threshold, so low-saturation dark colors never cross it. **Use bright, saturated colors at low opacity.** A grid at `#1144aa` / 0.2 reads clearly. A grid at `#0a0a3e` / 0.4 disappears.
+Grid and terrain colors like `#0a0a3e` disappear against a `#000000` background, even at reasonable opacity. The bloom pass only amplifies emissive content above the threshold, so low-saturation dark colors stay below it. **Use bright, saturated colors at low opacity.** A grid at `#1144aa` / 0.2 reads clearly. A grid at `#0a0a3e` / 0.4 disappears.
 
 ### 2. Emissive intensity drives bloom
 
@@ -880,11 +880,11 @@ When using grids as walls and ceilings, the grid lines define the space while th
 
 ### 8. Light backgrounds need inverted thinking
 
-On dark backgrounds, emissive drives visibility: objects glow their way into existence. On light backgrounds, **opacity and color saturation** drive visibility. Bloom creates watercolor blobs on white instead of halos on black. The rules: low bloom (strength ≤ 0.4), high threshold (≥ 0.7) so only capitals/key nodes glow, low emissive on most elements (≤ 0.3), off-white background (`#e8e8ee`) for contrast instead of pure white, `minimal` label style (bracket has dark backgrounds that clash), and ambient light at `#888888` for 3D definition through shadows instead of emission. It's a fundamentally different mode.
+On dark backgrounds, emissive drives visibility: objects glow their way into existence. On light backgrounds, **opacity and color saturation** drive visibility. Bloom creates watercolor blobs on white, soft and diffuse. The rules: low bloom (strength <= 0.4), high threshold (>= 0.7) so only capitals/key nodes glow, low emissive on most elements (<= 0.3), off-white background (`#e8e8ee`) for subtle contrast, `minimal` label style (bracket backgrounds clash with light scenes), and ambient light at `#888888` for 3D definition through shadows. It's a fundamentally different mode.
 
 ### 9. Organic scenes fight the void
 
-The engine's default aesthetic (dark background, emissive glow, neon colors) favors abstract, cyberpunk, and sci-fi compositions. Earthy browns and forest greens vanish into the void without brighter shades / emission. Organic and natural scenes work best with bright saturated versions of natural colors (`#00e676` for terrain, `#69f0ae` for trees). The brighter the source color, the more the bloom has to work with.
+The engine's default aesthetic (dark background, emissive glow, neon colors) favors abstract, cyberpunk, and sci-fi compositions. Earthy browns and forest greens need brighter shades to survive the void. Organic and natural scenes work best with bright saturated versions of natural colors (`#00e676` for terrain, `#69f0ae` for trees). The brighter the source color, the more the bloom has to work with.
 
 ### 10. Write one-off scripts for calculated geometry
 

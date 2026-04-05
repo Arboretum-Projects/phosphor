@@ -71,7 +71,7 @@
 - [x] **Solar system** — central star, torus rings as orbits at different angles, planet nodes, asteroid particle belt
 - [x] **DNA helix** — two intertwined curved lines spiraling upward, cross-link edges, nodes at base pairs
 - [x] **Circuit board** — grid as PCB, nodes as components, edges as traces, labels as part numbers
-- [x] **Abstract composition** — pure interplay of rings, volumes, light, and color with no representation
+- [x] **Abstract composition** — pure interplay of rings, volumes, light, and color as form alone
 - [x] **Network topology** — Arboretum network visualized (instances as nodes, communication as edges)
 
 ### Primitive features to push
